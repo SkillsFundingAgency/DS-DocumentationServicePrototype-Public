@@ -1,25 +1,19 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  Example of using variables in pages
+  ILR Specification Validation Rules and Appendices
 {% endblock %}
 
 {% block beforeContent %}
-  {% from "breadcrumbs/macro.njk" import govukBreadcrumbs %}
-
-{{ govukBreadcrumbs({
+  {{ govukBreadcrumbs({
   items: [
     {
       text: "Home",
       href: "#"
     },
     {
-      text: "ILR & PSM landing page",
-      href: "#"
-    },
-    {
-      text: "Individualised Learner Record Specification"
-    }
+      text: "ILR & PSM landing page"
+    }	
   ]
 }) }}
 {% endblock %}
@@ -28,136 +22,94 @@
 <div id="wrapper">
     <main role="main" class="hmrc-internal-manuals-frontend-content outer-block">
       <div id="manuals-frontend" class="manuals-frontend-body inner-block">
-        
 
+		  
+<div class="grid-row">
 
-
-
-<div class="gem-c-contextual-breadcrumbs">
-    <!-- Rendering step by step nav breadcrumbs because there's 1 step by step -->
-      <div class="gem-c-step-nav-header" data-module="track-click">
-    <span class="gem-c-step-nav-header__part-of">Part of</span>
-      <a href="/learn-to-drive-a-car" class="gem-c-step-nav-header__title" data-track-category="stepNavHeaderClicked" data-track-action="top" data-track-label="/learn-to-drive-a-car" data-track-dimension="Learn to drive a car: step by step" data-track-dimension-index="29" data-track-options="{&quot;dimension96&quot; : &quot;e01e924b-9c7c-4c71-8241-66a575c2f61f&quot; }">
-        ILR Specification, Provider Support Manual and Appendices
-      </a>
-  </div>
-
-</div>
-
-
-<header aria-labelledby="manual-title" class="">
-
-  <div class="primary">
-
-    <h1 id="manual-title">ILR Specification 2018 to 2019: version 3</h1>
-    <div class="gem-c-metadata gem-c-metadata--inverse" data-module="gem-toggle">
-  <dl data-module="track-click">
-      <dt class="gem-c-metadata__term">From:</dt>
-      <dd class="gem-c-metadata__definition">
-          <a href="#">Education and Skills Funding Agency</a>
-
-      </dd>
-      <dt class="gem-c-metadata__term">Published:</dt>
-      <dd class="gem-c-metadata__definition"><time datetime="2018-02-14">14/02/2018</time></dd>
-          <dt class="gem-c-metadata__term">Updated:</dt>
-          <dd class="gem-c-metadata__definition">
-              <time datetime="2018-06-26">26/06/2018</time>, <a href="#">see all updates</a>
-
-          </dd>
-  </dl>
-</div>
-
-    <div class="in-manual-search">
-      <form action="/search">
-        <label for="search-box">Search this manual</label>
-        <input type="hidden" name="filter_manual[]" value="/guidance/the-highway-code">
-        <input id="search-box" class="in-manual-search-box" type="text" name="q">
-        <button type="submit">search</button>
-      </form>
+  	<div class="column-two-thirds">
+    <div class="page-header">
+      <p class="page-header__context">Guidance</p>
+      <h1 class="page-header__title">ILR Specification, validation rules and appendices 2018 to 2019
+      </h1>
     </div>
   </div>
-  <div class="secondary">
-    <div class="secondary-inner">
+	
+	
+  	<div class="column-third">
+
+    <div class="community-contact">
       <p>
-        <a class="feedback" href="https://www.gov.uk/contact/govuk">Give feedback about this page</a>
+        <a class="feedback" href="/contact/govuk">Give feedback about this page</a>
       </p>
     </div>
   </div>
-</header>
+	
+</div>
+		  
+<div class="grid-row">
+  <div class="column-two-thirds">
 
-<ol class="breadcrumb-trail">
-    <li class="no-separator">Contents</li>
+    <div class="metadata">
+      <dl>
+          <dt>Published by:</dt>
+            <dd>
+              <a href="#">Education and Skills Funding Agency</a>
+            </dd>
+        <dt>Last updated:</dt>
+        <dd>
+          26 June 2018
+        </dd>
+      </dl>
+    </div>
 
-</ol>
+  </div>
+</div>
 
 <article aria-labelledby="manual-title" id="content">
   <div class="manual-body">
-    <p class="summary">Specification of the Individualised Learner Record for 2018 to 2019</p>
+    <p class="summary">Technical documents that define the ILR data that publicly funded
+
+providers must collect and return including ILR data returns calendar for 2019.</p>
       
 <div class="gem-c-govspeak govuk-govspeak ">
+      
+<div role="note" aria-label="Information" class="application-notice info-notice">
+<p>Version 3</a>.</p>
+</div>
 
 </div>
 
-        <ol class="section-list">
+        <ol class="section-list" style="margin-top:30px">
           <li>
-          <a class="" href="#">
-              <span class="subsection-title-text">Introduction to ILR Specification</span>
-              <span class="subsection-summary">This technical document is aimed at those responsible for the collection and return of learner data and to assist with data specification implementation and MI system design.</span>
-</a>          </li>
-          <li>
-          <a class="" href="/guidance/the-highway-code/rules-for-pedestrians-1-to-35">
-              <span class="subsection-title-text">ILR Structure</span>
-              <span class="subsection-summary">Contains: Lorem Ipsum</span>
-</a>          </li>
-          <li>
-          <a class="" href="/guidance/the-highway-code/rules-for-users-of-powered-wheelchairs-and-mobility-scooters-36-to-46">
-              <span class="subsection-title-text">Format of the ILR file</span>
-              <span class="subsection-summary">Contains: Lorem Ipsum</span>
-</a>          </li>
-          <li>
-          <a class="" href="/guidance/the-highway-code/rules-about-animals-47-to-58">
-              <span class="subsection-title-text">Summary of Changes 2019-2020</span>
-              <span class="subsection-summary">Contains: Lorem Ipsum</span>
-</a>          </li>
-          <li>
-          <a class="" href="/guidance/the-highway-code/rules-for-cyclists-59-to-82">
-              <span class="subsection-title-text">Funding Models and A-Z</span>
-              <span class="subsection-summary">Contains: Lorem Ipsum</span>
-</a>          </li>
-          <li>
-          <a class="" href="/guidance/the-highway-code/rules-for-motorcyclists-83-to-88">
-              <span class="subsection-title-text">Recording valid postcodes</span>
-              <span class="subsection-summary">Contains: Lorem Ipsum</span>
-</a>          </li>
-          <li>
-          <a class="" href="/guidance/the-highway-code/rules-for-drivers-and-motorcyclists-89-to-102">
-              <span class="subsection-title-text">Programme Aims</span>
-              <span class="subsection-summary">Contains: Lorem Ipsum</span>
-</a>          </li>
-          <li>
-          <a class="" href="/guidance/the-highway-code/general-rules-techniques-and-advice-for-all-drivers-and-riders-103-to-158">
-              <span class="subsection-title-text">Entity Definitions</span>
-              <span class="subsection-summary">Contains: Lorem Ipsum</span>
-</a>          </li>
+          <a class="" href="/ilr-specification-landing-page.html">
+              <span class="subsection-title-text">ILR Specification</span>
+              <span class="subsection-summary">This specification details the structure and individual field requirements for the ILR.</span>
+		  </a>          
+		  </li>
 		  <li>
-		  <a class="" href="/guidance/the-highway-code/general-rules-techniques-and-advice-for-all-drivers-and-riders-103-to-158">
-              <span class="subsection-title-text">Attribute Codes</span>
-              <span class="subsection-summary">Contains: Lorem Ipsum</span>
-</a>          </li>
+          <a class="" href="/provider-support-manual-landing-page.html">
+              <span class="subsection-title-text">Provider Suport Manual</span>
+			  <span class="subsection-summary">Guidance to support providers to meet requirements and make ILR data returns.</span>
+			  </a>          
+		  </li>
           <li>
-          <a class="" href="/guidance/the-highway-code/using-the-road-159-to-203">
-              <span class="subsection-title-text">Contact</span>
-              <span class="subsection-summary">Signpost</span>
-</a>          </li>
+          <a class="" href="#1">
+              <span class="subsection-title-text">Appendices</span>
+          </a>          
+		  </li>
           <li>
-          <a class="" href="/guidance/the-highway-code/road-users-requiring-extra-care-204-to-225">
-              <span class="subsection-title-text">PSM</span>
-              <span class="subsection-summary">Signpost.</span>
-</a>          </li>
-          <li>
+          <a class="" href="#2">
+              <span class="subsection-title-text">ILR Validation Rules</span>
+          </a>          
+		  </li>
+          
         </ol>
+		  
+		
   </div>
 </article>
+	
+
 
 
         <div class="print-page">

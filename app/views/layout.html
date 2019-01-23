@@ -3,7 +3,6 @@
 {% from "back-link/macro.njk"     import govukBackLink %}
 {% from "breadcrumbs/macro.njk"   import govukBreadcrumbs %}
 {% from "button/macro.njk"        import govukButton %}
-{% from "character-count/macro.njk"  import govukCharacterCount %}
 {% from "checkboxes/macro.njk"    import govukCheckboxes %}
 {% from "date-input/macro.njk"    import govukDateInput %}
 {% from "details/macro.njk"       import govukDetails %}
@@ -26,46 +25,72 @@
 
 {% block head %}
   {% include "includes/head.html" %}
+  {% if doNotTrackEnabled == false and promoMode == 'true' and gtmId %}
+    {% include "includes/tracking_head.html" %}
+  {% endif %}
 {% endblock %}
 
-{% block pageTitle %}
-  GOV.UK Prototype Kit
+
+{% block bodyStart %}
+  {% if doNotTrackEnabled == false and promoMode == 'true' and gtmId %}
+    {% include "includes/tracking_body.html" %}
+  {% endif %}
 {% endblock %}
 
 {% block header %}
   {% include "includes/cookie-banner.html" %}
   {# Set serviceName in config.js. #}
   {{ govukHeader({
-    homepageUrl: "/",
-    serviceName: serviceName,
-    serviceUrl: "/",
-    containerClasses: "govuk-width-container"
+    navigation: [
+      {
+        href: "/ilr-specification",
+        text: "ILR Specification",
+        attributes: {
+          "ilr-specification": "ILR Specification"
+        }
+      },
+      {
+        href: "/provider-support-manual-landing-page",
+        text: "Provider Support Manual",
+        attributes: {
+          "provider-support-manual-landing-page": "Provider Support Manual"
+        }
+      },
+	  {
+        href: "#",
+        text: "Appendices",
+        attributes: {
+          "data-tutorials": "Tutorials and examples"
+        }
+      }	
+    ]
   }) }}
 {% endblock %}
 
-{% if useAutoStoreData %}
-  {% block footer %}
-    {{ govukFooter({
-      meta: {
-        items: [
-          {
-            href: "https://govuk-prototype-kit.herokuapp.com/",
-            text: "GOV.UK Prototype Kit " + releaseVersion
-          },
-          {
-            href: "/prototype-admin/clear-data",
-            text: "Clear data"
-          }
-        ]
-      }
-    }) }}
-  {% endblock %}
-{% endif %}
+{% block footer %}
+  {{ govukFooter({
+    meta: {
+      items: [
+        {
+          href: "/prototype-admin/clear-data",
+          text: "Clear data"
+        },
+        {
+          href: "/docs/cookies",
+          text: "Cookies"
+        },
+        {
+          href: "/docs/privacy-policy",
+          text: "Privacy policy"
+        }
+      ]
+    }
+  }) }}
+{% endblock %}
 
 {% block bodyEnd %}
   {% block scripts %}
     {% include "includes/scripts.html" %}
     {% block pageScripts %}{% endblock %}
   {% endblock %}
-  <!-- GOV.UK Prototype Kit {{releaseVersion}} -->
 {% endblock %}
