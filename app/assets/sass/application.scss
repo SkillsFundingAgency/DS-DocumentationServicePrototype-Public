@@ -14,3 +14,29 @@ $govuk-global-styles: true;
 @import "components/cookie-banner";
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+
+<style>
+	.govuk-link, a {
+  font-family: "nta", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.manuals-frontend-body .section-list .list li {
+	list-style-type: disc;
+	border:none;
+}
+
+.manuals-frontend-body .section-list .list li:last-child {
+	border:none;
+}
+
+.govuk-width-container .govuk-main-wrapper {
+    padding-bottom: 0px;
+	margin: 0px;
+}
+
+.govuk-template__body .govuk-footer {
+    border-top: 10px solid #005ea5;
+}
+</style>
