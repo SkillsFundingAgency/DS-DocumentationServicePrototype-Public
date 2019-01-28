@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  LLDD and health problem category
+  Campus Identifier
 {% endblock %}
 
 
@@ -24,20 +24,20 @@
     },
 	{
       text: "Funding Streams",
-      href: '/funding-streams'
+      href: '/funding-streams/funding-streams'
     },
 	{
       text: "Community Learning funded learning: Funding Streams",
-      href: '/community-learning-funding-models.html'
+      href: "/funding-streams/community-learning-funding-models.html"
     },
     {
-      text: "LLDD and health problem category: field"
+      text: "Campus Identifier: field"
     }
   ]
 }) }}
 
 
-  <a class="govuk-back-link" href="/community-learning-funding-models.html">Back</a>  
+  <a class="govuk-back-link" href="/funding-streams/community-learning-funding-models.html">Back</a> 
 
 {% endblock %}
 
@@ -52,7 +52,7 @@
     <div class="page-header">
       <p class="page-header__context">ILR Spec</p>
       <h1 class="page-header__title">
-        LLDD and health problem category: field
+        Campus Identifier: field
       </h1>
     </div>
   </div>
@@ -96,14 +96,14 @@
     
       
 <div class="summary">
-	<p class="summary"><a href="#">LLDD and Health Problem</a></p>
+	<p class="summary"><a href="#">Part of the Learner field listings</a></p>
 </div>
 	
 <h2 class="govuk-heading-m">About the field</h2>
-<p>To identify all the learning difficulties, disabilities or health problems that may apply for reporting purposes and to align with data collected in the school census.</p>
+<p>To allow identification of provision delivered across the various sites of merged institutions.</p>
 	
 <h2 class="govuk-heading-m">How it’s used</h2>
-<p>To determine the nature of the learner's disability, learning difficulty and/or health problem.</p>
+<p>The identifier of a campus within a college group and no longer a separate legal entity but previously operated as an incorporated college with a UKPRN.</p>
 	
 <h2 class="govuk-heading-m">When to use</h2>
 <p>When notified to do so.</p>
@@ -115,19 +115,19 @@
   <tbody class="govuk-table__body">
     <tr class="govuk-table__row">
       <th class="govuk-table__header" scope="row">XML Element Name</th>
-      <td class="govuk-table__cell">LLDDCat</td>
+      <td class="govuk-table__cell">CampId</td>
     </tr>
     <tr class="govuk-table__row">
       <th class="govuk-table__header" scope="row">Field length</th>
-      <td class="govuk-table__cell">2</td>
+      <td class="govuk-table__cell">8</td>
     </tr>
     <tr class="govuk-table__row">
       <th class="govuk-table__header" scope="row">Data type</th>
-      <td class="govuk-table__cell">xs:int</td>
+      <td class="govuk-table__cell">RestrictedString</td>
     </tr>
 	<tr class="govuk-table__row">
       <th class="govuk-table__header" scope="row">Minimum occurrences</th>
-      <td class="govuk-table__cell">1</td>
+      <td class="govuk-table__cell">0</td>
     </tr>
     <tr class="govuk-table__row">
       <th class="govuk-table__header" scope="row">Maximum occurrences</th>
@@ -135,7 +135,7 @@
     </tr>
     <tr class="govuk-table__row">
       <th class="govuk-table__header" scope="row">Part of</th>
-      <td class="govuk-table__cell">LLDDandHealthProblem</td>
+      <td class="govuk-table__cell">Learner</td>
     </tr>
   </tbody>
 </table>
@@ -159,143 +159,33 @@
 </table>
 	
 <table class="govuk-table">
-  <caption class="govuk-table__caption">Attribute Codes</caption>
+  <caption class="govuk-table__caption"><strong class="govuk-tag">
+  VERSION 2
+</strong>&nbsp;&nbsp;&nbsp;Pattern</caption>
   <tbody class="govuk-table__body">
-	<tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row"><strong>Code</strong></th>
-      <td class="govuk-table__cell"><strong>Definition</strong></td>
-	  <td class="govuk-table__cell"><strong>Valid To</strong></td>
-    </tr>
     <tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">1</th>
-      <td class="govuk-table__cell">Emotional/behavioural difficulties</td>
-	  <td class="govuk-table__cell">31/07/2015</td>
-    </tr>
-	<tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">2</th>
-      <td class="govuk-table__cell">Multiple disabilities</td>
-	  <td class="govuk-table__cell">31/07/2015</td>
-    </tr>
-	<tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">3</th>
-      <td class="govuk-table__cell">Multiple learning difficulties</td>
-	  <td class="govuk-table__cell">31/07/2015</td>
-    </tr>
-	<tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">4</th>
-      <td class="govuk-table__cell">Visual impairment</td>
-	  <td class="govuk-table__cell"></td>
-    </tr>
-	<tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">5</th>
-      <td class="govuk-table__cell">Hearing impairment</td>
-	  <td class="govuk-table__cell"></td>
-    </tr>
-	<tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">6</th>
-      <td class="govuk-table__cell">Disability affecting mobility</td>
-	  <td class="govuk-table__cell"></td>
-    </tr>
-	<tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">7</th>
-      <td class="govuk-table__cell">Profound complex disabilities</td>
-	  <td class="govuk-table__cell"></td>
-    </tr>
-	<tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">8</th>
-      <td class="govuk-table__cell">Social and emotional difficulties</td>
-	  <td class="govuk-table__cell"></td>
-    </tr>
-	<tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">9</th>
-      <td class="govuk-table__cell">Mental health difficulty</td>
-	  <td class="govuk-table__cell"></td>
-    </tr>
-	<tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">10</th>
-      <td class="govuk-table__cell">Moderate learning difficulty</td>
-	  <td class="govuk-table__cell"></td>
-    </tr>
-	<tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">11</th>
-      <td class="govuk-table__cell">Severe learning difficulty</td>
-	  <td class="govuk-table__cell"></td>
-    </tr>
-	<tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">12</th>
-      <td class="govuk-table__cell">Dyslexia</td>
-	  <td class="govuk-table__cell"></td>
-    </tr>
-	<tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">13</th>
-      <td class="govuk-table__cell">Dyscalculia</td>
-	  <td class="govuk-table__cell"></td>
-    </tr>
-	<tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">14</th>
-      <td class="govuk-table__cell">Autism spectrum disorder</td>
-	  <td class="govuk-table__cell"></td>
-    </tr>
-	<tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">15</th>
-      <td class="govuk-table__cell">Asperger's syndrome</td>
-	  <td class="govuk-table__cell"></td>
-    </tr>
-	<tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">16</th>
-      <td class="govuk-table__cell">Temporary disability after illness (for example post-viral) or accident</td>
-	  <td class="govuk-table__cell"></td>
-    </tr>
-	<tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">17</th>
-      <td class="govuk-table__cell">Speech, Language and Communication Needs</td>
-	  <td class="govuk-table__cell"></td>
-    </tr>
-	<tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">93</th>
-      <td class="govuk-table__cell">Other physical disability</td>
-	  <td class="govuk-table__cell"></td>
-    </tr>  
-	<tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">94</th>
-      <td class="govuk-table__cell">Other specific learning difficulty (e.g. Dyspraxia)</td>
-	  <td class="govuk-table__cell"></td>
-    </tr>
-	<tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">95</th>
-      <td class="govuk-table__cell">Other medical condition (for example epilepsy, asthma, diabetes)</td>
-	  <td class="govuk-table__cell"></td>
-    </tr>
-	<tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">96</th>
-      <td class="govuk-table__cell">Other learning difficulty</td>
-	  <td class="govuk-table__cell"></td>
-    </tr>
-	<tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">97</th>
-      <td class="govuk-table__cell">Other disability</td>
-	  <td class="govuk-table__cell"></td>
-    </tr>
-	<tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">98</th>
-      <td class="govuk-table__cell">Prefer not to say</td>
-	  <td class="govuk-table__cell"></td>
-    </tr>
-	<tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">99</th>
-      <td class="govuk-table__cell">Not provided</td>
-	  <td class="govuk-table__cell"></td>
+      <th class="govuk-table__header" scope="row">[A-Za-z0-9]{1,8}</th>
+      <td class="govuk-table__cell"></td>
     </tr>
   </tbody>
 </table>
-	  
 
+<blockquote class="noquotes">
+	<p><strong class="govuk-tag">VERSION 2</strong>&nbsp;&nbsp;&nbsp;Version 2 changes: Updates Published March 2018</p>
+	<h3 class="govuk-heading-m">What's changed?</h3>
+	<p>Pattern has been corrected to [A-Za-z0-9]{1,8}</p>
+	<p>The pattern was incorrect in version 1.
+    </br>“8” is the change to the pattern in version 2.</p>
+	</blockquote>
+	  
 <div class="print-page" style="margin-top:90px;">
 <a onclick="window.print();return false;" href="#">Print this page</a>
 </div>
 
 
 </div>
+	
+
   
 <div class="column-one-third">
   
@@ -414,7 +304,7 @@
 
       </div>
     </div>
-  <input type="hidden" name="javascript_enabled" value="true"><input type="hidden" name="referrer" value="https://www.gov.uk/browse/driving/highway-code-road-safety"><input type="hidden" name="javascript_enabled" value="true"><input type="hidden" name="referrer" value="http://localhost:3000/community-learning-funding-models"></form>
+  <input type="hidden" name="javascript_enabled" value="true"><input type="hidden" name="referrer" value="https://www.gov.uk/browse/driving/highway-code-road-safety"></form>
 
   <form action="/contact/govuk/email-survey-signup" id="page-is-not-useful" class="gem-c-feedback__form gem-c-feedback__form--email gem-c-feedback__js-show js-feedback-form js-hidden" data-track-category="yesNoFeedbackForm" data-track-action="Send Form" method="post" aria-hidden="true">
     <a href="#" class="gem-c-feedback__close js-close-form" data-track-category="yesNoFeedbackForm" data-track-action="ffFormClose" aria-controls="page-is-not-useful" aria-expanded="true" role="button">Close</a>
