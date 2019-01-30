@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  Withdrawal Reason
+  Campus Identifier
 {% endblock %}
 
 
@@ -24,17 +24,17 @@
     },
 	{
       text: "Funding Streams",
-      href: "/funding-streams/funding-streams"
+      href: '/funding-streams/funding-streams'
     },
 	{
-      text: "Community Learning",
-      href: "/funding-streams/community-learning-funding-models.html"
+      text: "Entity Listings",
+      href: "/funding-streams/entity-listings"
     }
   ]
 }) }}
 
 
-  <a class="govuk-back-link" href="/funding-streams/community-learning-funding-models.html">Back</a>  
+  <a class="govuk-back-link" href="/funding-streams/entity-listings.html">Back</a> 
 
 {% endblock %}
 
@@ -49,7 +49,7 @@
     <div class="page-header">
       <p class="page-header__context">ILR Spec</p>
       <h1 class="page-header__title">
-        Withdrawal reason: field
+        Campus Identifier: field
       </h1>
     </div>
   </div>
@@ -93,33 +93,34 @@
     
       
 <div class="summary">
-	<p class="summary"><a href="#">Part of the Learning Delivery field listings</a></p>
+	<p class="summary"><a href="#">Part of the Learner field listings</a></p>
 </div>
 	
 <h2 class="govuk-heading-m">About the field</h2>
-<p>For use in performance management and success rates.</p>
+<p>To allow identification of provision delivered across the various sites of merged institutions.</p>
 	
 <h2 class="govuk-heading-m">How it’s used</h2>
-<p>The reason why the learner has withdrawn from the learning aim</p>
+<p>The identifier of a campus within a college group and no longer a separate legal entity but previously operated as an incorporated college with a UKPRN.</p>
 	
 <h2 class="govuk-heading-m">When to use</h2>
 <p>When notified to do so.</p>
 
-      
-<h2 class="govuk-heading-m">Schema definitions</h2>
+
+<h2 class="govuk-heading-m">Schema definitions</h2>	  
 <table class="govuk-table">
+  
   <tbody class="govuk-table__body">
     <tr class="govuk-table__row">
       <th class="govuk-table__header" scope="row">XML Element Name</th>
-      <td class="govuk-table__cell">WithdrawReason</td>
+      <td class="govuk-table__cell">CampId</td>
     </tr>
     <tr class="govuk-table__row">
       <th class="govuk-table__header" scope="row">Field length</th>
-      <td class="govuk-table__cell">2</td>
+      <td class="govuk-table__cell">8</td>
     </tr>
     <tr class="govuk-table__row">
       <th class="govuk-table__header" scope="row">Data type</th>
-      <td class="govuk-table__cell">xs:int</td>
+      <td class="govuk-table__cell">RestrictedString</td>
     </tr>
 	<tr class="govuk-table__row">
       <th class="govuk-table__header" scope="row">Minimum occurrences</th>
@@ -131,16 +132,17 @@
     </tr>
     <tr class="govuk-table__row">
       <th class="govuk-table__header" scope="row">Part of</th>
-      <td class="govuk-table__cell">LearningDeliveryCollection</td>
+      <td class="govuk-table__cell">Learner</td>
     </tr>
   </tbody>
 </table>
+
 
 <h2 class="govuk-heading-m">Collection requirements</h2>
 <table class="govuk-table">
   <tbody class="govuk-table__body">
     <tr class="govuk-table__row">
-      <td class="govuk-table__cell">Collected for all aims.</td>
+      <td class="govuk-table__cell">This field is collected for all learners.</td>
     </tr>
   </tbody>
 </table>
@@ -153,85 +155,27 @@
     </tr>
   </tbody>
 </table>
-
-<h2 class="govuk-heading-m">Attribute Codes</h2>
-<table class="govuk-table">
-  <tbody class="govuk-table__body">
-	<tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row"><strong>Code</strong></th>
-      <td class="govuk-table__cell"><strong>Definition</strong></td>
-    </tr>
-    <tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">2</th>
-      <td class="govuk-table__cell">Learner has transferred to another provider</td>
-    </tr>
-	<tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">3</th>
-      <td class="govuk-table__cell">Learner injury / illness</td>
-    </tr>
-	<tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">7</th>
-      <td class="govuk-table__cell">Learner has transferred between providers due to intervention by or with the written agreement of the ESFA</td>
-    </tr>
-	<tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">28</th>
-      <td class="govuk-table__cell">OLASS learner withdrawn due to circumstances outside the providers' control</td>
-    </tr>
-	<tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">29</th>
-      <td class="govuk-table__cell">Learner has been made redundant</td>
-    </tr>
-	<tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">40</th>
-      <td class="govuk-table__cell">Learner has transferred to a new learning aim with the same provider</td>
-    </tr>
-	<tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">41</th>
-      <td class="govuk-table__cell">Learner has transferred to another provider to undertake learning that meets a specific government strategy</td>
-    </tr>
-	<tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">42</th>
-      <td class="govuk-table__cell">Academic failure/left in bad standing/not permitted to progress - HE learning aims only</td>
-    </tr>
-	<tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">43</th>
-      <td class="govuk-table__cell">Financial reasons</td>
-    </tr>
-	<tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">44</th>
-      <td class="govuk-table__cell">Other personal reasons</td>
-    </tr>
-	<tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">45</th>
-      <td class="govuk-table__cell">Written off after lapse of time - HE learning aims only</td>
-    </tr>
-	<tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">46</th>
-      <td class="govuk-table__cell">Exclusion</td>
-    </tr>
-	<tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">47</th>
-      <td class="govuk-table__cell"><strong class="govuk-tag">VERSION 1</strong>&nbsp;&nbsp;&nbsp;Learner has transferred to another provider due to merger</td>
-    </tr>
-	<tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">97</th>
-      <td class="govuk-table__cell">Other</td>
-    </tr>
-	<tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">98</th>
-      <td class="govuk-table__cell">Reason not known</td>
-    </tr>
-	 
-  </tbody>
-</table>
 	
 </div>
+	
+<table class="govuk-table">
+  <caption class="govuk-table__caption"><strong class="govuk-tag">
+  VERSION 2
+</strong>&nbsp;&nbsp;&nbsp;Pattern</caption>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">[A-Za-z0-9]{1,8}</th>
+      <td class="govuk-table__cell"></td>
+    </tr>
+  </tbody>
+</table>
 
 <blockquote class="noquotes">
-	<p><strong class="govuk-tag">VERSION 1</strong>&nbsp;&nbsp;&nbsp;Version 1 changes: New content Published February 2018</p>
+	<p><strong class="govuk-tag">VERSION 2</strong>&nbsp;&nbsp;&nbsp;Version 2 changes: Updates Published March 2018</p>
 	<h3 class="govuk-heading-m">What's changed?</h3>
-	<p>New Attribute code: “47 - Learner has transferred to another provider due to merger”</p>
-	<p>Added to Learning Delivery entity within the Withdrawal Reason field for 2018 to 2019.</p>
+	<p>Pattern has been corrected to [A-Za-z0-9]{1,8}</p>
+	<p>The pattern was incorrect in version 1.
+    </br>“8” is the change to the pattern in version 2.</p>
 	</blockquote>
 	  
 <div class="print-page" style="margin-top:90px;">
@@ -239,8 +183,9 @@
 </div>
 
 </div>
-	
 
+
+	
 
   
 <div class="column-one-third">
@@ -360,7 +305,7 @@
 
       </div>
     </div>
-  <input type="hidden" name="javascript_enabled" value="true"><input type="hidden" name="referrer" value="https://www.gov.uk/browse/driving/highway-code-road-safety"><input type="hidden" name="javascript_enabled" value="true"><input type="hidden" name="referrer" value="http://localhost:3000/community-learning-funding-models"></form>
+  <input type="hidden" name="javascript_enabled" value="true"><input type="hidden" name="referrer" value="https://www.gov.uk/browse/driving/highway-code-road-safety"></form>
 
   <form action="/contact/govuk/email-survey-signup" id="page-is-not-useful" class="gem-c-feedback__form gem-c-feedback__form--email gem-c-feedback__js-show js-feedback-form js-hidden" data-track-category="yesNoFeedbackForm" data-track-action="Send Form" method="post" aria-hidden="true">
     <a href="#" class="gem-c-feedback__close js-close-form" data-track-category="yesNoFeedbackForm" data-track-action="ffFormClose" aria-controls="page-is-not-useful" aria-expanded="true" role="button">Close</a>

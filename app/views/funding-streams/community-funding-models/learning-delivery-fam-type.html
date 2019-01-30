@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  Withdrawal Reason
+  Learning Delivery FAM Type
 {% endblock %}
 
 
@@ -24,7 +24,7 @@
     },
 	{
       text: "Funding Streams",
-      href: "/funding-streams/funding-streams"
+      href: '/funding-streams/funding-streams'
     },
 	{
       text: "Community Learning",
@@ -34,7 +34,7 @@
 }) }}
 
 
-  <a class="govuk-back-link" href="/funding-streams/community-learning-funding-models.html">Back</a>  
+  <a class="govuk-back-link" href="/funding-streams/community-learning-funding-models.html">Back</a> 
 
 {% endblock %}
 
@@ -49,7 +49,7 @@
     <div class="page-header">
       <p class="page-header__context">ILR Spec</p>
       <h1 class="page-header__title">
-        Withdrawal reason: field
+        Learning Delivery Funding and Monitoring Type: field
       </h1>
     </div>
   </div>
@@ -93,37 +93,38 @@
     
       
 <div class="summary">
-	<p class="summary"><a href="#">Part of the Learning Delivery field listings</a></p>
+	<p class="summary"><a href="#">Part of the Learner funding and monitoring entity</a></p>
 </div>
 	
 <h2 class="govuk-heading-m">About the field</h2>
-<p>For use in performance management and success rates.</p>
+<p>The Learning Delivery Funding and Monitoring entity is required if any of the FAM type characteristics apply to the learning aim. Please refer to the individual FAM types for collection requirements.</p>
 	
 <h2 class="govuk-heading-m">How it’s used</h2>
-<p>The reason why the learner has withdrawn from the learning aim</p>
+<p>To identify additional funding and/or funding characteristics of the learning delivery.</p>
 	
 <h2 class="govuk-heading-m">When to use</h2>
 <p>When notified to do so.</p>
 
-      
-<h2 class="govuk-heading-m">Schema definitions</h2>
+
+<h2 class="govuk-heading-m">Schema definitions</h2>	  
 <table class="govuk-table">
+  
   <tbody class="govuk-table__body">
     <tr class="govuk-table__row">
       <th class="govuk-table__header" scope="row">XML Element Name</th>
-      <td class="govuk-table__cell">WithdrawReason</td>
+      <td class="govuk-table__cell">LearnDelFAMType</td>
     </tr>
     <tr class="govuk-table__row">
       <th class="govuk-table__header" scope="row">Field length</th>
-      <td class="govuk-table__cell">2</td>
+      <td class="govuk-table__cell">3</td>
     </tr>
     <tr class="govuk-table__row">
       <th class="govuk-table__header" scope="row">Data type</th>
-      <td class="govuk-table__cell">xs:int</td>
+      <td class="govuk-table__cell">RestrictedString</td>
     </tr>
 	<tr class="govuk-table__row">
       <th class="govuk-table__header" scope="row">Minimum occurrences</th>
-      <td class="govuk-table__cell">0</td>
+      <td class="govuk-table__cell">1</td>
     </tr>
     <tr class="govuk-table__row">
       <th class="govuk-table__header" scope="row">Maximum occurrences</th>
@@ -131,25 +132,16 @@
     </tr>
     <tr class="govuk-table__row">
       <th class="govuk-table__header" scope="row">Part of</th>
-      <td class="govuk-table__cell">LearningDeliveryCollection</td>
+      <td class="govuk-table__cell">LearningDeliveryFAM</td>
     </tr>
   </tbody>
 </table>
-
+	
 <h2 class="govuk-heading-m">Collection requirements</h2>
 <table class="govuk-table">
   <tbody class="govuk-table__body">
     <tr class="govuk-table__row">
-      <td class="govuk-table__cell">Collected for all aims.</td>
-    </tr>
-  </tbody>
-</table>
-
-<h2 class="govuk-heading-m">Valid entries</h2>
-<table class="govuk-table">
-  <tbody class="govuk-table__body">
-    <tr class="govuk-table__row">
-      <td class="govuk-table__cell">Must be in a valid look up. This is a 8-digit identifier using alphanumeric characters.</td>
+      <td class="govuk-table__cell">Collected for all aims</td>
     </tr>
   </tbody>
 </table>
@@ -157,90 +149,235 @@
 <h2 class="govuk-heading-m">Attribute Codes</h2>
 <table class="govuk-table">
   <tbody class="govuk-table__body">
-	<tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row"><strong>Code</strong></th>
-      <td class="govuk-table__cell"><strong>Definition</strong></td>
-    </tr>
     <tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">2</th>
-      <td class="govuk-table__cell">Learner has transferred to another provider</td>
+      <th class="govuk-table__header" scope="row"><a href="#">SOF</a></th>
+      <td class="govuk-table__cell">Source of funding</td>
+	  <td class="govuk-table__cell">1</td>
     </tr>
 	<tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">3</th>
-      <td class="govuk-table__cell">Learner injury / illness</td>
+      <th class="govuk-table__header" scope="row"><a href="#">RES</a></th>
+      <td class="govuk-table__cell">Restart indicator</td>
+	  <td class="govuk-table__cell">1</td>
     </tr>
 	<tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">7</th>
-      <td class="govuk-table__cell">Learner has transferred between providers due to intervention by or with the written agreement of the ESFA</td>
+      <th class="govuk-table__header" scope="row"><a href="#">ASL</a></th>
+      <td class="govuk-table__cell">Community Learning provision type</td>
+	  <td class="govuk-table__cell">1</td>
     </tr>
 	<tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">28</th>
-      <td class="govuk-table__cell">OLASS learner withdrawn due to circumstances outside the providers' control</td>
+      <th class="govuk-table__header" scope="row"><a href="#">LDM</a></th>
+      <td class="govuk-table__cell">Learning delivery monitoring</td>
+	  <td class="govuk-table__cell"><strong class="govuk-tag">VERSION 1</strong>&nbsp;&nbsp;&nbsp;6</td>
     </tr>
-	<tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">29</th>
-      <td class="govuk-table__cell">Learner has been made redundant</td>
-    </tr>
-	<tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">40</th>
-      <td class="govuk-table__cell">Learner has transferred to a new learning aim with the same provider</td>
-    </tr>
-	<tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">41</th>
-      <td class="govuk-table__cell">Learner has transferred to another provider to undertake learning that meets a specific government strategy</td>
-    </tr>
-	<tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">42</th>
-      <td class="govuk-table__cell">Academic failure/left in bad standing/not permitted to progress - HE learning aims only</td>
-    </tr>
-	<tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">43</th>
-      <td class="govuk-table__cell">Financial reasons</td>
-    </tr>
-	<tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">44</th>
-      <td class="govuk-table__cell">Other personal reasons</td>
-    </tr>
-	<tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">45</th>
-      <td class="govuk-table__cell">Written off after lapse of time - HE learning aims only</td>
-    </tr>
-	<tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">46</th>
-      <td class="govuk-table__cell">Exclusion</td>
-    </tr>
-	<tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">47</th>
-      <td class="govuk-table__cell"><strong class="govuk-tag">VERSION 1</strong>&nbsp;&nbsp;&nbsp;Learner has transferred to another provider due to merger</td>
-    </tr>
-	<tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">97</th>
-      <td class="govuk-table__cell">Other</td>
-    </tr>
-	<tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">98</th>
-      <td class="govuk-table__cell">Reason not known</td>
-    </tr>
-	 
   </tbody>
 </table>
 	
+<h2 class="govuk-heading-m">Source of Funding</h2>
+	
+<h3 class="govuk-heading-m">About the field</h3>
+<p>The Source of funding identifies the organisation which has directly funded the learning aim and that passes funds directly to you.  No attempt should be made to use this field to indicate sources beyond the one directly providing the funds.  </p>
+	
+<h3 class="govuk-heading-m">Other sources of funding </h3>
+<p>If the Funding model field is recorded with code 99 'Non-funded', then this field must not contain codes 105 (Education and Skills Funding Agency (ESFA) - Adult), or 107 (Education and Skills Funding Agency (ESFA) - 16-19).</p>
+<p>Code 108 should be used to record funding for Community Learning provision that is paid through Local Authorities.</p>
+<p>If the learning aim is financed by an Advanced Learner Loan, this field is not required and must not be returned. </p>
+<p>If the learner or employer is paying the full cost of the learning aim, this field is not required and must not be returned. </p>
+	
+<h3 class="govuk-heading-m">How it’s used</h3>
+<p>The organisation or source from which funding has been received directly for this learning aim in this teaching year.</p>
+	
+<h3 class="govuk-heading-m">When to use</h3>
+<p>To identify the organisation or source from which funds have been received.</p>
+		  
+<table class="govuk-table">
+  
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">Fam Type</th>
+      <td class="govuk-table__cell">SOF</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">Min Occurs</th>
+      <td class="govuk-table__cell">0</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">Max Occurs</th>
+      <td class="govuk-table__cell">1</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 class="govuk-heading-m">Collection requirements</h3>	
+<table class="govuk-table">
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">Collected for all aims</td>
+    </tr>
+  </tbody>
+</table>
+	
+
+	
+<h2 class="govuk-heading-m">Restart indicator </h2>
+	
+<h3 class="govuk-heading-m">About the field</h3>
+<p>This should be used to indicate that the learner has re-started a learning aim or apprenticeship programme.  </p>
+	
+<h3 class="govuk-heading-m">Other information </h3>
+<p>Where a learner has already undertaken some of the learning towards an Adult Skills funded or Other Adult  funded aim and is restarting it then the Funding adjustment for prior learning field should be used to reduce the amount of funding claimed as applicable.</p>
+<p>This indicator is used in the validation of the apprenticeship minimum duration rules and so it is important that it is completed accurately.</p>
+<p>For further guidance refer to the <a href="/provider-support-manual-landing-page.html">Provider Support Manual</a>. </p>
+<p>If the learner or employer is paying the full cost of the learning aim, this field is not required and must not be returned. </p>
+	
+<h3 class="govuk-heading-m">How it’s used</h3>
+<p>To identify whether the learner has restarted the learning aim.</p>
+	
+<h3 class="govuk-heading-m">When to use</h3>
+<p>Learning aim monitoring.</p>
+		  
+<table class="govuk-table">
+  
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">Fam Type</th>
+      <td class="govuk-table__cell">RES</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">Min Occurs</th>
+      <td class="govuk-table__cell">0</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">Max Occurs</th>
+      <td class="govuk-table__cell">1</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 class="govuk-heading-m">Collection requirements</h3>	
+<table class="govuk-table">
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">Collected for all aims</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<h2 class="govuk-heading-m">Community Learning Provision Type  </h2>
+	
+<h3 class="govuk-heading-m">About the field</h3>
+<p>For non-funded learners, this field is collected for Local Authority funded Community Learning provision only (Funding model 99 and Source of funding 108). </p>
+	
+<h3 class="govuk-heading-m">Other information </h3>
+<p>This field does not need to be completed for the Community learning mental health pilot. </p>
+<p>Where you are using the Adult Skills funding model (Funding Model 35) to deliver Family English, Maths or Language (FEML) learning aims, you should record this using the Learning Delivery Funding and Monitoring type of FLN.</p>
+<p>You should continue to record Family English, Maths and Language programmes funded through the Community Learning funding model (Funding Model 10) using this field. </p>
+<p>Family English, Maths and Language programmes must fulfil all the following requirements.  They must:</p>
+<span class="subsection-summary">
+		<ul class="list list-bullet">
+			<li>aim to improve the English, Maths or Language skills of parents or other carers</li>
+			<li>aim to improve parents'/carers' ability to help their children learn</li>
+			<li>aim to improve children's acquisition of English and/or Maths and/or Language</li>
+		</ul>
+ </span>
+<p>Learners' children must be under 18.</p>	
+	
+<h3 class="govuk-heading-m">How it’s used</h3>
+<p>Identifies the type of Community Learning provision activity being undertaken.</p>
+	
+<h3 class="govuk-heading-m">When to use</h3>
+<p>To monitor the provision type for learning aims within this sector.</p>
+		  
+<table class="govuk-table">
+  
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">Fam Type</th>
+      <td class="govuk-table__cell">ASL</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">Min Occurs</th>
+      <td class="govuk-table__cell">0</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">Max Occurs</th>
+      <td class="govuk-table__cell">1</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 class="govuk-heading-m">Collection requirements</h3>	
+<table class="govuk-table">
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">Community Learning (FundModel 10), Non-funded (FundModel 99)</td>
+    </tr>
+  </tbody>
+</table>
+	
+<h2 class="govuk-heading-m">Learning Delivery Monitoring   </h2>
+	
+<h3 class="govuk-heading-m">About the field</h3>
+<p>The Learning delivery monitoring codes document is available at <a href="https://www.gov.uk/government/publications/ilr-specification-validation-rules-and-appendices-2018-to-2019">https://www.gov.uk/government/publications/ilr-specification-validation-rules-and-appendices-2018-to-2019</a>.  This contains all of the valid codes available for this field, but is not teaching year specific. The 'Valid from' column should be used to determine whether the code is valid for use. </p>
+	
+<h3 class="govuk-heading-m">Other information </h3>
+<p>Unassigned codes will fail validation and must not be used until they have been authorised for use and have been published.</p>
+<p>The ESFA directorate responsible for running the project or pilot will inform providers involved of the code that should be used.  </p>
+<p>All learning aims starting on or after 1 August 2013 delivered through funding models 81 and 82 should be identified using a Learning Delivery Monitoring code. Providers will be informed of which code to use. This does not apply to apprenticeship standards.</p>
+	
+<h3 class="govuk-heading-m">How it’s used</h3>
+<p>Indicates participation in programmes or initiatives.</p>
+	
+<h3 class="govuk-heading-m">When to use</h3>
+<p>Learning aim monitoring.</p>
+		  
+<table class="govuk-table">
+  
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">Fam Type</th>
+      <td class="govuk-table__cell">LDM</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">Min Occurs</th>
+      <td class="govuk-table__cell">0</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">Max Occurs</th>
+      <td class="govuk-table__cell"><strong class="govuk-tag">VERSION 1</strong>&nbsp;&nbsp;&nbsp;6</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 class="govuk-heading-m">Collection requirements</h3>	
+<table class="govuk-table">
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">Collected for all aims</td>
+    </tr>
+  </tbody>
+</table>
+
+	
 </div>
+	
 
 <blockquote class="noquotes">
-	<p><strong class="govuk-tag">VERSION 1</strong>&nbsp;&nbsp;&nbsp;Version 1 changes: New content Published February 2018</p>
+	<p><strong class="govuk-tag">VERSION 1</strong>&nbsp;&nbsp;&nbsp;Version 1 changes: Updates Published February 2018</p>
 	<h3 class="govuk-heading-m">What's changed?</h3>
-	<p>New Attribute code: “47 - Learner has transferred to another provider due to merger”</p>
-	<p>Added to Learning Delivery entity within the Withdrawal Reason field for 2018 to 2019.</p>
-	</blockquote>
+	<p>Amendment to the maximum occurrences from 4 to 6</p>
+
+</blockquote>
+
 	  
 <div class="print-page" style="margin-top:90px;">
 <a onclick="window.print();return false;" href="#">Print this page</a>
 </div>
 
 </div>
-	
 
+
+	
 
   
 <div class="column-one-third">
@@ -360,7 +497,7 @@
 
       </div>
     </div>
-  <input type="hidden" name="javascript_enabled" value="true"><input type="hidden" name="referrer" value="https://www.gov.uk/browse/driving/highway-code-road-safety"><input type="hidden" name="javascript_enabled" value="true"><input type="hidden" name="referrer" value="http://localhost:3000/community-learning-funding-models"></form>
+  <input type="hidden" name="javascript_enabled" value="true"><input type="hidden" name="referrer" value="https://www.gov.uk/browse/driving/highway-code-road-safety"></form>
 
   <form action="/contact/govuk/email-survey-signup" id="page-is-not-useful" class="gem-c-feedback__form gem-c-feedback__form--email gem-c-feedback__js-show js-feedback-form js-hidden" data-track-category="yesNoFeedbackForm" data-track-action="Send Form" method="post" aria-hidden="true">
     <a href="#" class="gem-c-feedback__close js-close-form" data-track-category="yesNoFeedbackForm" data-track-action="ffFormClose" aria-controls="page-is-not-useful" aria-expanded="true" role="button">Close</a>
