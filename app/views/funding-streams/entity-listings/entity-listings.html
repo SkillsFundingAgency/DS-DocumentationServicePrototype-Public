@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  Entity Listings
+  Learner: entity 
 {% endblock %}
 
 {% block beforeContent %}
@@ -18,18 +18,22 @@
       href: '/ilr-psm-home'
     },
     {
-      text: "Individualised Learner Record Specification",
+      text: "Individualised learner record specification",
       href: '/ilr-specification-landing-page'
     },
 	{
-      text: "Funding Streams",
-      href: "/funding-streams/funding-streams"
+      text: "Funding streams",
+      href: '/funding-streams/funding-streams'
+    },
+	{
+      text: "Entities definitions and fields",
+      href: '/funding-streams/entities-definitions-and-fields'
     }
 	
   ]
 }) }}
 
-<a class="govuk-back-link" href="/funding-streams/funding-streams.html">Back</a> 
+<a class="govuk-back-link" href="/funding-streams/entities-definitions-and-fields.html">Back</a> 
 
 {% endblock %}
 
@@ -41,30 +45,23 @@
 		  
 <div class="grid-row">
 
-  	<div class="column-two-thirds">
+  <div class="column-two-thirds">
     <div class="page-header">
       <p class="page-header__context">ILR Spec</p>
       <h1 class="page-header__title">
-        Entity Listings
+        Learner: entity 
       </h1>	
-	  <p class="summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-	  </p>
-    </div>
-  </div>
+	</div>
+	</div>	
 	
-	
-  	<div class="column-third">
-
+  <div class="column-third">
     <div class="community-contact">
       <p>
         <a class="feedback" href="/contact/govuk">Give feedback about this page</a>
       </p>
     </div>
   </div>
-	
-</div>
-		  
-<div class="grid-row">
+
   <div class="column-two-thirds">
 
     <div class="metadata">
@@ -84,7 +81,20 @@
     </div>
 
   </div>
+		
+	
+	
+
+	
+<div class="column-two-thirds">
+    <div class="page-header">	
+	  <p class="summary">You should return only one record for each learner. The data recorded in the learner entity contains basic information specific to the learner such as their name, date of birth, sex and ethnicity</p>
+    </div>
+  </div>
+	
 </div>
+		  
+
 	
 	  
 
@@ -792,11 +802,7 @@
   <ul class="gem-c-related-navigation__link-list" data-module="track-click">
 
 
-        <li class="gem-c-related-navigation__link"><a class="gem-c-related-navigation__section-link gem-c-related-navigation__section-link--sidebar  gem-c-related-navigation__section-link--other" href="#">Funding Streams</a></li>
-	  
-        <li class="gem-c-related-navigation__link"><a class="gem-c-related-navigation__section-link gem-c-related-navigation__section-link--sidebar  gem-c-related-navigation__section-link--other"  href="/change-vehicle-details-registration-certificate">Entity Definitions</a></li>
-	  
-        <li class="gem-c-related-navigation__link"><a class="gem-c-related-navigation__section-link gem-c-related-navigation__section-link--sidebar  gem-c-related-navigation__section-link--other"  href="#">Attribute Codes</a></li>
+        <li class="gem-c-related-navigation__link"><span style="color: #6f777b;">Collection</span></br><a class="gem-c-related-navigation__section-link gem-c-related-navigation__section-link--sidebar  gem-c-related-navigation__section-link--other" href="#">TBC</a></li>
 
   </ul>
 </nav>
