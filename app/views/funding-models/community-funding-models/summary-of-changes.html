@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  Entities, definitions and fields 
+  Example:Summary of Changes 2019-2020 
 {% endblock %}
 
 {% block beforeContent %}
@@ -13,7 +13,7 @@
       text: "Home",
       href: "#"
     },
-    {
+	{
       text: "Submitting Individualised learner record data and guidance to meet the requirements (ILR)",
       href: '/specification-of-the-individualised-learner-record-and-guidance-2019-2020'
     },
@@ -22,14 +22,18 @@
       href: '/specification-of-the-Individualised-learner-record-for-2019-to-2020'
     },
 	{
-      text: "Funding streams",
-      href: '/funding-streams/funding-streams'
+      text: "Funding models",
+      href: '/funding-models/funding-models-and-field-collection-requirement-tables'
+    }
+	{
+      text: "Community Learning",
+      href: "/funding-models/community-learning-funding-models.html"
     }
 	
   ]
 }) }}
 
-<a class="govuk-back-link" href="/funding-streams.html">Back</a> 
+<a class="govuk-back-link" href="/funding-streams/community-funding-models/campus-identifier.html">Back</a> 
 
 {% endblock %}
 
@@ -45,7 +49,7 @@
     <div class="page-header">
       <p class="page-header__context">ILR Spec</p>
       <h1 class="page-header__title">
-        Entities, definitions and fields 
+        Example:Summary of Changes 2019-2020 
       </h1>	
 	</div>
 	</div>	
@@ -67,10 +71,10 @@
               <a href="#">Education and Skills Funding Agency</a>
             </dd>
 		    <dt>Published:</dt>
-		    <dd>14 February 2018</dd>
+		    <dd>31 January 2019</dd>
 			<dt>Last updated:</dt>
 			<dd>
-			  26 June 2018 — <a href="#history">see all updates</a>
+			  31 January 2019 — <a href="#history">see all updates</a>
 			</dd>	
 		
       </dl>
@@ -84,8 +88,7 @@
 	
 <div class="column-two-thirds">
     <div class="page-header">	
-	  <h2 class="heading-medium">Overview</h2>
-	  <p class="summary">Entities covered by the ILR </p>
+	  <p class="summary">Version 1 - Published January 2019</p>
     </div>
   </div>
 	
@@ -96,112 +99,53 @@
 	  
 
 <div class="grid-row responsive-bottom-margin">
-  <div class="column-two-thirds">
-      
+  <div class="column-two-thirds"> 
 
-		<ol class="section-list" style="margin:0px;">
-			  <li>
-			  <a class="" href="#1">
-				  <span class="subsection-title-text">Learning Provider</span>
-				  <span class="subsection-summary"><p>This entity collects data about the provider.</p></span>
-	</a>          </li>
-			  <li>
-			  <a class="" href="/funding-streams/entity-learner.html">
-				  <span class="subsection-title-text">Learner</span>
-				  <span class="subsection-summary"><p>This entity collects attributes that relate to an individual learner such as their name and date of birth.</p></span>
-	</a>          </li>
-			  <li>
-			  <a class="" href="#2">
-				  <span class="subsection-title-text">Learner Contact Preference</span>
-				  <span class="subsection-summary"><p>This entity collects any restrictions on the use of the learner's contact details and any restrictions on how a learner wishes to be contacted.</p></span>
-	</a>          </li>
-			  <li>
-			  <a class="" href="#3">
-				  <span class="subsection-title-text">LLDD and Health Problem</span>
-				  <span class="subsection-summary"><p>This entity collect details of the nature of the learner's disability, learning difficulty and/or health problem.</p></span>
-	</a>          </li>
-			  <li>
-			  <a class="" href="#4">
-				  <span class="subsection-title-text">Learner Funding and Monitoring (FAM)</span>
-				  <span class="subsection-summary"><p>This entity collects additional attributes of the learner that will inform either the funding of the learner or additional monitoring.</p></span>
-	</a>          </li>
-			  <li>
-			  <a class="" href="#5">
-				  <span class="subsection-title-text">Learner Provider Specified Monitoring</span>
-				  <span class="subsection-summary"><p>This entity collects data specified by the provider for their own use.</p></span>
-	</a>          </li>
-			  <li>
-			  <a class="" href="#6">
-				  <span class="subsection-title-text">Learner Employment Status</span>
-				  <span class="subsection-summary"><p>This entity collects the details of a learner's employment status before they start their learning (prior to enrolment) and any changes during their programme of learning.</p></span>
-	</a>          </li>
-			  <li>
-			  <a class="" href="#7">
-				  <span class="subsection-title-text">Learner HE</span>
-				  <span class="subsection-summary"><p>This entity collects data that is requested by the Office for Students (OfS) and the Higher Education Statistics Agency (HESA).</p></span>
-	</a>          </li> 
-			  <li>
-			  <a class="" href="#8">
-				  <span class="subsection-title-text">Learner HE Financial Support</span>
-				  <span class="subsection-summary"><p>This entity collects data about the financial support received by students.</p></span>
-	</a>          </li>
-			  <li>
-			  <a class="" href="#9">
-				  <span class="subsection-title-text">Learning Delivery</span>
-				  <span class="subsection-summary"><p>This entity collects details of the learning aims that a learner is studying.
-A learning delivery record should be returned for each learning aim that a learner is studying.</p>
-</span>
-	</a>          </li>
-		      <li>
-			  <a class="" href="#10">
-				  <span class="subsection-title-text">Learning Delivery Funding and Monitoring (FAM)</span>
-				  <span class="subsection-summary"><p>This entity collects additional attributes of the Learning Delivery that will either inform funding of the learner or additional monitoring.</p></span>
-	</a>          </li>
-		      <li>
-			  <a class="" href="#11">
-				  <span class="subsection-title-text">Learning Delivery Work Placement</span>
-				  <span class="subsection-summary"><p>This entity collects data about a work placement that is being undertaken by a learner as part of a traineeship or 16-19 study programme.</p></span>
-	</a>          </li>
-			  <li>
-			  <a class="" href="#12">
-				  <span class="subsection-title-text">Apprenticeship Financial Record</span>
-				  <span class="subsection-summary"><p>This entity collects data about the cost of an apprenticeship and financial contributions received from an employer for an apprenticeship.</p></span>
-	</a>          </li>
-			  <li>
-			  <a class="" href="#13">
-				  <span class="subsection-title-text">Apprenticeship Financial Type – AfinType</span>
-				  <span class="subsection-summary"><p>The type of financial details being recorded.</p></span>
-	</a>          </li>
-			  <li>
-			  <a class="" href="#14">
-				  <span class="subsection-title-text">Provider Spec Delivery Monitoring</span>
-				  <span class="subsection-summary"><p>This entity collects data specified by the provider for their own use.</p></span>
-	</a>          </li>
-			  <li>
-			  <a class="" href="#15">
-				  <span class="subsection-title-text">Learning Delivery HE</span>
-				  <span class="subsection-summary"><p>Data requested by OfS and HESA.</p></span>
-	</a>          </li>
-			  <li>
-			  <a class="" href="#16">
-				  <span class="subsection-title-text">Learner Destination and Progression</span>
-				  <span class="subsection-summary"><p>This entity records destination and progression outcomes for a learner, such as gaining employment or going onto further study. These outcomes will be reported after a learner has completed a programme of learning.</p></span>
-	</a>          </li>
+	  
+<table class="govuk-table">
+  <tbody class="govuk-table__body">
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><strong>Section </strong></th>
+	  <td class="govuk-table__cell"><strong>Type of change </strong></td>
+	  <td class="govuk-table__cell"><strong>Details of change </td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="/entities-speficiation-definitions/entity-learner.html">Learner </a></th>
+	  <td class="govuk-table__cell">Revision </td>
+	  <td class="govuk-table__cell">Revision of the Notes section of Family name to include: 
+This field will be used for apprenticeship standard certificates, please ensure spelling and case sensitivity is correct e.g. John Smith not JOHN SMITH. 
+</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="/entities-speficiation-definitions/entity-learner.html">Learner </a></th>
+	  <td class="govuk-table__cell">Revision </td>
+	  <td class="govuk-table__cell">Revision of the Notes section of Given names to include: 
+This field will be used for apprenticeship standard certificates, please ensure spelling and case sensitivity is correct e.g. John Smith not JOHN SMITH. 
 
-			</ol>  
+</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="/entities-speficiation-definitions/entity-learner.html">Learner </a></th>
+	  <td class="govuk-table__cell">Revision </td>
+	  <td class="govuk-table__cell">Revision to Notes section of the GCSE English qualification grade field 
+Change from: 
+Full-time learners who have a grade D in English Literature and grade E or lower in English Language should record the English Language grade in this field. 
+Change to: 
+Full-time learners who have a grade 3 or a grade D in English Literature or a grade 2 /grade E or lower in English Language should record the English Language grade in this field. They are not subject to the grade D requirement for condition of funding and therefore may enrol on a stepping stone qualification to meet the condition of funding. 
 
-	
+
+</td>
+    </tr>
+  </tbody>
+</table> 
 
 
 
-	
+	  
+ 
+	  
 
-
-  
-
-
-
-  
+	  
 
 
 </div>

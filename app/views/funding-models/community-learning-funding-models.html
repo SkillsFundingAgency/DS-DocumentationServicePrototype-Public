@@ -1,9 +1,8 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  Campus Identifier
+  Community Learning Funding Models
 {% endblock %}
-
 
 {% block beforeContent %}
   {% from "breadcrumbs/macro.njk" import govukBreadcrumbs %}
@@ -23,41 +22,36 @@
       href: '/specification-of-the-Individualised-learner-record-for-2019-to-2020'
     },
 	{
-      text: "Funding Streams",
-      href: '/funding-streams/funding-streams'
-    },
-	{
-      text: "Community Learning",
-      href: "/funding-streams/community-learning-funding-models.html"
+      text: "Funding models",
+      href: '/funding-models/funding-models-and-field-collection-requirement-tables'
     }
+	
   ]
 }) }}
 
-
-  <a class="govuk-back-link" href="/funding-streams/community-learning-funding-models.html">Back</a> 
+<a class="govuk-back-link" href="/funding-streams/funding-streams.html">Back</a> 
 
 {% endblock %}
 
 {% block content %}
+<div id="wrapper">
+    <main role="main" class="hmrc-internal-manuals-frontend-content outer-block">
+      <div id="manuals-frontend" class="manuals-frontend-body inner-block">
 
-  <main role="main" id="content" class="answer" lang="en">
-      
-
+		  
 <div class="grid-row">
 
-  <div class="column-two-thirds">
+  	<div class="column-two-thirds">
     <div class="page-header">
       <p class="page-header__context">ILR Spec</p>
       <h1 class="page-header__title">
-        Campus identifier: field
+        Community and learning funding model: collection requirements
       </h1>
     </div>
-	<div class="summary">
-	<p class="summary"><a href="funding-streams/community-funding-models/summary-of-changes.html">Part of the learner entity</a></p>
-</div>
   </div>
-
-  <div class="column-third">
+	
+	
+  	<div class="column-third">
 
     <div class="community-contact">
       <p>
@@ -65,8 +59,9 @@
       </p>
     </div>
   </div>
+	
 </div>
-	  
+		  
 <div class="grid-row">
   <div class="column-two-thirds">
 
@@ -80,121 +75,223 @@
 		    <dd>31 January 2019</dd>
 			<dt>Last updated:</dt>
 			<dd>
-			  31 January 2019 — <a href="/funding-streams/summary-of-changes.html">see all updates</a>
+			  31 January 2019 — <a href="/summary-of-changes.html">see all updates</a>
 			</dd>	
 		
       </dl>
     </div>
 
   </div>
-	
-  <div class="column-two-thirds">
+</div>
+
+		  
+<div class="grid-row">		  
+<div class="column-two-thirds">
     <div class="page-header">	
-	  <h2 class="govuk-heading-m">Overview</h2>
-	  <p class="summary">You should return only one record for each learner. The data recorded in the learner entity contains basic information specific to the learner such as their name, date of birth, sex and ethnicity. </p>
+	  <h2 class="heading-medium">Overview</h2>
+	  <p class="summary">The tables in this section list the fields that are collected for the community learning model. 
+	  </p>
     </div>
   </div>
-</div>
+</div>	
+	  
 
 <div class="grid-row responsive-bottom-margin">
   <div class="column-two-thirds">
-   
 	  
 <blockquote class="noquotes">
-	<p>Version 2 changes: Updates Published March 2018&nbsp;&nbsp;&nbsp;<strong class="govuk-tag">VERSION 2</strong></p>
+	<p><strong class="govuk-tag">VERSION 1</strong>&nbsp;&nbsp;&nbsp;Version 1 changes: Updates Published February 2018</p>
 	<h3 class="govuk-heading-m">What's changed?</h3>
-	<p>Pattern has been corrected to [A-Za-z0-9]{1,8}</p>
-	<p>The pattern was incorrect in version 1.
-    </br>“8” is the change to the pattern in version 2.</p>
-	</blockquote>
-	  
-<div class="gem-c-govspeak govuk-govspeak direction-ltr disable-youtube">
-    
+	<p>Campus identifier: entity has been added</p>
+	<p>Learning start date postcode: entity has been added</p>
 
-<h2 class="govuk-heading-m">Definition</h2>
-<p>The identifier of a campus within a college group and no longer a separate legal entity but previously operated as an incorporated college with a UKPRN.</p>
-	
-<h2 class="govuk-heading-m">Reason required</h2>
-<p>To allow identification of provision delivered across the various sites of merged institutions.</p>
-	
-<h2 class="govuk-heading-m">Schema definitions</h2>	  
+	</blockquote>
+
+
+      
+
 <table class="govuk-table">
-  
   <tbody class="govuk-table__body">
-    <tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">XML Element Name</th>
-      <td class="govuk-table__cell">CampId</td>
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><strong>Learner</strong></th>
     </tr>
     <tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">Field length</th>
-      <td class="govuk-table__cell">8</td>
-    </tr>
-    <tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">Data type</th>
-      <td class="govuk-table__cell">RestrictedString</td>
+      <th class="govuk-table__header" scope="row"><a href="#1">Learner reference number</a></th>
     </tr>
 	<tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">Minimum occurrences</th>
-      <td class="govuk-table__cell">0</td>
+      <th class="govuk-table__header" scope="row"><a href="#2">Pre-merger UKPRN</a></th>
     </tr>
-    <tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">Maximum occurrences</th>
-      <td class="govuk-table__cell">1</td>
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><a href="/funding-streams/community-funding-models/campus-identifier.html">Campus Identifier</a>&nbsp;&nbsp;&nbsp;<strong class="govuk-tag">VERSION 1</strong></th>
     </tr>
-    <tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">Part of</th>
-      <td class="govuk-table__cell">Learner</td>
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><a href="#3">Unique learner number</a></th>
     </tr>
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><a href="#4">Family name</a></th>
+    </tr>
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><a href="#5">Given names</a></th>
+    </tr>
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><a href="#6">Family name</a></th>
+    </tr>
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><a href="#7">Date of birth</a></th>
+    </tr>
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><a href="#8">Ethnicity</a></th>
+    </tr>
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><a href="#9">Sex</a></th>
+    </tr>
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><a href="#10">LLDD and health problem</a></th>
+    </tr>
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><a href="#11">Planned learning hours</a></th>
+    </tr>
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><a href="#12">Postcode prior to enrolment</a></th>
+    </tr>
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><a href="#13">Postcode </a></th>
+    </tr>
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><a href="#14">Address line 1 </a></th>
+    </tr>
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><a href="#15">Address line 2 </a></th>
+    </tr>
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><a href="#16">Address line 3 </a></th>
+    </tr>
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><a href="#17">Address line 4 </a></th>
+    </tr>
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><a href="#18">Telephone number </a></th>
+    </tr>
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><a href="#19">Email address </a></th>
+    </tr>
+    
   </tbody>
 </table>
 
-<h2 class="govuk-heading-m">Valid entries</h2>
 <table class="govuk-table">
   <tbody class="govuk-table__body">
-    <tr class="govuk-table__row">
-      <td class="govuk-table__cell">Must be in a valid look up. This is a 8-digit identifier using alphanumeric characters.</td>
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><strong>Learner Contact Preference</strong></th>
     </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><a href="#20">Contact Preference Type</a></th>
+    </tr>
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><a href="#21">Contact Preference Code</a></th>
+    </tr>	
+    
+  </tbody>
+</table>
+	
+<table class="govuk-table">
+  <tbody class="govuk-table__body">
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><strong>LLDD and Health Problem</strong></th>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><a href="/funding-streams/community-funding-models/lldd-and-health-problem-category.html">LLDD and health problem category</a></th>
+    </tr>
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><a href="#22">Primary LLDD and health problem</a></th>
+    </tr>	
+    
+  </tbody>
+</table>
+	  
+<table class="govuk-table">
+  <tbody class="govuk-table__body">
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><strong>Learner Funding and Monitoring</strong></th>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><a href="#23">Learner Funding and Monitoring Type</a></th>
+    </tr>
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><a href="#24">Learner Funding and Monitoring Code</a></th>
+    </tr>	
+    
+  </tbody>
+</table>
+	  
+<table class="govuk-table">
+  <tbody class="govuk-table__body">
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><strong>Learning Delivery</strong></th>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><a href="#25">Learning aim reference</a></th>
+    </tr>
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><a href="#26">Aim type</a></th>
+    </tr>	
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><a href="#27">Aim sequence number</a></th>
+    </tr>
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><a href="#28">Learning start date</a></th>
+    </tr>
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><a href="#29">Learning planned end date</a></th>
+    </tr>
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><a href="#30">Funding model</a></th>
+    </tr>
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><a href="#31">Delivery location postcode</a></th>
+    </tr>
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><a href="#31">Learning start date postcode</a>&nbsp;&nbsp;&nbsp;<strong class="govuk-tag">VERSION 1</strong></th>
+    </tr>
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><a href="#32">Completion status</a></th>
+    </tr>
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><a href="#33">Learning actual end date</a></th>
+    </tr>
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><a href="/funding-streams/community-funding-models/withdrawal-reason.html">Withdrawal reason</a></th>
+    </tr>
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><a href="#34">Outcome</a></th>
+    </tr>
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><a href="#35">Outcome grade</a></th>
+    </tr>
+    
+  </tbody>
+</table>
+	
+	  
+<table class="govuk-table">
+  <tbody class="govuk-table__body">
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><strong>Learning Delivery FAM</strong></th>
+    </tr>
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><a href="/funding-streams/community-funding-models/learning-delivery-fam-type.html">Learning Delivery Funding Type</a></th>
+    </tr>
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><a href="#37">Learning Delivery Funding Code</a></th>
+    </tr>   
   </tbody>
 </table>
 	
 </div>
-	
-<table class="govuk-table">
-  <caption class="govuk-table__caption">Pattern&nbsp;&nbsp;&nbsp;<strong class="govuk-tag">
-  VERSION 2</strong></caption>
-  <tbody class="govuk-table__body">
-    <tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">[A-Za-z0-9]{1,8}</th>
-      <td class="govuk-table__cell"></td>
-    </tr>
-  </tbody>
-</table>
-	  
-<h2 class="govuk-heading-m">Collection requirements</h2>
-<table class="govuk-table">
-  <tbody class="govuk-table__body">
-    <tr class="govuk-table__row">
-      <td class="govuk-table__cell">This field is collected for all learners.</td>
-    </tr>
-  </tbody>
-</table>
-	  
-<h2 class="govuk-heading-m">Notes and guidance about this field</h2>
-<p>This field records the identifier of a campus within a college group who is no longer a separate legal entity but previously operated as an incorporated college with a UKPRN</p>
-	
-<p>This should only be returned where the provider has been notified that they can use this field.</p>
-	
-<p>The campus identifier must be linked to a college group with a separate UKPRN.
-</p>
-	  
-<div class="print-page" style="margin-top:90px;">
-<a onclick="window.print();return false;" href="#">Print this page</a>
-</div>
-
-</div>
 
 
 	
+
 
   
 <div class="column-one-third">
@@ -217,7 +314,11 @@
   <ul class="gem-c-related-navigation__link-list" data-module="track-click">
 
 
-        <li class="gem-c-related-navigation__link"><span style="color: #6f777b;">Collection</span></br><a class="gem-c-related-navigation__section-link gem-c-related-navigation__section-link--sidebar  gem-c-related-navigation__section-link--other" href="#">TBC</a></li>
+        <li class="gem-c-related-navigation__link"><a class="gem-c-related-navigation__section-link gem-c-related-navigation__section-link--sidebar  gem-c-related-navigation__section-link--other" href="#">Funding Streams</a></li>
+	  
+        <li class="gem-c-related-navigation__link"><a class="gem-c-related-navigation__section-link gem-c-related-navigation__section-link--sidebar  gem-c-related-navigation__section-link--other"  href="/change-vehicle-details-registration-certificate">Entity Definitions</a></li>
+	  
+        <li class="gem-c-related-navigation__link"><a class="gem-c-related-navigation__section-link gem-c-related-navigation__section-link--sidebar  gem-c-related-navigation__section-link--other"  href="#">Attribute Codes</a></li>
 
   </ul>
 </nav>
@@ -236,14 +337,10 @@
 </div>
 
 
-  
-
-
-
+        
+      </div>
     </main>
-
-
-
+    
 <div class="gem-c-feedback gem-c-feedback--top-margin" data-module="feedback">
   <div class="gem-c-feedback__prompt gem-c-feedback__js-show js-prompt" tabindex="-1">
     <div class="gem-c-feedback__js-prompt-questions js-prompt-questions">
@@ -354,5 +451,8 @@
   </form>
 
 </div>
+
+  </div>
+  
 
 {% endblock %}
