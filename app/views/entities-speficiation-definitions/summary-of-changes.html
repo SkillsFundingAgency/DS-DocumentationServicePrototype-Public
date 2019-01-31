@@ -1,21 +1,36 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  ILR Specification Validation Rules and Appendices
+  Example:Summary of Changes 2019-2020 
 {% endblock %}
 
 {% block beforeContent %}
-  {{ govukBreadcrumbs({
+  {% from "breadcrumbs/macro.njk" import govukBreadcrumbs %}
+
+{{ govukBreadcrumbs({
   items: [
     {
       text: "Home",
       href: "#"
     },
+	{
+      text: "Submitting Individualised learner record data and guidance to meet the requirements (ILR)",
+      href: '/specification-of-the-individualised-learner-record-and-guidance-2019-2020'
+    },
     {
-      text: "ILR & PSM landing page"
-    }	
+      text: "Specification of the individualised learner record for 2019 to 2020",
+      href: '/specification-of-the-Individualised-learner-record-for-2019-to-2020'
+    },
+	{
+      text: "Entities definitions and fields",
+      href: '/entities-speficiation-definitions/entities-definitions-and-fields'
+    }
+	
   ]
 }) }}
+
+<a class="govuk-back-link" href="/entities-speficiation-definitions/entities-definitions-and-fields.html">Back</a> 
+
 {% endblock %}
 
 {% block content %}
@@ -26,27 +41,23 @@
 		  
 <div class="grid-row">
 
-  	<div class="column-two-thirds">
+  <div class="column-two-thirds">
     <div class="page-header">
-      <p class="page-header__context">Guidance</p>
-      <h1 class="page-header__title">Submitting Individualised learner record data and guidance to meet the requirements (ILR)
-      </h1>
-    </div>
-  </div>
+      <p class="page-header__context">ILR Spec</p>
+      <h1 class="page-header__title">
+        Example:Summary of Changes 2019-2020 
+      </h1>	
+	</div>
+	</div>	
 	
-	
-  	<div class="column-third">
-
+  <div class="column-third">
     <div class="community-contact">
       <p>
-        <a class="feedback" href="/contact/govuk">Give feedback about this page</a>
+        <a class="feedback" href="#">Give feedback about this page</a>
       </p>
     </div>
   </div>
-	
-</div>
-		  
-<div class="grid-row">
+
   <div class="column-two-thirds">
 
     <div class="metadata">
@@ -55,69 +66,123 @@
             <dd>
               <a href="#">Education and Skills Funding Agency</a>
             </dd>
-        <dt>Last updated:</dt>
-        <dd>
-          26 June 2018
-        </dd>
+		    <dt>Published:</dt>
+		    <dd>31 January 2019</dd>
+			<dt>Last updated:</dt>
+			<dd>
+			  31 January 2019 — <a href="#history">see all updates</a>
+			</dd>	
+		
       </dl>
     </div>
 
   </div>
-</div>
-
-<article aria-labelledby="manual-title" id="content">
-  <div class="manual-body">
-    <p class="summary">If you receive funding directly from the Education and Skills Funding Agency (ESFA) you need to submit individualised learner records (ILRs). ESFA uses this to calculate the funding earned by providers.
-</p>
-      
-<div class="gem-c-govspeak govuk-govspeak ">
-      
-<div role="note" aria-label="Information" class="application-notice info-notice">
-<p>Version 3</a>.</p>
-</div>
-
-</div>
-
-        <ol class="section-list" style="margin-top:30px">
-          <li>
-          <a class="" href="/ilr-specification-landing-page.html">
-              <span class="subsection-title-text">Specification of the Individualised learner record (ILR) 2019 to 2020</span>
-              <span class="subsection-summary"><p>A Technical specification document of the data collection requirements and file format of the ILR.  used to enable learning and training providers to be able to meet the requirements for ILR data returns in 2019 to 2020.</p></span>
-		  </a>          
-		  </li>
-		  <li>
-          <a class="" href="/provider-support-manual-landing-page.html">
-              <span class="subsection-title-text">Provider Suport Manual</span>
-			  <span class="subsection-summary"><p>Guidance to help providers meet the requirements for individualised learner records (ILR) data returns.</p></span>
-			  </a>          
-		  </li>
-          <li>
-          <a class="" href="#2">
-              <span class="subsection-title-text">ILR Validation Rules</span>
-			  <span class="subsection-summary"><p>Technical document aimed at those responsible for making data returns; data specification implementation; and MI system design (including MI managers, commercial software suppliers and own software writers)</p></span>
-          </a>          
-		  </li>
-		  <li>
-          <a class="" href="#1">
-              <span class="subsection-title-text">Appendices</span>
-			  <span class="subsection-summary"><p>These documents support further education providers (publicly funded colleges, training organisations, local authorities and employers) to understand the details of the data about learners and their learning that must be collected.</p></span>
-          </a>          
-		  </li>	
-          
-        </ol>
-		  
 		
-  </div>
-</article>
+	
 	
 
+	
+<div class="column-two-thirds">
+    <div class="page-header">	
+	  <p class="summary">Version 1 - Published January 2019</p>
+    </div>
+  </div>
+	
+</div>
+		  
+
+	
+	  
+
+<div class="grid-row responsive-bottom-margin">
+  <div class="column-two-thirds"> 
+
+	  
+<table class="govuk-table">
+  <tbody class="govuk-table__body">
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><strong>Section </strong></th>
+	  <td class="govuk-table__cell"><strong>Type of change /strong></td>
+	  <td class="govuk-table__cell"><strong>Details of change </td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="/entities-speficiation-definitions/entity-learner.html">Learner </a></th>
+	  <td class="govuk-table__cell">Revision </td>
+	  <td class="govuk-table__cell">Revision of the Notes section of Family name to include: 
+This field will be used for apprenticeship standard certificates, please ensure spelling and case sensitivity is correct e.g. John Smith not JOHN SMITH. 
+</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="/entities-speficiation-definitions/entity-learner.html">Learner </a></th>
+	  <td class="govuk-table__cell">Revision </td>
+	  <td class="govuk-table__cell">Revision of the Notes section of Given names to include: 
+This field will be used for apprenticeship standard certificates, please ensure spelling and case sensitivity is correct e.g. John Smith not JOHN SMITH. 
+
+</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="/entities-speficiation-definitions/entity-learner.html">Learner </a></th>
+	  <td class="govuk-table__cell">Revision </td>
+	  <td class="govuk-table__cell">Revision to Notes section of the GCSE English qualification grade field 
+Change from: 
+Full-time learners who have a grade D in English Literature and grade E or lower in English Language should record the English Language grade in this field. 
+Change to: 
+Full-time learners who have a grade 3 or a grade D in English Literature or a grade 2 /grade E or lower in English Language should record the English Language grade in this field. They are not subject to the grade D requirement for condition of funding and therefore may enrol on a stepping stone qualification to meet the condition of funding. 
 
 
-        <div class="print-page">
-          <a onclick="window.print();return false;" href="#">Print this page</a>
-        </div>
+</td>
+    </tr>
+  </tbody>
+</table> 
+
+
+
+	  
+ 
+	  
+
+	  
+
+
+</div>
+
+<div class="column-one-third">
+  
+<div class="gem-c-contextual-sidebar">
+
+    
+  <div class="gem-c-related-navigation">
+
+      <h2 id="related-nav-related_items-9547b6f6" class="gem-c-related-navigation__main-heading" data-track-count="sidebarRelatedItemSection">
+        Related content
+      </h2>
+
+
+
+
+      <nav role="navigation" class="gem-c-related-navigation__nav-section" aria-labelledby="related-nav-related_items-9547b6f6" data-module="gem-toggle">
+
+
+  <ul class="gem-c-related-navigation__link-list" data-module="track-click">
+
+
+        <li class="gem-c-related-navigation__link"><span style="color: #6f777b;">Collection</span></br><a class="gem-c-related-navigation__section-link gem-c-related-navigation__section-link--sidebar  gem-c-related-navigation__section-link--other" href="#">TBC</a></li>
+
+  </ul>
+</nav>
+
+  </div>
+
+
+</div>
+
+</div>
+        
       </div>
-    </main>
+		  
+		</div>
+    
+		  </main>
     
 <div class="gem-c-feedback gem-c-feedback--top-margin" data-module="feedback">
   <div class="gem-c-feedback__prompt gem-c-feedback__js-show js-prompt" tabindex="-1">
@@ -230,7 +295,6 @@
 
 </div>
 
-  </div>
   
 
 {% endblock %}
