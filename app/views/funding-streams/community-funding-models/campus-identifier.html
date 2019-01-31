@@ -49,9 +49,12 @@
     <div class="page-header">
       <p class="page-header__context">ILR Spec</p>
       <h1 class="page-header__title">
-        Campus Identifier: field
+        Campus identifier: field
       </h1>
     </div>
+	<div class="summary">
+	<p class="summary"><a href="/funding-streams/entity-learner.html">Part of the learner entity</a></p>
+</div>
   </div>
 
   <div class="column-third">
@@ -74,46 +77,46 @@
               <a href="#">Education and Skills Funding Agency</a>
             </dd>
 		    <dt>Published:</dt>
-		    <dd>14 February 2018</dd>
+		    <dd>31 January 2019</dd>
 			<dt>Last updated:</dt>
 			<dd>
-			  26 June 2018 — <a href="/funding-streams/summary-of-changes.html">see all updates</a>
+			  31 January 2019 — <a href="/funding-streams/summary-of-changes.html">see all updates</a>
 			</dd>	
 		
       </dl>
     </div>
 
   </div>
+	
+  <div class="column-two-thirds">
+    <div class="page-header">	
+	  <h2 class="govuk-heading-m">Overview</h2>
+	  <p class="summary">You should return only one record for each learner. The data recorded in the learner entity contains basic information specific to the learner such as their name, date of birth, sex and ethnicity. </p>
+    </div>
+  </div>
 </div>
 
 <div class="grid-row responsive-bottom-margin">
   <div class="column-two-thirds">
-    
-<div class="gem-c-govspeak govuk-govspeak direction-ltr disable-youtube">
-    
-      
-<div class="summary">
-	<p class="summary"><a href="#">Part of the Learner field listings</a></p>
-</div>
-	
+   
+	  
 <blockquote class="noquotes">
-	<p><strong class="govuk-tag">VERSION 2</strong>&nbsp;&nbsp;&nbsp;Version 2 changes: Updates Published March 2018</p>
+	<p>Version 2 changes: Updates Published March 2018&nbsp;&nbsp;&nbsp;<strong class="govuk-tag">VERSION 2</strong></p>
 	<h3 class="govuk-heading-m">What's changed?</h3>
 	<p>Pattern has been corrected to [A-Za-z0-9]{1,8}</p>
 	<p>The pattern was incorrect in version 1.
     </br>“8” is the change to the pattern in version 2.</p>
 	</blockquote>
-	
-<h2 class="govuk-heading-m">About the field</h2>
-<p>To allow identification of provision delivered across the various sites of merged institutions.</p>
-	
-<h2 class="govuk-heading-m">How it’s used</h2>
+	  
+<div class="gem-c-govspeak govuk-govspeak direction-ltr disable-youtube">
+    
+
+<h2 class="govuk-heading-m">Definition</h2>
 <p>The identifier of a campus within a college group and no longer a separate legal entity but previously operated as an incorporated college with a UKPRN.</p>
 	
-<h2 class="govuk-heading-m">When to use</h2>
-<p>When notified to do so.</p>
-
-
+<h2 class="govuk-heading-m">Reason required</h2>
+<p>To allow identification of provision delivered across the various sites of merged institutions.</p>
+	
 <h2 class="govuk-heading-m">Schema definitions</h2>	  
 <table class="govuk-table">
   
@@ -145,16 +148,6 @@
   </tbody>
 </table>
 
-
-<h2 class="govuk-heading-m">Collection requirements</h2>
-<table class="govuk-table">
-  <tbody class="govuk-table__body">
-    <tr class="govuk-table__row">
-      <td class="govuk-table__cell">This field is collected for all learners.</td>
-    </tr>
-  </tbody>
-</table>
-
 <h2 class="govuk-heading-m">Valid entries</h2>
 <table class="govuk-table">
   <tbody class="govuk-table__body">
@@ -167,9 +160,8 @@
 </div>
 	
 <table class="govuk-table">
-  <caption class="govuk-table__caption"><strong class="govuk-tag">
-  VERSION 2
-</strong>&nbsp;&nbsp;&nbsp;Pattern</caption>
+  <caption class="govuk-table__caption">Pattern&nbsp;&nbsp;&nbsp;<strong class="govuk-tag">
+  VERSION 2</strong></caption>
   <tbody class="govuk-table__body">
     <tr class="govuk-table__row">
       <th class="govuk-table__header" scope="row">[A-Za-z0-9]{1,8}</th>
@@ -177,7 +169,23 @@
     </tr>
   </tbody>
 </table>
-
+	  
+<h2 class="govuk-heading-m">Collection requirements</h2>
+<table class="govuk-table">
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">This field is collected for all learners.</td>
+    </tr>
+  </tbody>
+</table>
+	  
+<h2 class="govuk-heading-m">Notes and guidance about this field</h2>
+<p>This field records the identifier of a campus within a college group who is no longer a separate legal entity but previously operated as an incorporated college with a UKPRN</p>
+	
+<p>This should only be returned where the provider has been notified that they can use this field.</p>
+	
+<p>The campus identifier must be linked to a college group with a separate UKPRN.
+</p>
 	  
 <div class="print-page" style="margin-top:90px;">
 <a onclick="window.print();return false;" href="#">Print this page</a>
@@ -209,11 +217,7 @@
   <ul class="gem-c-related-navigation__link-list" data-module="track-click">
 
 
-        <li class="gem-c-related-navigation__link"><a class="gem-c-related-navigation__section-link gem-c-related-navigation__section-link--sidebar  gem-c-related-navigation__section-link--other" href="#">Funding Streams</a></li>
-	  
-        <li class="gem-c-related-navigation__link"><a class="gem-c-related-navigation__section-link gem-c-related-navigation__section-link--sidebar  gem-c-related-navigation__section-link--other"  href="/change-vehicle-details-registration-certificate">Entity Definitions</a></li>
-	  
-        <li class="gem-c-related-navigation__link"><a class="gem-c-related-navigation__section-link gem-c-related-navigation__section-link--sidebar  gem-c-related-navigation__section-link--other"  href="#">Attribute Codes</a></li>
+        <li class="gem-c-related-navigation__link"><span style="color: #6f777b;">Collection</span></br><a class="gem-c-related-navigation__section-link gem-c-related-navigation__section-link--sidebar  gem-c-related-navigation__section-link--other" href="#">TBC</a></li>
 
   </ul>
 </nav>
@@ -237,6 +241,8 @@
 
 
     </main>
+
+
 
 <div class="gem-c-feedback gem-c-feedback--top-margin" data-module="feedback">
   <div class="gem-c-feedback__prompt gem-c-feedback__js-show js-prompt" tabindex="-1">
