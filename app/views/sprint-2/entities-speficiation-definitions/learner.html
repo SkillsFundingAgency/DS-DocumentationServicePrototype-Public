@@ -84,7 +84,7 @@
 	
 <div class="column-two-thirds">
     <div class="page-header">	
-	  <p class="summary">You should return only one record for each learner. The data recorded in the learner entity contains basic information specific to the learner such as their name, date of birth, sex and ethnicity</p>
+	  <p class="summary">You should return only one record for each learner. The data recorded in the learner entity contains basic information specific to the learner such as their name, date of birth, sex and ethnicity. </p>
     </div>
   </div>
 	
@@ -104,8 +104,130 @@
 
 	</blockquote>-->
 	  
+<div class="gem-c-govspeak govuk-govspeak direction-ltr disable-youtube">
+	  
+		<h2 class="govuk-heading-m">Definition</h2>
+		<p>This entity collects attributes that relate to an individual learner such as their name and date of birth.</p>
+		 
+		<h2 class="govuk-heading-m">Reason required</h2>
+		<p>To enable the learner to be identified for matching purposes, to maintain data integrity and assist with query resolution.</p>
+	
+		<h2 class="govuk-heading-m">Schema definitions</h2>
+		<p>Refer to individual field pages for the collection and validation requirements and additional information for each field.</p>
+	
+		<h2 class="govuk-heading-m">Collection requirements</h2>
+		<p>Collected for all learners.</p>
+	
+	
 <table class="govuk-table">
-  <caption class="govuk-table__caption">Learner: entity</caption>
+  <!--<caption class="govuk-table__caption">Learner employment status: entity</caption>-->
+  <tbody class="govuk-table__body">
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><strong>XML elements</strong></th>
+	  <td class="govuk-table__cell"><strong>Schema mandation</strong></td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row">LearnRefNumber</th>
+	  <td class="govuk-table__cell">Y</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row">PrevLearnRefNumber</th>
+	  <td class="govuk-table__cell">N</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row">PrevUKPRN </th>
+	  <td class="govuk-table__cell">N</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row">PMUKPRN </th>
+	  <td class="govuk-table__cell">N</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row">CampId </th>
+	  <td class="govuk-table__cell">N</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row">ULN </th>
+	  <td class="govuk-table__cell">N</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row">FamilyName  </th>
+	  <td class="govuk-table__cell">N</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row">GivenNames </th>
+	  <td class="govuk-table__cell">N</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row">DateOfBirth </th>
+	  <td class="govuk-table__cell">N</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row">Ethnicity </th>
+	  <td class="govuk-table__cell">N</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row">Sex </th>
+	  <td class="govuk-table__cell">N</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row">LLDDHealthProb  </th>
+	  <td class="govuk-table__cell">N</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row">NINumber </th>
+	  <td class="govuk-table__cell">N</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row">PriorAttain  </th>
+	  <td class="govuk-table__cell">N</td>
+    </tr>
+	
+  </tbody>
+</table> 
+	
+	
+<table class="govuk-table">
+  <!--<caption class="govuk-table__caption">Learner employment status: entity</caption>-->
+  <tbody class="govuk-table__body">
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><strong>Child entities</strong></th>
+	  <td class="govuk-table__cell"><strong>Schema mandation</strong></td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="#41">ContactPreference </a></th>
+	  <td class="govuk-table__cell">N</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="#42">LLDDandHealthProblem  </a></th>
+	  <td class="govuk-table__cell">N</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="#43">LearnerFAM  </a></th>
+	  <td class="govuk-table__cell">N</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="#44">ProviderSpecLearnerMonitoring </a></th>
+	  <td class="govuk-table__cell">N</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="#45">LearnerEmploymentStatus  </a></th>
+	  <td class="govuk-table__cell">N</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="#46">LearnerHE  </a></th>
+	  <td class="govuk-table__cell">N</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="#47">LearningDelivery  </a></th>
+	  <td class="govuk-table__cell">Y</td>
+    </tr>
+  </tbody>
+</table> 
+	
+	
+	  
+<table class="govuk-table">
   <tbody class="govuk-table__body">
 	<tr class="govuk-table__row">
       <th class="govuk-table__header" scope="row"><strong>Fields</strong></th>
@@ -237,7 +359,7 @@
 	  
 
 	  
-
+</div>
 
 </div>
 
