@@ -24,16 +24,16 @@
 {% from "warning-text/macro.njk"  import govukWarningText %}
 
 {% block head %}
-  {% include "includes/head.html" %}
+  {% include "sprint-2/includes/head.html" %}
   {% if doNotTrackEnabled == false and promoMode == 'true' and gtmId %}
-    {% include "includes/tracking_head.html" %}
+    {% include "sprint-2/includes/tracking_head.html" %}
   {% endif %}
 {% endblock %}
 
 
 {% block bodyStart %}
   {% if doNotTrackEnabled == false and promoMode == 'true' and gtmId %}
-    {% include "includes/tracking_body.html" %}
+    {% include "sprint-2/includes/tracking_body.html" %}
   {% endif %}
 {% endblock %}
 
