@@ -1,7 +1,7 @@
 {% extends "sprint-2/layout.html" %}
 
 {% block pageTitle %}
-  Entities, definitions and fields 
+  Learner destination and progression: entity definition and fields
 {% endblock %}
 
 {% block beforeContent %}
@@ -13,19 +13,23 @@
       text: "Home",
       href: "#"
     },
-    {
+	{
       text: "ILR specification 2019 to 2020",
       href: '/sprint-2/ilr-specification-2019-to-2020'
     },
     {
       text: "Specification of the individualised learner record for 2019 to 2020",
       href: '/sprint-2/specification-of-the-Individualised-learner-record-for-2019-to-2020'
+    },	
+	{
+      text: "Entities definitions and fields",
+      href: '/sprint-2/entities-speficiation-definitions/entities-definitions-and-fields'
     }	
 	
   ]
 }) }}
 
-<a class="govuk-back-link" href="/sprint-2/specification-of-the-Individualised-learner-record-for-2019-to-2020.html">Back</a> 
+<a class="govuk-back-link" href="/sprint-2/entities-speficiation-definitions/entities-definitions-and-fields.html">Back</a> 
 
 {% endblock %}
 
@@ -41,7 +45,7 @@
     <div class="page-header">
       <p class="page-header__context">ILR Spec</p>
       <h1 class="page-header__title">
-        Entities, definitions and fields 
+        Learner destination and progression: entity definition and fields 
       </h1>	
 	</div>
 	</div>	
@@ -80,8 +84,7 @@
 	
 <div class="column-two-thirds">
     <div class="page-header">	
-	  <h2 class="heading-medium">Overview</h2>
-	  <p class="summary">Entities covered by the ILR </p>
+	  <p class="summary">The destination of the learner when they have completed or withdrawn from the activities on their original learning agreement or plan. </p>
     </div>
   </div>
 	
@@ -92,154 +95,149 @@
 	  
 
 <div class="grid-row responsive-bottom-margin">
-  <div class="column-two-thirds">
+  <div class="column-two-thirds"> 
 	  
 	<blockquote class="noquotes">
 	<p><strong class="govuk-tag">VERSION 1</strong>&nbsp;&nbsp;&nbsp;Version 1 changes: Updates published January 2019</p>
 	<p>What's changed?</p>
-	<p>Learner destination and progression: <strong>Amendment to Notes section for 2019 to 2020</strong></p>
-
+	<p>Notes and guidance: <strong>Collected for Non-levy funded apprenticeships that started on or after 1 August 2018 where the ACT record has remained non-levy. This data is not collected where a levy funded apprenticeship (ACT1) changes employer to become non-levy funded (ACT2).</strong></p>
 	</blockquote>
 	  
+<div class="gem-c-govspeak govuk-govspeak direction-ltr disable-youtube">
 	  
-	  <div>
-	    <h2 class="govuk-heading-m">Learning provider entity</h2>
-	  </div>
+		<h2 class="govuk-heading-m">Definition</h2>
+		<p>The destination of the learner when they have completed or withdrawn from the activities on their original learning agreement or plan.</p>
 		 
-	    <ol class="section-list" style="margin:0px;">
-		<li>
-			<a class="" href="#1">
-				  <span class="subsection-title-text">Learning provider</span>
-				  <span class="subsection-summary"><p>This entity collects data about the provider.</p></span>
-			</a>        
-		</li>
-	  	</ol>
+		<h2 class="govuk-heading-m">Reason required</h2>
+		<ul class="list list-bullet">
+					  <li>To demonstrate how the FE sector is contributing to the future success of learners </li>
+					  <li>Minimum standards and publishing provider level outcomes for traineeships </li>
+					  <li>ESF funding </li> 
+					  <li>DfE completion and attainment measure</li>
+		</ul>
+	
+<h2 class="govuk-heading-m">Schema definitions</h2>
+<table class="govuk-table">
+  
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">XML Element Name</th>
+      <td class="govuk-table__cell">LearnerDestinationandProgression</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">Minimum occurrences</th>
+      <td class="govuk-table__cell">0</td>
+    </tr>
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">Maximum occurrences</th>
+      <td class="govuk-table__cell">Unbounded</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">Part of</th>
+      <td class="govuk-table__cell">Message</td>
+    </tr>
+  </tbody>
+</table>
+	
+		<h2 class="govuk-heading-m">Collection requirements</h2>
+		<ul class="list list-bullet">
+					  <li>16-19 excluding Apprenticeships (FundModel 25)</li>
+					  <li>ESF (FundModel 70)</li>
+					  <li>Other Adult (FundModel 81)</li> 
+					  <li>Adult Skills (FundModel 35)</li>
+					  <li>Non-levy funded apprenticeships (FundModel 36, ACT2)</li>
+		</ul>
+	
+	
+<table class="govuk-table">
+  <!--<caption class="govuk-table__caption">Learner employment status: entity</caption>-->
+  <tbody class="govuk-table__body">
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><strong>XML elements</strong></th>
+	  <td class="govuk-table__cell"><strong>Schema mandation</strong></td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row">LearnRefNumber</th>
+	  <td class="govuk-table__cell">Y</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row">ULN</th>
+	  <td class="govuk-table__cell">Y</td>
+    </tr>	
+  </tbody>
+</table> 
+	
+	
+<table class="govuk-table">
+  <!--<caption class="govuk-table__caption">Learner employment status: entity</caption>-->
+  <tbody class="govuk-table__body">
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><strong>Child entities</strong></th>
+	  <td class="govuk-table__cell"><strong>Schema mandation</strong></td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="#41">DPOutcome</a></th>
+	  <td class="govuk-table__cell">Y</td>
+    </tr>
+  </tbody>
+</table> 
+	
+	
 	  
-	  <div style="margin-top:30px;">
-        <h2 class="govuk-heading-m">Learner entity and child entities</h2> 
-	  </div> 
+<table class="govuk-table">
+  <tbody class="govuk-table__body">
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><strong>Fields</strong></th>
+	  <td class="govuk-table__cell"><strong>XML Element Name</strong></td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="#4">Learner reference number</a></th>
+	  <td class="govuk-table__cell">LearnRefNumber</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="#5">Unique Learner  Number</a></th>
+	  <td class="govuk-table__cell">ULN</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="#6">DPOutcome Entity Definition</a></th>
+	  <td class="govuk-table__cell">DPOutcome Outcome Type</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="#7">OutType Outcome Code</a></th>
+	  <td class="govuk-table__cell">OutCode</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="#8">Outcome Start Date</a></th>
+	  <td class="govuk-table__cell">OutStartDate</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="#9">Outcome End Date</a></th>
+	  <td class="govuk-table__cell">OutEndDate</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="#10">Outcome Collection Date</a></th>
+	  <td class="govuk-table__cell">OutCollDate</td>
+    </tr>
+  </tbody>
+</table> 
 
-		<ol class="section-list" style="margin:0px;"> 
-		      <li>
-				  <a class="" href="/sprint-2/entities-speficiation-definitions/learner.html" alt="Learner">
-					  <span class="subsection-title-text">Learner</span>
-					  <span class="subsection-summary"><p>This entity collects attributes that relate to an individual learner such as their name and date of birth.</p></span>
-				  </a>         
-			  </li>
-			  <li>
-				  <a class="" href="#2">
-					  <span class="subsection-title-text">Learner contact preference</span>
-					  <span class="subsection-summary"><p>This entity collects any restrictions on the use of the learner's contact details and any restrictions on how a learner wishes to be contacted.</p></span>
-				  </a>          
-			  </li>
-		      <li>
-				  <a class="" href="#3">
-					  <span class="subsection-title-text">LLDD and health problem</span>
-					  <span class="subsection-summary"><p>This entity collect details of the nature of the learner's disability, learning difficulty and/or health problem.</p></span>
-				  </a>          
-			  </li>
-			  <li>
-				  <a class="" href="#4">
-					  <span class="subsection-title-text">Learner funding and monitoring (FAM)</span>
-					  <span class="subsection-summary"><p>This entity collects additional attributes of the learner that will inform either the funding of the learner or additional monitoring.</p></span>
-				  </a>          
-			  </li>
-			  <li>
-				  <a class="" href="#5">
-					  <span class="subsection-title-text">Learner provider specified monitoring</span>
-					  <span class="subsection-summary"><p>This entity collects data specified by the provider for their own use.</p></span>
-				  </a>          
-		      </li>
-			  <li>
-				  <a class="" href="/sprint-2/entities-speficiation-definitions/learner-employment-status.html">
-					  <span class="subsection-title-text">Learner employment status</span>
-					  <span class="subsection-summary"><p>This entity collects the details of a learner's employment status before they start their learning (prior to enrolment) and any changes during their programme of learning.</p></span>
-				  </a>          
-			  </li>
-			  <li>
-				  <a class="" href="#7">
-					  <span class="subsection-title-text">Learner HE</span>
-					  <span class="subsection-summary"><p>This entity collects data that is requested by the Office for Students (OfS) and the Higher Education Statistics Agency (HESA).</p></span>
-				  </a>         
-			  </li>
-			  <li>
-				  <a class="" href="#8">
-					  <span class="subsection-title-text">Learner HE financial support</span>
-					  <span class="subsection-summary"><p>This entity collects data about the financial support received by students.</p></span>
-				  </a>         
-			  </li>
-		</ol> 			
-		
-	    <div style="margin-top:30px;">
-		<h2 class="govuk-heading-m">Learning delivery entity and child entities</h2>
-	    </div>
-		
-	    <ol class="section-list" style="margin:0px;">			
-			  
-			  <li>
-				  <a class="" href="/sprint-2/entities-speficiation-definitions/learning-delivery.html" alt="Learning delivery">
-					  <span class="subsection-title-text">Learning delivery</span>
-					  <span class="subsection-summary"><p>This entity collects details of the learning aims that a learner is studying.
-	A learning delivery record should be returned for each learning aim that a learner is studying.</p></span>
-				  </a>          
-			  </li> 
-			  <li>
-				  <a class="" href="#10">
-					  <span class="subsection-title-text">Learning delivery funding and monitoring (FAM)</span>
-					  <span class="subsection-summary"><p>This entity collects additional attributes of the Learning Delivery that will either inform funding of the learner or additional monitoring.</p></span>
-				  </a>          
-			  </li>
-			  <li>
-				  <a class="" href="#11">
-					  <span class="subsection-title-text">Learning delivery work placement</span>
-					  <span class="subsection-summary"><p>This entity collects data about a work placement that is being undertaken by a learner as part of a traineeship or 16-19 study programme.</p></span>
-				  </a>          
-			  </li>
-			  <li>
-				  <a class="" href="#12">
-					  <span class="subsection-title-text">Apprenticeship financial record</span>
-					  <span class="subsection-summary"><p>This entity collects data about the cost of an apprenticeship and financial contributions received from an employer for an apprenticeship.</p></span>
-				  </a>          
-			  </li>
-			  <li>
-				  <a class="" href="#13">
-					  <span class="subsection-title-text">Apprenticeship financial type – AfinType</span>
-					  <span class="subsection-summary"><p>The type of financial details being recorded.</p></span>
-				  </a>          
-			  </li>
-			
-			  <li>
-				  <a class="" href="#14">
-					  <span class="subsection-title-text">Provider spec delivery monitoring</span>
-					  <span class="subsection-summary"><p>This entity collects data specified by the provider for their own use.</p></span>
-				  </a>          
-			  </li>
-			  <li>
-				  <a class="" href="#15">
-					  <span class="subsection-title-text">Learning delivery HE</span>
-					  <span class="subsection-summary"><p>Data requested by OfS and HESA.</p></span>
-				  </a>          
-			  </li>
-		</ol> 			
-		
-	    <div style="margin-top:30px;">
-		<h2 class="govuk-heading-m">Learner destination and progression entity</h2>
-	  	</div>
-		
-	    <ol class="section-list" style="margin:0px;">				
-			
-			 <li>
-				  <a class="" href="/sprint-2/entities-speficiation-definitions/learner-destination-and-progression.html">
-					  <span class="subsection-title-text">Learner destination and progression&nbsp;&nbsp;&nbsp;<strong class="govuk-tag">VERSION 1</strong></span>
-					  <span class="subsection-summary"><p>This entity records destination and progression outcomes for a learner, such as gaining employment or going onto further study. These outcomes will be reported after a learner has completed a programme of learning.</p></span>
-				  </a>         
-			 </li>
 
-		</ol>  
+		<h2 class="govuk-heading-m">Notes and guidance</h2>
+		<p>Collected for Non-levy funded apprenticeships that started on or after 1 August 2018 where the ACT record has remained non-levy. This data is not collected where a levy funded apprenticeship (ACT1) changes employer to become non-levy funded (ACT2).&nbsp;&nbsp;&nbsp;<strong class="govuk-tag">VERSION 1</strong></p>
+	
+		<p>Collected for learners when they have completed or withdrawn from all the activities on their original learning agreement or plan. </p>
+	    <p>Not required for apprenticeship standards funded through the trailblazer funding model (FundModel 81 and ProgType 25) </p>
+ 		
+		<ul class="list list-bullet">
+					  <li>This data is required both for learners who leave the provider and for learners who are remaining with the same provider to progress to further learning.</li>
+					  <li>Information about when to collect this data and examples of recording destination and progression data in different scenarios can be found in the Provider Support Manual.</li>
+		</ul>
+	  
+
+	  
+</div>
 
 </div>
-  
-
 
 <div class="column-one-third">
   
