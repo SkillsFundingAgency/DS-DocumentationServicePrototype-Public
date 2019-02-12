@@ -1,7 +1,7 @@
-{% extends "layout.html" %}
+{% extends "sprint-2/layout.html" %}
 
 {% block pageTitle %}
-  Campus Identifier
+  Learning start date postcode
 {% endblock %}
 
 
@@ -14,27 +14,27 @@
       text: "Home",
       href: "#"
     },
-    {
-      text: "ILR & PSM landing page",
-      href: '/ilr-psm-home'
-    },
-    {
-      text: "Individualised Learner Record Specification",
-      href: '/ilr-specification-landing-page'
-    },
 	{
-      text: "Funding Streams",
-      href: '/funding-streams/funding-streams'
+      text: "ILR specification 2019 to 2020",
+      href: '/sprint-2/ilr-specification-2019-to-2020'
     },
+    {
+      text: "Specification of the individualised learner record for 2019 to 2020",
+      href: '/sprint-2/specification-of-the-Individualised-learner-record-for-2019-to-2020'
+    },	
 	{
-      text: "Entity Listings",
-      href: "/funding-streams/entity-listings"
+      text: "Field collection requirement tables ",
+      href: '/sprint-2/field-collection/field-collection-requirement-tables'
+    },
+    {
+      text: "Community and learning funding model",
+      href: "/sprint-2/field-collection/community-learning-funding-models.html"
     }
   ]
 }) }}
 
 
-  <a class="govuk-back-link" href="/funding-streams/entity-listings.html">Back</a> 
+  <a class="govuk-back-link" href="/sprint-2/field-collection/community-learning-funding-models.html">Back</a> 
 
 {% endblock %}
 
@@ -49,16 +49,19 @@
     <div class="page-header">
       <p class="page-header__context">ILR Spec</p>
       <h1 class="page-header__title">
-        Campus Identifier: field
+        Learning start date postcode: field
       </h1>
     </div>
+	<div class="summary">
+	<p class="summary"><a href="/sprint-2/entities-speficiation-definitions/learning-delivery.html">Part of the learning delivery entity</a></p>
+</div>
   </div>
 
   <div class="column-third">
 
     <div class="community-contact">
       <p>
-        <a class="feedback" href="/contact/govuk">Give feedback about this page</a>
+        <a class="feedback" href="#">Give feedback about this page</a>
       </p>
     </div>
   </div>
@@ -74,45 +77,45 @@
               <a href="#">Education and Skills Funding Agency</a>
             </dd>
 		    <dt>Published:</dt>
-		    <dd>14 February 2018</dd>
+		    <dd>31 January 2019</dd>
 			<dt>Last updated:</dt>
 			<dd>
-			  26 June 2018 — <a href="#history">see all updates</a>
+			  31 January 2019 — <a href="/sprint-2/summary-of-changes.html">see all updates</a>
 			</dd>	
 		
       </dl>
     </div>
 
   </div>
+	
+  <div class="column-two-thirds">
+    <div class="page-header">	
+	  <h2 class="govuk-heading-m">Overview</h2>
+	  <p class="summary">This field is returned at the start of the learning aim and will continue for the duration of the aim. For example if the learner is in a devolved area at the start of the learning aim and then moves to outside of a devolved area, this postcode field will not be updated and the funding arrangement will remain in place by the devolved area for the duration of the aim. </p>
+    </div>
+  </div>
 </div>
 
 <div class="grid-row responsive-bottom-margin">
   <div class="column-two-thirds">
-    
+
+	  
 <div class="gem-c-govspeak govuk-govspeak direction-ltr disable-youtube">
     
-      
-<div class="summary">
-	<p class="summary"><a href="#">Part of the Learner field listings</a></p>
-</div>
-	
-<h2 class="govuk-heading-m">About the field</h2>
-<p>To allow identification of provision delivered across the various sites of merged institutions.</p>
-	
-<h2 class="govuk-heading-m">How it’s used</h2>
-<p>The identifier of a campus within a college group and no longer a separate legal entity but previously operated as an incorporated college with a UKPRN.</p>
-	
-<h2 class="govuk-heading-m">When to use</h2>
-<p>When notified to do so.</p>
 
-
+<h2 class="govuk-heading-m">Definition</h2>
+<p>The residency postcode of the learner for the purposes of funding.</p>
+	
+<h2 class="govuk-heading-m">Reason required</h2>
+<p>To determine whether learners are in a devolved or non-devolved area.</p>
+	
 <h2 class="govuk-heading-m">Schema definitions</h2>	  
 <table class="govuk-table">
   
   <tbody class="govuk-table__body">
     <tr class="govuk-table__row">
       <th class="govuk-table__header" scope="row">XML Element Name</th>
-      <td class="govuk-table__cell">CampId</td>
+      <td class="govuk-table__cell">LSDPostcode</td>
     </tr>
     <tr class="govuk-table__row">
       <th class="govuk-table__header" scope="row">Field length</th>
@@ -132,17 +135,7 @@
     </tr>
     <tr class="govuk-table__row">
       <th class="govuk-table__header" scope="row">Part of</th>
-      <td class="govuk-table__cell">Learner</td>
-    </tr>
-  </tbody>
-</table>
-
-
-<h2 class="govuk-heading-m">Collection requirements</h2>
-<table class="govuk-table">
-  <tbody class="govuk-table__body">
-    <tr class="govuk-table__row">
-      <td class="govuk-table__cell">This field is collected for all learners.</td>
+      <td class="govuk-table__cell">Learning delivery</td>
     </tr>
   </tbody>
 </table>
@@ -151,7 +144,7 @@
 <table class="govuk-table">
   <tbody class="govuk-table__body">
     <tr class="govuk-table__row">
-      <td class="govuk-table__cell">Must be in a valid look up. This is a 8-digit identifier using alphanumeric characters.</td>
+      <td class="govuk-table__cell">A valid postcode that must be in upper case.</td>
     </tr>
   </tbody>
 </table>
@@ -159,24 +152,49 @@
 </div>
 	
 <table class="govuk-table">
-  <caption class="govuk-table__caption"><strong class="govuk-tag">
-  VERSION 2
-</strong>&nbsp;&nbsp;&nbsp;Pattern</caption>
+  <caption class="govuk-table__caption">Pattern</caption>
   <tbody class="govuk-table__body">
     <tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">[A-Za-z0-9]{1,8}</th>
+      <th class="govuk-table__header" scope="row">Not applicable to this field</th>
       <td class="govuk-table__cell"></td>
     </tr>
   </tbody>
 </table>
-
-<blockquote class="noquotes">
-	<p><strong class="govuk-tag">VERSION 2</strong>&nbsp;&nbsp;&nbsp;Version 2 changes: Updates Published March 2018</p>
-	<h3 class="govuk-heading-m">What's changed?</h3>
-	<p>Pattern has been corrected to [A-Za-z0-9]{1,8}</p>
-	<p>The pattern was incorrect in version 1.
-    </br>“8” is the change to the pattern in version 2.</p>
-	</blockquote>
+	  
+<h2 class="govuk-heading-m">Collection requirements</h2>
+<table class="govuk-table">
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">Adult skills (FundModel 35)</td>
+	</tr>
+	<tr class="govuk-table__row">  
+	  <td class="govuk-table__cell">Community Learning (FundModel 10)</td>
+	</tr>
+	<tr class="govuk-table__row">  
+	  <td class="govuk-table__cell">Local authority funded Community Learning (FundModel 99) </td>
+	</tr>
+	<tr class="govuk-table__row">  
+	  <td class="govuk-table__cell">Source of funding (FundModel 108)</td>
+    </tr>
+  </tbody>
+</table>
+	  
+<h2 class="govuk-heading-m">Notes and guidance about this field</h2>
+<p>This field to be returned for aims that start on or after 1 August 2019 (this does not include restarts).</p>
+	
+<p>This postcode is completed for Adult skills (Funding Model 35) excluding traineeships, Community Learning (Funding Model 10), and Local authority funded Community Learning (Funding model 99 and Source of funding 108).</p>
+	
+<p>This field is returned at the start of the learning aim and will continue for the duration of the aim. For example if the learner is in a devolved area at the start of the learning aim and then moves to outside of a devolved area, this postcode field will not be updated and the funding arrangement will remain in place by the devolved area for the duration of the aim.
+</p>
+	  
+<p>Please refer to the Adult Education Budget (AEB) funding rule for the definition of residency.
+</p>
+	  
+<p>If the learner's postcode is unknown, providers must return a postcode of ZZ99 9ZZ
+</p>
+	  
+<h2 class="govuk-heading-m">Related</h2>
+<p class="summary">Full valid postcodes can be located at the <a class="summary" href="https://www.royalmail.com/find-a-postcode" alt-="Royal Mail Postcode finder website" target="new">Royal Mail Postcode finder website</a>.</p>
 	  
 <div class="print-page" style="margin-top:90px;">
 <a onclick="window.print();return false;" href="#">Print this page</a>
@@ -208,12 +226,8 @@
   <ul class="gem-c-related-navigation__link-list" data-module="track-click">
 
 
-        <li class="gem-c-related-navigation__link"><a class="gem-c-related-navigation__section-link gem-c-related-navigation__section-link--sidebar  gem-c-related-navigation__section-link--other" href="#">Funding Streams</a></li>
+        <li class="gem-c-related-navigation__link"><span style="color: #6f777b;">Collection</span></br><a class="gem-c-related-navigation__section-link gem-c-related-navigation__section-link--sidebar  gem-c-related-navigation__section-link--other" href="https://www.royalmail.com/find-a-postcode" alt-="Royal Mail Postcode finder website" target="new">Royal Mail Postcode finder website</a></li>	  
 	  
-        <li class="gem-c-related-navigation__link"><a class="gem-c-related-navigation__section-link gem-c-related-navigation__section-link--sidebar  gem-c-related-navigation__section-link--other"  href="/change-vehicle-details-registration-certificate">Entity Definitions</a></li>
-	  
-        <li class="gem-c-related-navigation__link"><a class="gem-c-related-navigation__section-link gem-c-related-navigation__section-link--sidebar  gem-c-related-navigation__section-link--other"  href="#">Attribute Codes</a></li>
-
   </ul>
 </nav>
 

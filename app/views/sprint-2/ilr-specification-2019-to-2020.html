@@ -1,63 +1,38 @@
-{% extends "layout.html" %}
+{% extends "sprint-2/layout.html" %}
 
 {% block pageTitle %}
-  Learning start date postcode
+  ILR specification 2019 to 2020
 {% endblock %}
 
-
 {% block beforeContent %}
-  {% from "breadcrumbs/macro.njk" import govukBreadcrumbs %}
-
-{{ govukBreadcrumbs({
+  {{ govukBreadcrumbs({
   items: [
     {
       text: "Home",
       href: "#"
-    },
-	{
-      text: "Submitting Individualised learner record data and guidance to meet the requirements (ILR)",
-      href: '/sprint-2/specification-of-the-individualised-learner-record-and-guidance-2019-2020'
-    },
-    {
-      text: "Specification of the individualised learner record for 2019 to 2020",
-      href: '/sprint-2/specification-of-the-Individualised-learner-record-for-2019-to-2020'
-    },	
-	{
-      text: "Entities definitions and fields",
-      href: '/sprint-2/entities-speficiation-definitions/entities-definitions-and-fields'
-    },
-    {
-      text: "Learner Employment Status",
-      href: '/#1'
-    }
+    }	
   ]
 }) }}
-
-
-  <a class="govuk-back-link" href="/sprint-2/entities-speficiation-definitions/learner.html">Back</a> 
-
 {% endblock %}
 
 {% block content %}
+<div id="wrapper">
+    <main role="main" class="hmrc-internal-manuals-frontend-content outer-block">
+      <div id="manuals-frontend" class="manuals-frontend-body inner-block">
 
-  <main role="main" id="content" class="answer" lang="en">
-      
-
+		  
 <div class="grid-row">
 
-  <div class="column-two-thirds">
+  	<div class="column-two-thirds">
     <div class="page-header">
-      <p class="page-header__context">ILR Spec</p>
-      <h1 class="page-header__title">
-        Learning start date postcode: field
+      <p class="page-header__context">Guidance</p>
+      <h1 class="page-header__title">ILR specification 2019 to 2020: validation rules, appendices and provider support manual
       </h1>
     </div>
-	<div class="summary">
-	<p class="summary"><a href="/#">Part of the learning delivery entity</a></p>
-</div>
   </div>
-
-  <div class="column-third">
+	
+	
+  	<div class="column-third">
 
     <div class="community-contact">
       <p>
@@ -65,10 +40,11 @@
       </p>
     </div>
   </div>
+	
 </div>
-	  
+		  
 <div class="grid-row">
-  <div class="column-two-thirds">
+  <div class="column-full">
 
     <div class="metadata">
       <dl>
@@ -76,175 +52,113 @@
             <dd>
               <a href="#">Education and Skills Funding Agency</a>
             </dd>
-		    <dt>Published:</dt>
-		    <dd>31 January 2019</dd>
-			<dt>Last updated:</dt>
-			<dd>
-			  31 January 2019 — <a href="/sprint-2/summary-of-changes.html">see all updates</a>
-			</dd>	
-		
+        <dt>Published:</dt>
+        <dd>
+          31 January 2019
+        </dd>
+		<dt>Last updated:</dt>
+        <dd>
+          <div class="app-c-published-dates app-c-published-dates--history" id="history" data-module="toggle">
+      7 February 2019 
+      <a href="#full-history" class="app-c-published-dates__toggle" data-controls="full-history" data-expanded="false" data-toggled-text="-&nbsp;hide all updates" role="button" aria-controls="full-history" aria-expanded="false">+&nbsp;show all updates</a>
+      <div class="app-c-published-dates__change-history js-hidden" id="full-history" aria-live="polite" role="region">
+        <ol>
+            <li class="app-c-published-dates__change-item">
+              <time class="app-c-published-dates__change-date timestamp" datetime="2019-02-07T13:00:28.000+00:00">7 February 2019</time>
+              We have published ILR specification 2019 to 2020: appendix D higher education domicile codes, <a href="https://www.gov.uk/government/publications/ilr-specification-validation-rules-and-appendices-2018-to-2019">version 1 (7 February 2019)</a> and ILR specification 2019 to 2020: appendix L standard occupational classification 2000 and 2010 codes, <a href="https://www.gov.uk/government/publications/ilr-specification-validation-rules-and-appendices-2018-to-2019">version 1 (7 February 2019)</a>.
+            </li>
+
+            
+        </ol>
+      </div>
+</div>
+        </dd>
       </dl>
     </div>
-
-  </div>
 	
-  <div class="column-two-thirds">
-    <div class="page-header">	
-	  <h2 class="govuk-heading-m">Overview</h2>
-	  <p class="summary">This field is returned at the start of the learning aim and will continue for the duration of the aim. For example if the learner is in a devolved area at the start of the learning aim and then moves to outside of a devolved area, this postcode field will not be updated and the funding arrangement will remain in place by the devolved area for the duration of the aim. </p>
-    </div>
+	
+
   </div>
 </div>
 
-<div class="grid-row responsive-bottom-margin">
-  <div class="column-two-thirds">
+<article aria-labelledby="manual-title" id="content">
+  <div class="manual-body">
+    <p class="summary">If you receive funding directly from the Education and Skills Funding Agency (ESFA) you need to submit individualised learner records (ILRs). ESFA uses this to calculate the funding earned by providers.
+</p>
 
+        <ol class="section-list" style="margin-top:30px">
+          <li>
+          <a class="" href="/sprint-2/specification-of-the-Individualised-learner-record-for-2019-to-2020.html">
+              <span class="subsection-title-text">Individualised learner record (ILR) specification 2019 to 2020</span>
+              <span class="subsection-summary"><p>Specification for colleges, training organisations, local authorities and employers in collecting learner data for the 2019 to 2020 year. </p></span>
+		  </a>          
+		  </li>
+		  <li>
+          <a class="" href="/sprint-2/provider-support-manual.html">
+              <span class="subsection-title-text">Provider support manual </span>
+			  <span class="subsection-summary"><p>Guidance to help providers meet the requirements for individualised learner record (ILR) data returns.</p></span>
+			  </a>          
+		  </li>
+          <li>
+          <a class="" href="#2">
+              <span class="subsection-title-text">Validation rules</span>
+			  <span class="subsection-summary"><p>Technical document aimed at those responsible for making data returns; data specification implementation; and MI system design (including MI managers, commercial software suppliers and own software writers).</p></span>
+          </a>          
+		  </li>     
+        </ol>
 	  
-<div class="gem-c-govspeak govuk-govspeak direction-ltr disable-youtube">
-    
+  </div>
+</article>
 
-<h2 class="govuk-heading-m">Definition</h2>
-<p>The residency postcode of the learner for the purposes of funding.</p>
+
 	
-<h2 class="govuk-heading-m">Reason required</h2>
-<p>To determine whether learners are in a devolved or non-devolved area.</p>
-	
-<h2 class="govuk-heading-m">Schema definitions</h2>	  
+<main role="main" class="hmrc-internal-manuals-frontend-content outer-block">		  
+<div class="gem-c-govspeak govuk-govspeak direction-ltr disable-youtube">
+			
+			<h2 class="govuk-heading-m">Appendices</h2>
+				
+			<p>These documents support further education providers (publicly funded colleges, training organisations, local authorities and employers) to understand the details of the data about learners and their learning that must be collected.</p>
+			
+			
 <table class="govuk-table">
-  
+  <!--<caption class="govuk-table__caption">Learner employment status: entity</caption>-->
   <tbody class="govuk-table__body">
-    <tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">XML Element Name</th>
-      <td class="govuk-table__cell">LSDPostcode</td>
-    </tr>
-    <tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">Field length</th>
-      <td class="govuk-table__cell">8</td>
-    </tr>
-    <tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">Data type</th>
-      <td class="govuk-table__cell">RestrictedString</td>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="#4">Appendix A – ILR Specification 2019 to 2020 - Data Collection Timetable</a></th>
     </tr>
 	<tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">Minimum occurrences</th>
-      <td class="govuk-table__cell">0</td>
+	  <th class="govuk-table__header" scope="row"><a href="#5">Appendix B - Migration Specification</a></th>
     </tr>
-    <tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">Maximum occurrences</th>
-      <td class="govuk-table__cell">1</td>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="#6">Appendix D – Higher Education Domicile Codes</a></th>
     </tr>
-    <tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">Part of</th>
-      <td class="govuk-table__cell">Learning delivery</td>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="#7">Appendix F – Privacy notice</a></th>
+    </tr>
+ 	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="#8">Appendix G – Prior attainment levels</a></th>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="#9">Appendix L – Standard Occupational Classification 2000-2001 Codes</a></th>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="#10">Appendix Q – Learning outcome grade code list</a></th>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="#11">Spreadsheet containing the Learning Delivery Monitoring (LDM)</a></th>
     </tr>
   </tbody>
 </table>
+			
+		</div>
+</main>
 
-<h2 class="govuk-heading-m">Valid entries</h2>
-<table class="govuk-table">
-  <tbody class="govuk-table__body">
-    <tr class="govuk-table__row">
-      <td class="govuk-table__cell">A valid postcode that must be in upper case.</td>
-    </tr>
-  </tbody>
-</table>
-	
+        <!--<div class="print-page">
+          <a onclick="window.print();return false;" href="#">Print this page</a>
+        </div>-->
 </div>
-	
-<table class="govuk-table">
-  <caption class="govuk-table__caption">Pattern</caption>
-  <tbody class="govuk-table__body">
-    <tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">Not applicable to this field</th>
-      <td class="govuk-table__cell"></td>
-    </tr>
-  </tbody>
-</table>
-	  
-<h2 class="govuk-heading-m">Collection requirements</h2>
-<table class="govuk-table">
-  <tbody class="govuk-table__body">
-    <tr class="govuk-table__row">
-      <td class="govuk-table__cell">Adult skills (FundModel 35)</td>
-	  <td class="govuk-table__cell">Community Learning (FundModel 10)</td>
-	  <td class="govuk-table__cell">Local authority funded Community Learning (FundModel 99) </td>
-	  <td class="govuk-table__cell">Source of funding (FundModel 108)</td>
-    </tr>
-  </tbody>
-</table>
-	  
-<h2 class="govuk-heading-m">Notes and guidance about this field</h2>
-<p>This field to be returned for aims that start on or after 1 August 2019 (this does not include restarts).</p>
-	
-<p>This postcode is completed for Adult skills (Funding Model 35) excluding traineeships, Community Learning (Funding Model 10), and Local authority funded Community Learning (Funding model 99 and Source of funding 108).</p>
-	
-<p>This field is returned at the start of the learning aim and will continue for the duration of the aim. For example if the learner is in a devolved area at the start of the learning aim and then moves to outside of a devolved area, this postcode field will not be updated and the funding arrangement will remain in place by the devolved area for the duration of the aim.
-</p>
-	  
-<p>Please refer to the Adult Education Budget (AEB) funding rule for the definition of residency.
-</p>
-	  
-<p>If the learner's postcode is unknown, providers must return a postcode of ZZ99 9ZZ
-</p>
-	  
-<h2 class="govuk-heading-m">Related</h2>
-<p>Full valid postcodes can be located at the <a herf="url https://www.royalmail.com/find-a-postcode" alt-="Royal Mail Postcode finder website">Royal Mail Postcode finder website</a>.</p>
-	  
-<div class="print-page" style="margin-top:90px;">
-<a onclick="window.print();return false;" href="#">Print this page</a>
-</div>
-
-</div>
-
-
-	
-
-  
-<div class="column-one-third">
-  
-<div class="gem-c-contextual-sidebar">
-
+</main>
     
-  <div class="gem-c-related-navigation">
-
-      <h2 id="related-nav-related_items-9547b6f6" class="gem-c-related-navigation__main-heading" data-track-count="sidebarRelatedItemSection">
-        Related content
-      </h2>
-
-
-
-
-      <nav role="navigation" class="gem-c-related-navigation__nav-section" aria-labelledby="related-nav-related_items-9547b6f6" data-module="gem-toggle">
-
-
-  <ul class="gem-c-related-navigation__link-list" data-module="track-click">
-
-
-        <li class="gem-c-related-navigation__link"><span style="color: #6f777b;">Collection</span></br><a class="gem-c-related-navigation__section-link gem-c-related-navigation__section-link--sidebar  gem-c-related-navigation__section-link--other" href="#">TBC</a></li>
-
-  </ul>
-</nav>
-
-  </div>
-
-
-</div>
-
-</div>
-
-
-  
-
-
-</div>
-
-
-  
-
-
-
-    </main>
-
 <div class="gem-c-feedback gem-c-feedback--top-margin" data-module="feedback">
   <div class="gem-c-feedback__prompt gem-c-feedback__js-show js-prompt" tabindex="-1">
     <div class="gem-c-feedback__js-prompt-questions js-prompt-questions">
@@ -355,5 +269,8 @@
   </form>
 
 </div>
+
+  </div>
+  
 
 {% endblock %}
