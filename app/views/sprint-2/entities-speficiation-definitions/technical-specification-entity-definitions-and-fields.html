@@ -1,4 +1,4 @@
-{% extends "layout.html" %}
+{% extends "sprint-2/layout.html" %}
 
 {% block pageTitle %}
   Technical specification: entity definitions and fields 
@@ -14,26 +14,18 @@
       href: "#"
     },
     {
-      text: "ILR & PSM landing page",
-      href: '/ilr-psm-home'
+      text: "ILR specification 2019 to 2020",
+      href: '/sprint-2/ilr-specification-2019-to-2020'
     },
     {
-      text: "Individualised learner record specification",
-      href: '/ilr-specification-landing-page'
-    },
-	{
-      text: "Funding streams",
-      href: '/funding-streams/funding-streams'
-    },
-	{
-      text: "Entities definitions and fields",
-      href: '/funding-streams/entities-definitions-and-fields'
-    }
+      text: "Specification of the individualised learner record for 2019 to 2020",
+      href: '/sprint-2/specification-of-the-Individualised-learner-record-for-2019-to-2020'
+    }	
 	
   ]
 }) }}
 
-<a class="govuk-back-link" href="/funding-streams/entities-definitions-and-fields.html">Back</a> 
+<a class="govuk-back-link" href="/sprint-2/specification-of-the-Individualised-learner-record-for-2019-to-2020.html">Back</a> 
 
 {% endblock %}
 
@@ -106,157 +98,121 @@
 </blockquote>
       
 
-<table class="govuk-table">
-  <h2 class="heading-medium">Learning Provider: entity</h2>
+<table class="govuk-table tech-spec-table">
   <tbody class="govuk-table__body">
 	<tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row"><strong>Fields</strong></th>
-	  <td class="govuk-table__cell"><strong>XML Element Name</strong></td>
+      <th class="govuk-table__header tech-spec-label" scope="row"><a href="#1">Learning Provider</a></th>
     </tr>
     <tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row"><a href="#1">Learning Provider Entity Definition</a></th>
-	  <td class="govuk-table__cell">Learning Provider</td>
+      <th class="govuk-table__header tech-spec-row" scope="row">&mdash; <a href="#1">Learning Provider Entity Definition</a> - Learning Provider</th>
 	</tr>
 	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#2">UK provider reference number</a></th>
-	  <td class="govuk-table__cell">UKPRN</td>
+	  <th class="govuk-table__header tech-spec-row" scope="row">&mdash; <a href="#2">UK provider reference number</a> - UKPRN</th>
     </tr>
   </tbody>
 </table>  
 	  
-<table class="govuk-table">
-  <h2 class="heading-medium">Learner: entity</h2>
+<table class="govuk-table tech-spec-table">
   <tbody class="govuk-table__body">
 	<tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row"><strong>Fields</strong></th>
-	  <td class="govuk-table__cell"><strong>XML Element Name</strong></td>
+      <th class="govuk-table__header tech-spec-label" scope="row"><a href="/sprint-2/entities-speficiation-definitions/learner.html">Learner</a></th>
     </tr>
     <tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row"><a href="#3">Learner Entity Definition</a></th>
-	  <td class="govuk-table__cell">Learner</td>
+      <th class="govuk-table__header tech-spec-row" scope="row"><a href="#3">Learner Entity Definition</a> - Learner</th>
 	</tr>
 	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#4">Learner reference number</a></th>
-	  <td class="govuk-table__cell">LearnRefNumber</td>
+	  <th class="govuk-table__header tech-spec-row" scope="row"><a href="#4">Learner reference number</a> - LearnRefNumber</th>
     </tr>
 	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#5">Learner reference number in previous year</a></th>
-	  <td class="govuk-table__cell">PrevLearnRefNumber</td>
+	  <th class="govuk-table__header tech-spec-row" scope="row"><a href="#5">Learner reference number in previous year</a> - PrevLearnRefNumber</th>
     </tr>
 	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#6">UKPRN in previous year</a></th>
-	  <td class="govuk-table__cell">PrevUKPRN</td>
+	  <th class="govuk-table__header tech-spec-row" scope="row"><a href="#6">UKPRN in previous year</a> - PrevUKPRN</th>
+    </tr>
+	<tr class="govuk-table__row ">
+	  <th class="govuk-table__header tech-spec-row" scope="row"><a href="#7">Pre-merger UKPRN</a> - PMUKPRN</th>
     </tr>
 	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#7">Pre-merger UKPRN</a></th>
-	  <td class="govuk-table__cell">PMUKPRN</td>
+	  <th class="govuk-table__header tech-spec-row" scope="row"><a href="entity-listings/campus-identifier.html">Campus Identifier</a>&nbsp;&nbsp;&nbsp;<strong class="govuk-tag">VERSION 1</strong> - CampId</th>
     </tr>
 	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="entity-listings/campus-identifier.html">Campus Identifier</a>&nbsp;&nbsp;&nbsp;<strong class="govuk-tag">VERSION 1</strong></th>
-	  <td class="govuk-table__cell">CampId</td>
+	  <th class="govuk-table__header tech-spec-row" scope="row"><a href="#8">Unique learner number</a> - ULN</th>
     </tr>
 	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#8">Unique learner number</a></th>
-	  <td class="govuk-table__cell">ULN</td>
+	  <th class="govuk-table__header tech-spec-row" scope="row"><a href="#9">Family name</a> - FamilyName</th>
     </tr>
 	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#9">Family name</a></th>
-	  <td class="govuk-table__cell">FamilyName</td>
+	  <th class="govuk-table__header tech-spec-row" scope="row"><a href="#10">Given names</a> - GivenNames</th>
     </tr>
 	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#10">Given names</a></th>
-	  <td class="govuk-table__cell">GivenNames</td>
+	  <th class="govuk-table__header tech-spec-row" scope="row"><a href="#11">Date of birth</a> - DateOfBirth</th>
     </tr>
 	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#11">Date of birth</a></th>
-	  <td class="govuk-table__cell">DateOfBirth</td>
+	  <th class="govuk-table__header tech-spec-row" scope="row"><a href="#12">Ethnicity</a> - Ethnicity</th>
     </tr>
 	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#12">Ethnicity</a></th>
-	  <td class="govuk-table__cell">Ethnicity</td>
+	  <th class="govuk-table__header tech-spec-row" scope="row"><a href="#13">Sex</a> - Sex</th>
     </tr>
 	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#13">Sex</a></th>
-	  <td class="govuk-table__cell">Sex</td>
+	  <th class="govuk-table__header tech-spec-row" scope="row"><a href="#14">LLDD and health problem</a> - LLDDHealthProb</th>
     </tr>
 	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#14">LLDD and health problem</a></th>
-	  <td class="govuk-table__cell">LLDDHealthProb</td>
+	  <th class="govuk-table__header tech-spec-row" scope="row"><a href="#15">National Insurance number</a> - NINumber</th>
     </tr>
 	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#15">National Insurance number</a></th>
-	  <td class="govuk-table__cell">NINumber</td>
+	  <th class="govuk-table__header tech-spec-row" scope="row"><a href="#16">Prior attainment</a> - PriorAttain</th>
     </tr>
 	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#16">Prior attainment</a></th>
-	  <td class="govuk-table__cell">PriorAttain</td>
+	  <th class="govuk-table__header tech-spec-row" scope="row"><a href="#17">Accommodation</a> - Accom</th>
     </tr>
 	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#17">Accommodation</a></th>
-	  <td class="govuk-table__cell">Accom</td>
+	  <th class="govuk-table__header tech-spec-row" scope="row"><a href="#18">Learning support cost</a> - ALSCost</th>
     </tr>
 	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#18">Learning support cost</a></th>
-	  <td class="govuk-table__cell">ALSCost</td>
+	  <th class="govuk-table__header tech-spec-row" scope="row"><a href="#19">Planned learning hours</a> - PlanLearnHours</th>
     </tr>
 	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#19">Planned learning hours</a></th>
-	  <td class="govuk-table__cell">PlanLearnHours</td>
+	  <th class="govuk-table__header tech-spec-row" scope="row"><a href="#20">Planned employability, enrichment and pastoral hours</a> - PlanEEPHours</th>
     </tr>
 	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#20">Planned employability, enrichment and pastoral hours</a></th>
-	  <td class="govuk-table__cell">PlanEEPHours</td>
+	  <th class="govuk-table__header tech-spec-row" scope="row"><a href="#21">GCSE maths qualification grade</a> - MathGrade</th>
     </tr>
 	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#21">GCSE maths qualification grade</a></th>
-	  <td class="govuk-table__cell">MathGrade</td>
+	  <th class="govuk-table__header tech-spec-row" scope="row"><a href="#22">GCSE English qualification</a> - EngGrade</th>
     </tr>
 	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#22">GCSE English qualification</a></th>
-	  <td class="govuk-table__cell">EngGrade</td>
+	  <th class="govuk-table__header tech-spec-row" scope="row"><a href="#23">Postcode prior to enrolment</a> - PostcodePrior</th>
     </tr>
 	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#23">Postcode prior to enrolment</a></th>
-	  <td class="govuk-table__cell">PostcodePrior</td>
+	  <th class="govuk-table__header tech-spec-row" scope="row"><a href="#24">Postcode</a> - Postcode</th>
     </tr>
 	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#24">Postcode</a></th>
-	  <td class="govuk-table__cell">Postcode</td>
+	  <th class="govuk-table__header tech-spec-row" scope="row"><a href="#25">Address line 1</a> - AddLine1</th>
     </tr>
 	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#25">Address line 1</a></th>
-	  <td class="govuk-table__cell">AddLine1</td>
+	  <th class="govuk-table__header tech-spec-row" scope="row"><a href="#26">Address line 2</a> - AddLine2</th>
     </tr>
 	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#26">Address line 2</a></th>
-	  <td class="govuk-table__cell">AddLine2</td>
+	  <th class="govuk-table__header tech-spec-row" scope="row"><a href="#27">Address line 3</a> - AddLine3</th>
     </tr>
 	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#27">Address line 3</a></th>
-	  <td class="govuk-table__cell">AddLine3</td>
+	  <th class="govuk-table__header tech-spec-row" scope="row"><a href="#28">Address line 4</a> - AddLine4</th>
     </tr>
 	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#28">Address line 4</a></th>
-	  <td class="govuk-table__cell">AddLine4</td>
+	  <th class="govuk-table__header tech-spec-row" scope="row"><a href="#29">Telephone number</a> - TelNo</th>
     </tr>
 	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#29">Telephone number</a></th>
-	  <td class="govuk-table__cell">TelNo</td>
+	  <th class="govuk-table__header tech-spec-row" scope="row"><a href="#30">Email address</a> - Email</th>
     </tr>
 	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#30">Email address</a></th>
-	  <td class="govuk-table__cell">Email</td>
-    </tr>
-	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#31">Off-the-job training hours</a></th>
-	  <td class="govuk-table__cell">OTJHours</td>
+	  <th class="govuk-table__header tech-spec-row" scope="row"><a href="#31">Off-the-job training hours</a> - OTJHours</th>
     </tr>
   </tbody>
 </table> 
 
 
-<table class="govuk-table">
-  <h2 class="heading-medium">Learner Contact Preference: entity</h2>
+<table class="govuk-table tech-spec-table">
+  <p class="govuk-body govuk-!-font-size-24">Learner Contact Preference: entity</p>
   <tbody class="govuk-table__body">
 	<tr class="govuk-table__row">
       <th class="govuk-table__header" scope="row"><strong>Fields</strong></th>
