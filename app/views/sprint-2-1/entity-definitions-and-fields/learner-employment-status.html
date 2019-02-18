@@ -21,15 +21,15 @@
       text: "Specification of the individualised learner record for 2019 to 2020",
       href: '/sprint-2-1/specification-of-the-Individualised-learner-record-for-2019-to-2020'
     },	
-	{
+		{
       text: "Entity definitions and fields",
-      href: '/sprint-2-1/entities-definitions-and-fields/technical-specification-entity-definitions-and-fields'
+      href: '/sprint-2-1/entity-definitions-and-fields/technical-specification-entity-definitions-and-fields'
     }	
 	
   ]
 }) }}
 
-<a class="govuk-back-link" href="/sprint-2-1/entities-definitions-and-fields/technical-specification-entity-definitions-and-fields.html">Back</a> 
+<a class="govuk-back-link" href="/sprint-2-1/entity-definitions-and-fields/technical-specification-entity-definitions-and-fields.html">Back</a> 
 
 {% endblock %}
 
@@ -45,9 +45,12 @@
     <div class="page-header">
       <p class="page-header__context">ILR Spec</p>
       <h1 class="page-header__title">
-        Learner: entity 
+        Learner employment status: entity 
       </h1>	
 	</div>
+	<div class="summary">
+	<p class="summary"><a href="/sprint-2-1/entity-definitions-and-fields/learner.html">Part of the learner entity</a></p>
+</div>
 	</div>	
 	
   <div class="column-third">
@@ -84,7 +87,7 @@
 	
 <!--<div class="column-two-thirds">
     <div class="page-header">	
-	  <p class="summary">You should return only one record for each learner. The data recorded in the learner entity contains basic information specific to the learner such as their name, date of birth, sex and ethnicity. </p>
+	  <p class="summary">For 16-19 (excluding Apprenticeships) funded learners, this data is only required for those on a part-time programme of study (less than 540 hours in the teaching year).</p>
     </div>
   </div>-->
 	
@@ -97,28 +100,35 @@
 <div class="grid-row responsive-bottom-margin">
   <div class="column-two-thirds"> 
 	  
-<!--<blockquote class="noquotes">
-	<p><strong class="govuk-tag">VERSION 1</strong>&nbsp;&nbsp;&nbsp;Version 1 changes: Updates Published February 2018</p>
+	<!--<blockquote class="noquotes">
+	<p><strong class="govuk-tag">VERSION 1</strong>&nbsp;&nbsp;&nbsp;Version 1 changes: Updates Published January 2019</p>
 	<h3 class="govuk-heading-m">What's changed?</h3>
-	<p>Campus identifier: entity has been added</p>
-
+	<p>Additional collection requirement for this entity : Other 16-19 (FundModel 82)</p>
 	</blockquote>-->
 	  
-<div class="gem-c-govspeak govuk-govspeak direction-ltr disable-youtube">
+	  
+	 <div class="gem-c-govspeak govuk-govspeak direction-ltr disable-youtube">
 	  
 		<h2 class="govuk-heading-m">Definition</h2>
-		<p>This entity collects attributes that relate to an individual learner such as their name and date of birth.</p>
+		<p>This entity collects the details of a learner's employment status before they start their learning (prior to enrolment) and any changes during their programme of learning.</p>
 		 
 		<h2 class="govuk-heading-m">Reason required</h2>
-		<p>To enable the learner to be identified for matching purposes, to maintain data integrity and assist with query resolution.</p>
-	
-<h2 class="govuk-heading-m">Schema definitions</h2>
+		<p>To demonstrate how the FE sector is contributing to improving the employability of learners. Validation of funding eligibility for Adult Skills and ESF funded learners.</p>	 
+		 
+
+	  
+	 <h2 class="govuk-heading-m">Schema definitions</h2>	  
+
 <table class="govuk-table">
   
   <tbody class="govuk-table__body">
     <tr class="govuk-table__row">
       <th class="govuk-table__header" scope="row">XML Element Name</th>
-      <td class="govuk-table__cell">Learner</td>
+      <td class="govuk-table__cell">LearnerEmploymentStatus</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">Field length</th>
+      <td class="govuk-table__cell">0</td>
     </tr>
     <tr class="govuk-table__row">
       <th class="govuk-table__header" scope="row">Minimum occurrences</th>
@@ -130,15 +140,39 @@
     </tr>
     <tr class="govuk-table__row">
       <th class="govuk-table__header" scope="row">Part of</th>
-      <td class="govuk-table__cell">Message</td>
+      <td class="govuk-table__cell">Learner</td>
     </tr>
   </tbody>
 </table>
-	
-		<h2 class="govuk-heading-m">Collection requirements</h2>
-		<p>Collected for all learners.</p>
-	
-	
+	  
+<h2 class="govuk-heading-m">Collection requirements</h2>
+<table class="govuk-table">
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">16-19 excluding Apprenticeships (FundModel 25)</td>
+	</tr>
+	<tr class="govuk-table__row">
+	  <td class="govuk-table__cell">Adult Skills (FundModel 35)</td>
+	</tr>
+	<tr class="govuk-table__row">
+	  <td class="govuk-table__cell">ESF (FundModel 70)</td>
+	</tr>
+	<tr class="govuk-table__row">
+	  <td class="govuk-table__cell">Apprenticeships from 1 May 2017 (FundModel 36)</td>
+	</tr>
+	<tr class="govuk-table__row">
+	  <td class="govuk-table__cell">Non-funded (FundModel 99)</td>
+	</tr>
+	<tr class="govuk-table__row">
+	  <td class="govuk-table__cell">Other Adult (FundModel 81)</td>
+	</tr>
+	<tr class="govuk-table__row">
+	  <td class="govuk-table__cell">Other 16-19 (FundModel 82) &nbsp;&nbsp;&nbsp;<strong class="govuk-tag">VERSION 1</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+	  
 <table class="govuk-table">
   <!--<caption class="govuk-table__caption">Learner employment status: entity</caption>-->
   <tbody class="govuk-table__body">
@@ -147,66 +181,28 @@
 	  <td class="govuk-table__cell"><strong>Schema mandation</strong></td>
     </tr>
 	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row">LearnRefNumber</th>
+	  <th class="govuk-table__header" scope="row">EmpStat</th>
 	  <td class="govuk-table__cell">Y</td>
     </tr>
 	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row">PrevLearnRefNumber</th>
+	  <th class="govuk-table__header" scope="row">DateEmpStatApp</th>
+	  <td class="govuk-table__cell">Y</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row">EmpId</th>
 	  <td class="govuk-table__cell">N</td>
     </tr>
 	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row">PrevUKPRN </th>
+	  <th class="govuk-table__header" scope="row">AgreeId</th>
 	  <td class="govuk-table__cell">N</td>
     </tr>
 	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row">PMUKPRN </th>
-	  <td class="govuk-table__cell">N</td>
+	  <th class="govuk-table__header" scope="row">Learner Employment Status Monitoring Entity Definition  </a></th>
+	  <td class="govuk-table__cell">EmploymentStatusMonitoring</td>
     </tr>
-	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row">CampId </th>
-	  <td class="govuk-table__cell">N</td>
-    </tr>
-	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row">ULN </th>
-	  <td class="govuk-table__cell">N</td>
-    </tr>
-	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row">FamilyName  </th>
-	  <td class="govuk-table__cell">N</td>
-    </tr>
-	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row">GivenNames </th>
-	  <td class="govuk-table__cell">N</td>
-    </tr>
-	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row">DateOfBirth </th>
-	  <td class="govuk-table__cell">N</td>
-    </tr>
-	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row">Ethnicity </th>
-	  <td class="govuk-table__cell">N</td>
-    </tr>
-	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row">Sex </th>
-	  <td class="govuk-table__cell">N</td>
-    </tr>
-	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row">LLDDHealthProb  </th>
-	  <td class="govuk-table__cell">N</td>
-    </tr>
-	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row">NINumber </th>
-	  <td class="govuk-table__cell">N</td>
-    </tr>
-	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row">PriorAttain  </th>
-	  <td class="govuk-table__cell">N</td>
-    </tr>
-	
   </tbody>
 </table> 
-	
-	
+		  
 <table class="govuk-table">
   <!--<caption class="govuk-table__caption">Learner employment status: entity</caption>-->
   <tbody class="govuk-table__body">
@@ -215,43 +211,68 @@
 	  <td class="govuk-table__cell"><strong>Schema mandation</strong></td>
     </tr>
 	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#41">ContactPreference </a></th>
+	  <th class="govuk-table__header" scope="row"><a href="#4">EmploymentStatusMonitoring</a></th>
 	  <td class="govuk-table__cell">N</td>
-    </tr>
-	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#42">LLDDandHealthProblem  </a></th>
-	  <td class="govuk-table__cell">N</td>
-    </tr>
-	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#43">LearnerFAM  </a></th>
-	  <td class="govuk-table__cell">N</td>
-    </tr>
-	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#44">ProviderSpecLearnerMonitoring </a></th>
-	  <td class="govuk-table__cell">N</td>
-    </tr>
-	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#45">LearnerEmploymentStatus  </a></th>
-	  <td class="govuk-table__cell">N</td>
-    </tr>
-	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#46">LearnerHE  </a></th>
-	  <td class="govuk-table__cell">N</td>
-    </tr>
-	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#47">LearningDelivery  </a></th>
-	  <td class="govuk-table__cell">Y</td>
     </tr>
   </tbody>
 </table> 
 
+<!--
+<table class="govuk-table">
+  <caption class="govuk-table__caption">Learner employment status: entity</caption>
+  <tbody class="govuk-table__body">
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><strong>Fields</strong></th>
+	  <td class="govuk-table__cell"><strong>XML Element Name</strong></td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="#4">Employment Status </a></th>
+	  <td class="govuk-table__cell">EmpStat</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="#4">Date Employment Status Applies   </a></th>
+	  <td class="govuk-table__cell">DateEmpStatApp</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="#4">Employer Identifier </a></th>
+	  <td class="govuk-table__cell">EmpId</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="#4">Agreement Identifier</a></th>
+	  <td class="govuk-table__cell">AgreeId</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="#4">Learner Employment Status Monitoring Entity Definition  </a></th>
+	  <td class="govuk-table__cell">EmploymentStatusMonitoring</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="#4">Employment Status Monitoring Type </a></th>
+	  <td class="govuk-table__cell">ESMType</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="#4">Employment Status Monitoring Code </a></th>
+	  <td class="govuk-table__cell">ESMCode</td>
+    </tr>
+  </tbody>
+</table> 
+-->		 
+
+
 	  
+		<h2 class="govuk-heading-m">Notes and guidance</h2>
+		<p>For non-funded learners, this data is only required for non-funded apprenticeships and those aged 19+. It is not required for Local Authority funded Community learning (Funding model 99 and Source of funding 108).</p>
+		<p>Not collected for OLASS learners (LearnDelFAMType = LDM034).</p>
+		<p>Data about a learner's employment status prior to enrolment must be collected in all cases when a learner first enrols with a provider.</p>
+	
+		<h2 class="govuk-heading-m">Related</h2>
+		<p>Refer to the <a href="/sprint-2-1/provider-support-manual.html" alt="Provider Support Manual">Provider Support Manual</a> for guidance about updating employment status records and detailed examples for completing this data</p>
+ 
 </div>
 	  
 <div class="print-page" style="margin-top:90px;">
 <a onclick="window.print();return false;" href="#">Print this page</a>
 </div>
-
+	  
 </div>
 
 <div class="column-one-third">
