@@ -1,8 +1,9 @@
 {% extends "sprint-2-1/layout.html" %}
 
 {% block pageTitle %}
-  Entities, definitions and fields 
+  Campus identifier
 {% endblock %}
+
 
 {% block beforeContent %}
   {% from "breadcrumbs/macro.njk" import govukBreadcrumbs %}
@@ -13,47 +14,56 @@
       text: "Home",
       href: "#"
     },
-    {
+	{
       text: "ILR specification 2019 to 2020",
       href: '/sprint-2-1/ilr-specification-2019-to-2020'
     },
     {
       text: "Specification of the individualised learner record for 2019 to 2020",
       href: '/sprint-2-1/specification-of-the-Individualised-learner-record-for-2019-to-2020'
+    },	
+	{
+      text: "Entity definitions and fields",
+      href: '/sprint-2-1/entities-definitions-and-fields/technical-specification-entity-definitions-and-fields'
     }	
 	
   ]
 }) }}
 
-<a class="govuk-back-link" href="/sprint-2-1/specification-of-the-Individualised-learner-record-for-2019-to-2020.html">Back</a> 
+<a class="govuk-back-link" href="/sprint-2-1/entities-definitions-and-fields/technical-specification-entity-definitions-and-fields.html">Back</a> 
 
 {% endblock %}
 
 {% block content %}
-<div id="wrapper">
-    <main role="main" class="hmrc-internal-manuals-frontend-content outer-block">
-      <div id="manuals-frontend" class="manuals-frontend-body inner-block">
 
-		  
+  <main role="main" id="content" class="answer" lang="en">
+      
+
 <div class="grid-row">
 
   <div class="column-two-thirds">
     <div class="page-header">
       <p class="page-header__context">ILR Spec</p>
       <h1 class="page-header__title">
-        Entities, definitions and fields 
-      </h1>	
-	</div>
-	</div>	
-	
+        Campus identifier: field
+      </h1>
+    </div>
+	<div class="summary">
+	<p class="summary"><a href="/sprint-2-1/entities-definitions-and-fields/learner.html">Part of the learner entity</a></p>
+</div>
+  </div>
+
   <div class="column-third">
+
     <div class="community-contact">
       <p>
         <a class="feedback" href="#">Give feedback about this page</a>
       </p>
     </div>
   </div>
-
+</div>
+	  
+<div class="grid-row">
   <div class="column-two-thirds">
 
     <div class="metadata">
@@ -73,174 +83,117 @@
     </div>
 
   </div>
-		
 	
-	
-
-	
-<div class="column-two-thirds">
+  <div class="column-two-thirds">
     <div class="page-header">	
-	  <h2 class="heading-medium">Overview</h2>
-	  <p class="summary">Entities covered by the ILR </p>
+	  <h2 class="govuk-heading-m">Overview</h2>
+	  <p class="summary">You should return only one record for each learner. The data recorded in the learner entity contains basic information specific to the learner such as their name, date of birth, sex and ethnicity. </p>
     </div>
   </div>
-	
 </div>
-		  
-
-	
-	  
 
 <div class="grid-row responsive-bottom-margin">
   <div class="column-two-thirds">
+   
 	  
-	<blockquote class="noquotes">
-	<p><strong class="govuk-tag">VERSION 1</strong>&nbsp;&nbsp;&nbsp;Version 1 changes: Updates published January 2019</p>
-	<p>What's changed?</p>
-	<p>Learner destination and progression: <strong>Amendment to Notes section for 2019 to 2020</strong></p>
+<!--<blockquote class="noquotes">
+	<p>Version 2 changes: Updates Published March 2018&nbsp;&nbsp;&nbsp;<strong class="govuk-tag">VERSION 2</strong></p>
+	<h3 class="govuk-heading-m">What's changed?</h3>
+	<p>Pattern has been corrected to [A-Za-z0-9]{1,8}</p>
+	<p>The pattern was incorrect in version 1.
+    </br>“8” is the change to the pattern in version 2.</p>
+	</blockquote>-->
+	  
+<div class="gem-c-govspeak govuk-govspeak direction-ltr disable-youtube">
+    
 
-	</blockquote>
-	  
-	  
-	  <div>
-	    <h2 class="govuk-heading-m">Learning provider entity</h2>
-	  </div>
-		 
-	    <ol class="section-list" style="margin:0px;">
-		<li>
-			<a class="" href="#1">
-				  <span class="subsection-title-text">Learning provider</span>
-				  <span class="subsection-summary"><p>This entity collects data about the provider.</p></span>
-			</a>        
-		</li>
-	  	</ol>
-	  
-	  <div style="margin-top:30px;">
-        <h2 class="govuk-heading-m">Learner entity and child entities</h2> 
-	  </div> 
+<h2 class="govuk-heading-m">Definition</h2>
+<p>The identifier of a campus within a college group and no longer a separate legal entity but previously operated as an incorporated college with a UKPRN.</p>
+	
+<h2 class="govuk-heading-m">Reason required</h2>
+<p>To allow identification of provision delivered across the various sites of merged institutions.</p>
+	
+<h2 class="govuk-heading-m">Schema definitions</h2>	  
+<table class="govuk-table">
+  
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">XML Element Name</th>
+      <td class="govuk-table__cell">CampId</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">Field length</th>
+      <td class="govuk-table__cell">8</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">Data type</th>
+      <td class="govuk-table__cell">RestrictedString</td>
+    </tr>
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">Minimum occurrences</th>
+      <td class="govuk-table__cell">0</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">Maximum occurrences</th>
+      <td class="govuk-table__cell">1</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">Part of</th>
+      <td class="govuk-table__cell">Learner</td>
+    </tr>
+  </tbody>
+</table>
 
-		<ol class="section-list" style="margin:0px;"> 
-		      <li>
-				  <a class="" href="/sprint-2-1/entities-speficiation-definitions/learner.html" alt="Learner">
-					  <span class="subsection-title-text">Learner</span>
-					  <span class="subsection-summary"><p>This entity collects attributes that relate to an individual learner such as their name and date of birth.</p></span>
-				  </a>         
-			  </li>
-			  <li>
-				  <a class="" href="#2">
-					  <span class="subsection-title-text">Learner contact preference</span>
-					  <span class="subsection-summary"><p>This entity collects any restrictions on the use of the learner's contact details and any restrictions on how a learner wishes to be contacted.</p></span>
-				  </a>          
-			  </li>
-		      <li>
-				  <a class="" href="#3">
-					  <span class="subsection-title-text">LLDD and health problem</span>
-					  <span class="subsection-summary"><p>This entity collect details of the nature of the learner's disability, learning difficulty and/or health problem.</p></span>
-				  </a>          
-			  </li>
-			  <li>
-				  <a class="" href="#4">
-					  <span class="subsection-title-text">Learner funding and monitoring (FAM)</span>
-					  <span class="subsection-summary"><p>This entity collects additional attributes of the learner that will inform either the funding of the learner or additional monitoring.</p></span>
-				  </a>          
-			  </li>
-			  <li>
-				  <a class="" href="#5">
-					  <span class="subsection-title-text">Learner provider specified monitoring</span>
-					  <span class="subsection-summary"><p>This entity collects data specified by the provider for their own use.</p></span>
-				  </a>          
-		      </li>
-			  <li>
-				  <a class="" href="/sprint-2-1/entities-speficiation-definitions/learner-employment-status.html">
-					  <span class="subsection-title-text">Learner employment status</span>
-					  <span class="subsection-summary"><p>This entity collects the details of a learner's employment status before they start their learning (prior to enrolment) and any changes during their programme of learning.</p></span>
-				  </a>          
-			  </li>
-			  <li>
-				  <a class="" href="#7">
-					  <span class="subsection-title-text">Learner HE</span>
-					  <span class="subsection-summary"><p>This entity collects data that is requested by the Office for Students (OfS) and the Higher Education Statistics Agency (HESA).</p></span>
-				  </a>         
-			  </li>
-			  <li>
-				  <a class="" href="#8">
-					  <span class="subsection-title-text">Learner HE financial support</span>
-					  <span class="subsection-summary"><p>This entity collects data about the financial support received by students.</p></span>
-				  </a>         
-			  </li>
-		</ol> 			
-		
-	    <div style="margin-top:30px;">
-		<h2 class="govuk-heading-m">Learning delivery entity and child entities</h2>
-	    </div>
-		
-	    <ol class="section-list" style="margin:0px;">			
-			  
-			  <li>
-				  <a class="" href="/sprint-2-1/entities-speficiation-definitions/learning-delivery.html" alt="Learning delivery">
-					  <span class="subsection-title-text">Learning delivery</span>
-					  <span class="subsection-summary"><p>This entity collects details of the learning aims that a learner is studying.
-	A learning delivery record should be returned for each learning aim that a learner is studying.</p></span>
-				  </a>          
-			  </li> 
-			  <li>
-				  <a class="" href="#10">
-					  <span class="subsection-title-text">Learning delivery funding and monitoring (FAM)</span>
-					  <span class="subsection-summary"><p>This entity collects additional attributes of the Learning Delivery that will either inform funding of the learner or additional monitoring.</p></span>
-				  </a>          
-			  </li>
-			  <li>
-				  <a class="" href="#11">
-					  <span class="subsection-title-text">Learning delivery work placement</span>
-					  <span class="subsection-summary"><p>This entity collects data about a work placement that is being undertaken by a learner as part of a traineeship or 16-19 study programme.</p></span>
-				  </a>          
-			  </li>
-			  <li>
-				  <a class="" href="#12">
-					  <span class="subsection-title-text">Apprenticeship financial record</span>
-					  <span class="subsection-summary"><p>This entity collects data about the cost of an apprenticeship and financial contributions received from an employer for an apprenticeship.</p></span>
-				  </a>          
-			  </li>
-			  <li>
-				  <a class="" href="#13">
-					  <span class="subsection-title-text">Apprenticeship financial type – AfinType</span>
-					  <span class="subsection-summary"><p>The type of financial details being recorded.</p></span>
-				  </a>          
-			  </li>
-			
-			  <li>
-				  <a class="" href="#14">
-					  <span class="subsection-title-text">Provider spec delivery monitoring</span>
-					  <span class="subsection-summary"><p>This entity collects data specified by the provider for their own use.</p></span>
-				  </a>          
-			  </li>
-			  <li>
-				  <a class="" href="#15">
-					  <span class="subsection-title-text">Learning delivery HE</span>
-					  <span class="subsection-summary"><p>Data requested by OfS and HESA.</p></span>
-				  </a>          
-			  </li>
-		</ol> 			
-		
-	    <div style="margin-top:30px;">
-		<h2 class="govuk-heading-m">Learner destination and progression entity</h2>
-	  	</div>
-		
-	    <ol class="section-list" style="margin:0px;">				
-			
-			 <li>
-				  <a class="" href="/sprint-2-1/entities-speficiation-definitions/learner-destination-and-progression.html">
-					  <span class="subsection-title-text">Learner destination and progression&nbsp;&nbsp;&nbsp;<strong class="govuk-tag">VERSION 1</strong></span>
-					  <span class="subsection-summary"><p>This entity records destination and progression outcomes for a learner, such as gaining employment or going onto further study. These outcomes will be reported after a learner has completed a programme of learning.</p></span>
-				  </a>         
-			 </li>
+<h2 class="govuk-heading-m">Valid entries</h2>
+<table class="govuk-table">
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">Must be in a valid look up. This is a 8-digit identifier using alphanumeric characters.</td>
+    </tr>
+  </tbody>
+</table>
+	
+</div>
 
-		</ol>  
+<h2 class="govuk-heading-m">Pattern</h2>
+<table class="govuk-table">
+  <caption class="govuk-table__caption"><!--Pattern&nbsp;&nbsp;&nbsp;<strong class="govuk-tag">
+  VERSION 2</strong>--></caption>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">[A-Za-z0-9]{1,8}</th>
+      <td class="govuk-table__cell"></td>
+    </tr>
+  </tbody>
+</table>
+	  
+<h2 class="govuk-heading-m">Collection requirements</h2>
+<table class="govuk-table">
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">This field is collected for all learners.</td>
+    </tr>
+  </tbody>
+</table>
+	  
+<h2 class="govuk-heading-m">Notes and guidance about this field</h2>
+<p>This field records the identifier of a campus within a college group who is no longer a separate legal entity but previously operated as an incorporated college with a UKPRN</p>
+	
+<p>This should only be returned where the provider has been notified that they can use this field.</p>
+	
+<p>The campus identifier must be linked to a college group with a separate UKPRN.
+</p>
+	  
+<div class="print-page" style="margin-top:90px;">
+<a onclick="window.print();return false;" href="#">Print this page</a>
+</div>
 
 </div>
+
+
+	
+
   
-
-
 <div class="column-one-third">
   
 <div class="gem-c-contextual-sidebar">
@@ -272,13 +225,20 @@
 </div>
 
 </div>
-        
-      </div>
-		  
-		</div>
-    
-		  </main>
-    
+
+
+  
+
+
+</div>
+
+
+  
+
+
+
+    </main>
+
 <div class="gem-c-feedback gem-c-feedback--top-margin" data-module="feedback">
   <div class="gem-c-feedback__prompt gem-c-feedback__js-show js-prompt" tabindex="-1">
     <div class="gem-c-feedback__js-prompt-questions js-prompt-questions">
@@ -389,7 +349,5 @@
   </form>
 
 </div>
-
-  
 
 {% endblock %}

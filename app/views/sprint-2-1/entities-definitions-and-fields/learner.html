@@ -1,7 +1,7 @@
 {% extends "sprint-2-1/layout.html" %}
 
 {% block pageTitle %}
-  Learning delivery: entity definition and fields 
+  Learner: entity definition and fields
 {% endblock %}
 
 {% block beforeContent %}
@@ -23,13 +23,13 @@
     },	
 	{
       text: "Entity definitions and fields",
-      href: '/sprint-2-1/entities-speficiation-definitions/technical-specification-entity-definitions-and-fields'
+      href: '/sprint-2-1/entities-definitions-and-fields/technical-specification-entity-definitions-and-fields'
     }	
 	
   ]
 }) }}
 
-<a class="govuk-back-link" href="/sprint-2-1/entities-speficiation-definitions/technical-specification-entity-definitions-and-fields.html">Back</a> 
+<a class="govuk-back-link" href="/sprint-2-1/entities-definitions-and-fields/technical-specification-entity-definitions-and-fields.html">Back</a> 
 
 {% endblock %}
 
@@ -45,12 +45,9 @@
     <div class="page-header">
       <p class="page-header__context">ILR Spec</p>
       <h1 class="page-header__title">
-        Learning delivery: entity 
+        Learner: entity 
       </h1>	
 	</div>
-	<div class="summary">
-	<p class="summary"><a href="/sprint-2-1/entities-speficiation-definitions/learner.html">Part of the learner entity</a></p>
-</div>
 	</div>	
 	
   <div class="column-third">
@@ -81,7 +78,15 @@
 
   </div>
 		
+	
+	
 
+	
+<!--<div class="column-two-thirds">
+    <div class="page-header">	
+	  <p class="summary">You should return only one record for each learner. The data recorded in the learner entity contains basic information specific to the learner such as their name, date of birth, sex and ethnicity. </p>
+    </div>
+  </div>-->
 	
 </div>
 		  
@@ -92,36 +97,32 @@
 <div class="grid-row responsive-bottom-margin">
   <div class="column-two-thirds"> 
 	  
-	<!--<blockquote class="noquotes">
-	<p><strong class="govuk-tag">VERSION 1</strong>&nbsp;&nbsp;&nbsp;Version 1 changes: Updates published January 2019</p>
-	<p>What's changed?</p>
-	<p>New field: <strong>LSDPostcode entity has been added for 2019 to 2020</strong></p>
-	</blockquote>-->
+<!--<blockquote class="noquotes">
+	<p><strong class="govuk-tag">VERSION 1</strong>&nbsp;&nbsp;&nbsp;Version 1 changes: Updates Published February 2018</p>
+	<h3 class="govuk-heading-m">What's changed?</h3>
+	<p>Campus identifier: entity has been added</p>
 
+	</blockquote>-->
 	  
-	  
-	 <div class="gem-c-govspeak govuk-govspeak direction-ltr disable-youtube">
+<div class="gem-c-govspeak govuk-govspeak direction-ltr disable-youtube">
 	  
 		<h2 class="govuk-heading-m">Definition</h2>
-		<p>This entity collects details of the learning aims that a learner is studying.</p>
+		<p>This entity collects attributes that relate to an individual learner such as their name and date of birth.</p>
 		 
 		<h2 class="govuk-heading-m">Reason required</h2>
-		<p>Funding, monitoring and reporting of individual learning activities being undertaken by a learner.</p>	 
-		 
-
-	  
-	 <h2 class="govuk-heading-m">Schema definitions</h2>	  
-
+		<p>To enable the learner to be identified for matching purposes, to maintain data integrity and assist with query resolution.</p>
+	
+<h2 class="govuk-heading-m">Schema definitions</h2>
 <table class="govuk-table">
   
   <tbody class="govuk-table__body">
     <tr class="govuk-table__row">
       <th class="govuk-table__header" scope="row">XML Element Name</th>
-      <td class="govuk-table__cell">LearningDelivery</td>
+      <td class="govuk-table__cell">Learner</td>
     </tr>
     <tr class="govuk-table__row">
       <th class="govuk-table__header" scope="row">Minimum occurrences</th>
-      <td class="govuk-table__cell">1</td>
+      <td class="govuk-table__cell">0</td>
     </tr>
 	<tr class="govuk-table__row">
       <th class="govuk-table__header" scope="row">Maximum occurrences</th>
@@ -129,141 +130,83 @@
     </tr>
     <tr class="govuk-table__row">
       <th class="govuk-table__header" scope="row">Part of</th>
-      <td class="govuk-table__cell">Learner</td>
+      <td class="govuk-table__cell">Message</td>
     </tr>
   </tbody>
 </table>
-	  
-<h2 class="govuk-heading-m">Collection requirements</h2>
-<table class="govuk-table">
-  <tbody class="govuk-table__body">
-    <tr class="govuk-table__row">
-      <td class="govuk-table__cell">Collected for all learner</td>
-	</tr>
-  </tbody>
-</table>
-
-	  
+	
+		<h2 class="govuk-heading-m">Collection requirements</h2>
+		<p>Collected for all learners.</p>
+	
+	
 <table class="govuk-table">
   <!--<caption class="govuk-table__caption">Learner employment status: entity</caption>-->
   <tbody class="govuk-table__body">
 	<tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row"><strong>XML Elements</strong></th>
+      <th class="govuk-table__header" scope="row"><strong>XML elements</strong></th>
 	  <td class="govuk-table__cell"><strong>Schema mandation</strong></td>
     </tr>
 	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row">LearnAimRef</th>
-	  <td class="govuk-table__cell">Y </td>
-    </tr>
-	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row">AimType</th>
+	  <th class="govuk-table__header" scope="row">LearnRefNumber</th>
 	  <td class="govuk-table__cell">Y</td>
     </tr>
 	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row">AimSeqNumber </th>
-	  <td class="govuk-table__cell">Y </td>
-    </tr>
-	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row">LearnStartDate </th>
-	  <td class="govuk-table__cell">Y</td>
-    </tr>
-	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row">OrigLearnStartDate  </th>
+	  <th class="govuk-table__header" scope="row">PrevLearnRefNumber</th>
 	  <td class="govuk-table__cell">N</td>
     </tr>
 	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row">LearnPlanEndDate  </th>
-	  <td class="govuk-table__cell">Y</td>
-    </tr>
-	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row">FundModel   </th>
-	  <td class="govuk-table__cell">Y</td>
-    </tr>
-	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row">ProgType</th>
+	  <th class="govuk-table__header" scope="row">PrevUKPRN </th>
 	  <td class="govuk-table__cell">N</td>
     </tr>
 	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row">FworkCode</th>
+	  <th class="govuk-table__header" scope="row">PMUKPRN </th>
 	  <td class="govuk-table__cell">N</td>
     </tr>
 	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row">PwayCode</th>
+	  <th class="govuk-table__header" scope="row">CampId </th>
 	  <td class="govuk-table__cell">N</td>
     </tr>
 	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row">StdCode</th>
+	  <th class="govuk-table__header" scope="row">ULN </th>
 	  <td class="govuk-table__cell">N</td>
     </tr>
 	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row">PartnerUKPRN</th>
+	  <th class="govuk-table__header" scope="row">FamilyName  </th>
 	  <td class="govuk-table__cell">N</td>
     </tr>
 	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row">DelLocPostCode</th>
-	  <td class="govuk-table__cell">Y</td>
-    </tr>
-	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row">LSDPostCode</th>
+	  <th class="govuk-table__header" scope="row">GivenNames </th>
 	  <td class="govuk-table__cell">N</td>
     </tr>
 	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row">AddHours </th>
+	  <th class="govuk-table__header" scope="row">DateOfBirth </th>
 	  <td class="govuk-table__cell">N</td>
     </tr>
 	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row">PriorLearnFundAdj </th>
+	  <th class="govuk-table__header" scope="row">Ethnicity </th>
 	  <td class="govuk-table__cell">N</td>
     </tr>
 	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row">OtherFundAdj</th>
+	  <th class="govuk-table__header" scope="row">Sex </th>
 	  <td class="govuk-table__cell">N</td>
     </tr>
 	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row">ConRefNumber</th>
+	  <th class="govuk-table__header" scope="row">LLDDHealthProb  </th>
 	  <td class="govuk-table__cell">N</td>
     </tr>
 	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row">EPAOrgID</th>
+	  <th class="govuk-table__header" scope="row">NINumber </th>
 	  <td class="govuk-table__cell">N</td>
     </tr>
 	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row">EmpOutcome</th>
+	  <th class="govuk-table__header" scope="row">PriorAttain  </th>
 	  <td class="govuk-table__cell">N</td>
     </tr>
-	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row">CompStatus</th>
-	  <td class="govuk-table__cell">Y</td>
-    </tr>
-	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row">LearnActEndDate </th>
-	  <td class="govuk-table__cell">N</td>
-    </tr>
-	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row">WithdrawReason</th>
-	  <td class="govuk-table__cell">N</td>
-    </tr>
-	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row">Outcome</th>
-	  <td class="govuk-table__cell">N</td>
-    </tr>
-	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row">AchDate</th>
-	  <td class="govuk-table__cell">N</td>
-    </tr>
-	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row">OutGrade</th>
-	  <td class="govuk-table__cell">N</td>
-    </tr>
-	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row">SWSupAimId</th>
-	  <td class="govuk-table__cell">N</td>
-    </tr>
-
+	
   </tbody>
-</table>
-		 
-
+</table> 
+	
+	
 <table class="govuk-table">
   <!--<caption class="govuk-table__caption">Learner employment status: entity</caption>-->
   <tbody class="govuk-table__body">
@@ -272,168 +215,43 @@
 	  <td class="govuk-table__cell"><strong>Schema mandation</strong></td>
     </tr>
 	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row">LearningDeliveryFAM</th>
+	  <th class="govuk-table__header" scope="row"><a href="#41">ContactPreference </a></th>
 	  <td class="govuk-table__cell">N</td>
     </tr>
 	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row">LearningDeliveryWorkPlacement</th>
+	  <th class="govuk-table__header" scope="row"><a href="#42">LLDDandHealthProblem  </a></th>
 	  <td class="govuk-table__cell">N</td>
     </tr>
 	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row">AppFinRecord</th>
+	  <th class="govuk-table__header" scope="row"><a href="#43">LearnerFAM  </a></th>
 	  <td class="govuk-table__cell">N</td>
     </tr>
 	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row">ProviderSpecDeliveryMonitoring</th>
+	  <th class="govuk-table__header" scope="row"><a href="#44">ProviderSpecLearnerMonitoring </a></th>
 	  <td class="govuk-table__cell">N</td>
     </tr>
 	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row">LearningDeliveryHE</th>
+	  <th class="govuk-table__header" scope="row"><a href="#45">LearnerEmploymentStatus  </a></th>
 	  <td class="govuk-table__cell">N</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="#46">LearnerHE  </a></th>
+	  <td class="govuk-table__cell">N</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="#47">LearningDelivery  </a></th>
+	  <td class="govuk-table__cell">Y</td>
     </tr>
   </tbody>
 </table> 
-		 
-<!--		 
-<table class="govuk-table">
-  <caption class="govuk-table__caption">Learner employment status: entity</caption>
-  <tbody class="govuk-table__body">
-	<tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row"><strong>Fields</strong></th>
-	  <td class="govuk-table__cell"><strong>XML Element Name</strong></td>
-    </tr>
-	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#4">Learning Delivery Entity Definition</a></th>
-	  <td class="govuk-table__cell">LearningDelivery </td>
-    </tr>
-	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#4">Learning Aim Reference </a></th>
-	  <td class="govuk-table__cell">LearnAimRef</td>
-    </tr>
-	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#4">Aim type</a></th>
-	  <td class="govuk-table__cell">AimType</td>
-    </tr>
-	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#4">Aim sequence number</a></th>
-	  <td class="govuk-table__cell">AimSeqNumber </td>
-    </tr>
-	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#4">Learning start date</a></th>
-	  <td class="govuk-table__cell">LearnStartDate</td>
-    </tr>
-	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#4">Original Learning Start Date </a></th>
-	  <td class="govuk-table__cell">OrigLearnStartDate </td>
-    </tr>
-	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#4">Learning planned end date  </a></th>
-	  <td class="govuk-table__cell">LearnPlanEndDate </td>
-    </tr>
-	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#4">Funding model </a></th>
-	  <td class="govuk-table__cell">FundModel </td>
-    </tr>
-	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#4">Programme type  </a></th>
-	  <td class="govuk-table__cell">ProgType  </td>
-    </tr>
-	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#4">Framework code </a></th>
-	  <td class="govuk-table__cell">FworkCode</td>
-    </tr>
-	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#4">Apprenticeship Pathway </a></th>
-	  <td class="govuk-table__cell">PwayCode</td>
-    </tr>
-	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#4">Apprenticeship standard code  </a></th>
-	  <td class="govuk-table__cell">StdCode </td>
-    </tr>
-	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#4">Subcontracted or partnership UKPRN  </a></th>
-	  <td class="govuk-table__cell">PartnerUKPRN </td>
-    </tr>
-	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#4">Delivery Location Postcode  </a></th>
-	  <td class="govuk-table__cell">DelLocPostCode</td>
-    </tr>
-	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="/sprint-2/entities-speficiation-definitions/learning-delivery/learning-start-date-postcode.html">Learning Start Date Postcode   </a></th>
-	  <td class="govuk-table__cell">LSDPostcode&nbsp;&nbsp;&nbsp;<strong class="govuk-tag">VERSION 1</strong></td>
-    </tr>
-	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#4">Additional Delivery Hours </a></th>
-	  <td class="govuk-table__cell">AddHours </td>
-    </tr>
-	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#4">Funding adjustment for prior learning  </a></th>
-	  <td class="govuk-table__cell">PriorLearnFundAdj  </td>
-    </tr>
-	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#4">Other Funding Adjustment</a></th>
-	  <td class="govuk-table__cell">OtherFundAdj</td>
-    </tr>
-	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#4">Contract Reference Number  	</a></th>
-	  <td class="govuk-table__cell">ConRefNumber </td>
-    </tr>
-	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#4">End point assessment organisation </a></th>
-	  <td class="govuk-table__cell">EPAOrgID</td>
-    </tr>
-	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#4">Employment Outcome </a></th>
-	  <td class="govuk-table__cell">EmpOutcome </td>
-    </tr>
-	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#4">Completion status </a></th>
-	  <td class="govuk-table__cell">CompStatus </td>
-    </tr>
-	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#4">Learning Actual End Date </a></th>
-	  <td class="govuk-table__cell">LearnActEndDate </td>
-    </tr>
-	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#4">Withdrawal Reason   </a></th>
-	  <td class="govuk-table__cell">WithdrawReason</td>
-    </tr>
-	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#4">Outcome </a></th>
-	  <td class="govuk-table__cell">Outcome </td>
-    </tr>
-	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#4">Achievement date </a></th>
-	  <td class="govuk-table__cell">AchDate</td>
-    </tr>
-	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#4">Outcome Grade</a></th>
-	  <td class="govuk-table__cell">OutGrade</td>
-    </tr>
-	<tr class="govuk-table__row">
-	  <th class="govuk-table__header" scope="row"><a href="#4">Software Supplier Aim Identifier </a></th>
-	  <td class="govuk-table__cell">SWSupAimId</td>
-    </tr>  
-  </tbody>
-</table>
--->
-	  
-		 
-		<h2 class="govuk-heading-m">Notes and guidance</h2>
-		<ul class="list list-bullet">
-					  <li>All fields must be returned in the order displayed in the XML file</li>
-					  <li>Refer to individual field pages for collection details of when data is required</li>
 
-					</ul>
-		
-	
-		<h2 class="govuk-heading-m">Related</h2>
-		<p>Refer to the <a href="/sprint-2-1/provider-support-manual.html" alt="Provider Support Manual">Provider Support Manual</a> for guidance about updating employment status records and detailed examples for completing this data</p>
- 
+	  
 </div>
 	  
+<div class="print-page" style="margin-top:90px;">
+<a onclick="window.print();return false;" href="#">Print this page</a>
+</div>
 
-	  
 </div>
 
 <div class="column-one-third">

@@ -1,9 +1,8 @@
 {% extends "sprint-2-1/layout.html" %}
 
 {% block pageTitle %}
-  Learning start date postcode
+  Entities, definitions and fields 
 {% endblock %}
-
 
 {% block beforeContent %}
   {% from "breadcrumbs/macro.njk" import govukBreadcrumbs %}
@@ -14,56 +13,47 @@
       text: "Home",
       href: "#"
     },
-	{
+    {
       text: "ILR specification 2019 to 2020",
       href: '/sprint-2-1/ilr-specification-2019-to-2020'
     },
     {
       text: "Specification of the individualised learner record for 2019 to 2020",
       href: '/sprint-2-1/specification-of-the-Individualised-learner-record-for-2019-to-2020'
-    },	
-	{
-      text: "Entity definitions and fields",
-      href: '/sprint-2-1/entities-speficiation-definitions/technical-specification-entity-definitions-and-fields'
     }	
 	
   ]
 }) }}
 
-<a class="govuk-back-link" href="/sprint-2-1/entities-speficiation-definitions/technical-specification-entity-definitions-and-fields.html">Back</a> 
+<a class="govuk-back-link" href="/sprint-2-1/specification-of-the-Individualised-learner-record-for-2019-to-2020.html">Back</a> 
 
 {% endblock %}
 
 {% block content %}
+<div id="wrapper">
+    <main role="main" class="hmrc-internal-manuals-frontend-content outer-block">
+      <div id="manuals-frontend" class="manuals-frontend-body inner-block">
 
-  <main role="main" id="content" class="answer" lang="en">
-      
-
+		  
 <div class="grid-row">
 
   <div class="column-two-thirds">
     <div class="page-header">
       <p class="page-header__context">ILR Spec</p>
       <h1 class="page-header__title">
-        Learning start date postcode: field
-      </h1>
-    </div>
-	<div class="summary">
-	<p class="summary"><a href="/sprint-2-1/entities-speficiation-definitions/learning-delivery.html">Part of the learning delivery entity</a></p>
-</div>
-  </div>
-
+        Entities, definitions and fields 
+      </h1>	
+	</div>
+	</div>	
+	
   <div class="column-third">
-
     <div class="community-contact">
       <p>
         <a class="feedback" href="#">Give feedback about this page</a>
       </p>
     </div>
   </div>
-</div>
-	  
-<div class="grid-row">
+
   <div class="column-two-thirds">
 
     <div class="metadata">
@@ -83,125 +73,174 @@
     </div>
 
   </div>
+		
 	
-  <div class="column-two-thirds">
+	
+
+	
+<div class="column-two-thirds">
     <div class="page-header">	
-	  <h2 class="govuk-heading-m">Overview</h2>
-	  <p class="summary">This field is returned at the start of the learning aim and will continue for the duration of the aim. For example if the learner is in a devolved area at the start of the learning aim and then moves to outside of a devolved area, this postcode field will not be updated and the funding arrangement will remain in place by the devolved area for the duration of the aim. </p>
+	  <h2 class="heading-medium">Overview</h2>
+	  <p class="summary">Entities covered by the ILR </p>
     </div>
   </div>
+	
 </div>
+		  
+
+	
+	  
 
 <div class="grid-row responsive-bottom-margin">
   <div class="column-two-thirds">
-
 	  
-<div class="gem-c-govspeak govuk-govspeak direction-ltr disable-youtube">
-    
+	<blockquote class="noquotes">
+	<p><strong class="govuk-tag">VERSION 1</strong>&nbsp;&nbsp;&nbsp;Version 1 changes: Updates published January 2019</p>
+	<p>What's changed?</p>
+	<p>Learner destination and progression: <strong>Amendment to Notes section for 2019 to 2020</strong></p>
 
-<h2 class="govuk-heading-m">Definition</h2>
-<p>The residency postcode of the learner for the purposes of funding.</p>
-	
-<h2 class="govuk-heading-m">Reason required</h2>
-<p>To determine whether learners are in a devolved or non-devolved area.</p>
-	
-<h2 class="govuk-heading-m">Schema definitions</h2>	  
-<table class="govuk-table">
+	</blockquote>
+	  
+	  
+	  <div>
+	    <h2 class="govuk-heading-m">Learning provider entity</h2>
+	  </div>
+		 
+	    <ol class="section-list" style="margin:0px;">
+		<li>
+			<a class="" href="#1">
+				  <span class="subsection-title-text">Learning provider</span>
+				  <span class="subsection-summary"><p>This entity collects data about the provider.</p></span>
+			</a>        
+		</li>
+	  	</ol>
+	  
+	  <div style="margin-top:30px;">
+        <h2 class="govuk-heading-m">Learner entity and child entities</h2> 
+	  </div> 
+
+		<ol class="section-list" style="margin:0px;"> 
+		      <li>
+				  <a class="" href="/sprint-2-1/entities-definitions-and-fields/learner.html" alt="Learner">
+					  <span class="subsection-title-text">Learner</span>
+					  <span class="subsection-summary"><p>This entity collects attributes that relate to an individual learner such as their name and date of birth.</p></span>
+				  </a>         
+			  </li>
+			  <li>
+				  <a class="" href="#2">
+					  <span class="subsection-title-text">Learner contact preference</span>
+					  <span class="subsection-summary"><p>This entity collects any restrictions on the use of the learner's contact details and any restrictions on how a learner wishes to be contacted.</p></span>
+				  </a>          
+			  </li>
+		      <li>
+				  <a class="" href="#3">
+					  <span class="subsection-title-text">LLDD and health problem</span>
+					  <span class="subsection-summary"><p>This entity collect details of the nature of the learner's disability, learning difficulty and/or health problem.</p></span>
+				  </a>          
+			  </li>
+			  <li>
+				  <a class="" href="#4">
+					  <span class="subsection-title-text">Learner funding and monitoring (FAM)</span>
+					  <span class="subsection-summary"><p>This entity collects additional attributes of the learner that will inform either the funding of the learner or additional monitoring.</p></span>
+				  </a>          
+			  </li>
+			  <li>
+				  <a class="" href="#5">
+					  <span class="subsection-title-text">Learner provider specified monitoring</span>
+					  <span class="subsection-summary"><p>This entity collects data specified by the provider for their own use.</p></span>
+				  </a>          
+		      </li>
+			  <li>
+				  <a class="" href="/sprint-2-1/entities-definitions-and-fields/learner-employment-status.html">
+					  <span class="subsection-title-text">Learner employment status</span>
+					  <span class="subsection-summary"><p>This entity collects the details of a learner's employment status before they start their learning (prior to enrolment) and any changes during their programme of learning.</p></span>
+				  </a>          
+			  </li>
+			  <li>
+				  <a class="" href="#7">
+					  <span class="subsection-title-text">Learner HE</span>
+					  <span class="subsection-summary"><p>This entity collects data that is requested by the Office for Students (OfS) and the Higher Education Statistics Agency (HESA).</p></span>
+				  </a>         
+			  </li>
+			  <li>
+				  <a class="" href="#8">
+					  <span class="subsection-title-text">Learner HE financial support</span>
+					  <span class="subsection-summary"><p>This entity collects data about the financial support received by students.</p></span>
+				  </a>         
+			  </li>
+		</ol> 			
+		
+	    <div style="margin-top:30px;">
+		<h2 class="govuk-heading-m">Learning delivery entity and child entities</h2>
+	    </div>
+		
+	    <ol class="section-list" style="margin:0px;">			
+			  
+			  <li>
+				  <a class="" href="/sprint-2-1/entities-definitions-and-fields/learning-delivery.html" alt="Learning delivery">
+					  <span class="subsection-title-text">Learning delivery</span>
+					  <span class="subsection-summary"><p>This entity collects details of the learning aims that a learner is studying.
+	A learning delivery record should be returned for each learning aim that a learner is studying.</p></span>
+				  </a>          
+			  </li> 
+			  <li>
+				  <a class="" href="#10">
+					  <span class="subsection-title-text">Learning delivery funding and monitoring (FAM)</span>
+					  <span class="subsection-summary"><p>This entity collects additional attributes of the Learning Delivery that will either inform funding of the learner or additional monitoring.</p></span>
+				  </a>          
+			  </li>
+			  <li>
+				  <a class="" href="#11">
+					  <span class="subsection-title-text">Learning delivery work placement</span>
+					  <span class="subsection-summary"><p>This entity collects data about a work placement that is being undertaken by a learner as part of a traineeship or 16-19 study programme.</p></span>
+				  </a>          
+			  </li>
+			  <li>
+				  <a class="" href="#12">
+					  <span class="subsection-title-text">Apprenticeship financial record</span>
+					  <span class="subsection-summary"><p>This entity collects data about the cost of an apprenticeship and financial contributions received from an employer for an apprenticeship.</p></span>
+				  </a>          
+			  </li>
+			  <li>
+				  <a class="" href="#13">
+					  <span class="subsection-title-text">Apprenticeship financial type – AfinType</span>
+					  <span class="subsection-summary"><p>The type of financial details being recorded.</p></span>
+				  </a>          
+			  </li>
+			
+			  <li>
+				  <a class="" href="#14">
+					  <span class="subsection-title-text">Provider spec delivery monitoring</span>
+					  <span class="subsection-summary"><p>This entity collects data specified by the provider for their own use.</p></span>
+				  </a>          
+			  </li>
+			  <li>
+				  <a class="" href="#15">
+					  <span class="subsection-title-text">Learning delivery HE</span>
+					  <span class="subsection-summary"><p>Data requested by OfS and HESA.</p></span>
+				  </a>          
+			  </li>
+		</ol> 			
+		
+	    <div style="margin-top:30px;">
+		<h2 class="govuk-heading-m">Learner destination and progression entity</h2>
+	  	</div>
+		
+	    <ol class="section-list" style="margin:0px;">				
+			
+			 <li>
+				  <a class="" href="/sprint-2-1/entities-definitions-and-fields/learner-destination-and-progression.html">
+					  <span class="subsection-title-text">Learner destination and progression&nbsp;&nbsp;&nbsp;<strong class="govuk-tag">VERSION 1</strong></span>
+					  <span class="subsection-summary"><p>This entity records destination and progression outcomes for a learner, such as gaining employment or going onto further study. These outcomes will be reported after a learner has completed a programme of learning.</p></span>
+				  </a>         
+			 </li>
+
+		</ol>  
+
+</div>
   
-  <tbody class="govuk-table__body">
-    <tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">XML Element Name</th>
-      <td class="govuk-table__cell">LSDPostcode</td>
-    </tr>
-    <tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">Field length</th>
-      <td class="govuk-table__cell">8</td>
-    </tr>
-    <tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">Data type</th>
-      <td class="govuk-table__cell">RestrictedString</td>
-    </tr>
-	<tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">Minimum occurrences</th>
-      <td class="govuk-table__cell">0</td>
-    </tr>
-    <tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">Maximum occurrences</th>
-      <td class="govuk-table__cell">1</td>
-    </tr>
-    <tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">Part of</th>
-      <td class="govuk-table__cell">Learning delivery</td>
-    </tr>
-  </tbody>
-</table>
-
-<h2 class="govuk-heading-m">Valid entries</h2>
-<table class="govuk-table">
-  <tbody class="govuk-table__body">
-    <tr class="govuk-table__row">
-      <td class="govuk-table__cell">A valid postcode that must be in upper case.</td>
-    </tr>
-  </tbody>
-</table>
-	
-</div>
-	
-<table class="govuk-table">
-  <caption class="govuk-table__caption">Pattern</caption>
-  <tbody class="govuk-table__body">
-    <tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="row">Not applicable to this field</th>
-      <td class="govuk-table__cell"></td>
-    </tr>
-  </tbody>
-</table>
-	  
-<h2 class="govuk-heading-m">Collection requirements</h2>
-<table class="govuk-table">
-  <tbody class="govuk-table__body">
-    <tr class="govuk-table__row">
-      <td class="govuk-table__cell">Adult skills (FundModel 35)</td>
-	</tr>
-	<tr class="govuk-table__row">  
-	  <td class="govuk-table__cell">Community Learning (FundModel 10)</td>
-	</tr>
-	<tr class="govuk-table__row">  
-	  <td class="govuk-table__cell">Local authority funded Community Learning (FundModel 99) </td>
-	</tr>
-	<tr class="govuk-table__row">  
-	  <td class="govuk-table__cell">Source of funding (FundModel 108)</td>
-    </tr>
-  </tbody>
-</table>
-	  
-<h2 class="govuk-heading-m">Notes and guidance about this field</h2>
-<p>This field to be returned for aims that start on or after 1 August 2019 (this does not include restarts).</p>
-	
-<p>This postcode is completed for Adult skills (Funding Model 35) excluding traineeships, Community Learning (Funding Model 10), and Local authority funded Community Learning (Funding model 99 and Source of funding 108).</p>
-	
-<p>This field is returned at the start of the learning aim and will continue for the duration of the aim. For example if the learner is in a devolved area at the start of the learning aim and then moves to outside of a devolved area, this postcode field will not be updated and the funding arrangement will remain in place by the devolved area for the duration of the aim.
-</p>
-	  
-<p>Please refer to the Adult Education Budget (AEB) funding rule for the definition of residency.
-</p>
-	  
-<p>If the learner's postcode is unknown, providers must return a postcode of ZZ99 9ZZ
-</p>
-	  
-<h2 class="govuk-heading-m">Related</h2>
-<p class="summary">Full valid postcodes can be located at the <a class="summary" href="https://www.royalmail.com/find-a-postcode" alt-="Royal Mail Postcode finder website" target="new">Royal Mail Postcode finder website</a>.</p>
-	  
-<div class="print-page" style="margin-top:90px;">
-<a onclick="window.print();return false;" href="#">Print this page</a>
-</div>
-
-</div>
 
 
-	
-
-  
 <div class="column-one-third">
   
 <div class="gem-c-contextual-sidebar">
@@ -222,8 +261,8 @@
   <ul class="gem-c-related-navigation__link-list" data-module="track-click">
 
 
-        <li class="gem-c-related-navigation__link"><span style="color: #6f777b;">Collection</span></br><a class="gem-c-related-navigation__section-link gem-c-related-navigation__section-link--sidebar  gem-c-related-navigation__section-link--other" href="https://www.royalmail.com/find-a-postcode" alt-="Royal Mail Postcode finder website" target="new">Royal Mail Postcode finder website</a></li>	  
-	  
+        <li class="gem-c-related-navigation__link"><span style="color: #6f777b;">Collection</span></br><a class="gem-c-related-navigation__section-link gem-c-related-navigation__section-link--sidebar  gem-c-related-navigation__section-link--other" href="#">TBC</a></li>
+
   </ul>
 </nav>
 
@@ -233,20 +272,13 @@
 </div>
 
 </div>
-
-
-  
-
-
-</div>
-
-
-  
-
-
-
-    </main>
-
+        
+      </div>
+		  
+		</div>
+    
+		  </main>
+    
 <div class="gem-c-feedback gem-c-feedback--top-margin" data-module="feedback">
   <div class="gem-c-feedback__prompt gem-c-feedback__js-show js-prompt" tabindex="-1">
     <div class="gem-c-feedback__js-prompt-questions js-prompt-questions">
@@ -357,5 +389,7 @@
   </form>
 
 </div>
+
+  
 
 {% endblock %}
