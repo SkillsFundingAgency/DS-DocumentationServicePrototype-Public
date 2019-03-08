@@ -1,0 +1,406 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Withdrawal Reason
+{% endblock %}
+
+
+{% block beforeContent %}
+  {% from "breadcrumbs/macro.njk" import govukBreadcrumbs %}
+
+{{ govukBreadcrumbs({
+  items: [
+    {
+      text: "Home",
+      href: "#"
+    },
+    {
+      text: "ILR & PSM landing page",
+      href: '/ilr-psm-home'
+    },
+    {
+      text: "Individualised Learner Record Specification",
+      href: '/ilr-specification-landing-page'
+    },
+	{
+      text: "Funding Streams",
+      href: "/funding-streams/funding-streams"
+    },
+	{
+      text: "Community Learning",
+      href: "/funding-streams/community-learning-funding-models.html"
+    }
+  ]
+}) }}
+
+
+  <a class="govuk-back-link" href="/funding-streams/community-learning-funding-models.html">Back</a>  
+
+{% endblock %}
+
+{% block content %}
+
+  <main role="main" id="content" class="answer" lang="en">
+      
+
+<div class="grid-row">
+
+  <div class="column-two-thirds">
+    <div class="page-header">
+      <p class="page-header__context">ILR Spec</p>
+      <h1 class="page-header__title">
+        Withdrawal reason: field
+      </h1>
+    </div>
+  </div>
+
+  <div class="column-third">
+
+    <div class="community-contact">
+      <p>
+        <a class="feedback" href="/contact/govuk">Give feedback about this page</a>
+      </p>
+    </div>
+  </div>
+</div>
+	  
+<div class="grid-row">
+  <div class="column-two-thirds">
+
+    <div class="metadata">
+      <dl>
+          <dt>Published by:</dt>
+            <dd>
+              <a href="#">Education and Skills Funding Agency</a>
+            </dd>
+		    <dt>Published:</dt>
+		    <dd>14 February 2018</dd>
+			<dt>Last updated:</dt>
+			<dd>
+			  26 June 2018 — <a href="#history">see all updates</a>
+			</dd>	
+		
+      </dl>
+    </div>
+
+  </div>
+</div>
+
+<div class="grid-row responsive-bottom-margin">
+  <div class="column-two-thirds">
+    
+<div class="gem-c-govspeak govuk-govspeak direction-ltr disable-youtube">
+    
+      
+<div class="summary">
+	<p class="summary"><a href="#">Part of the Learning Delivery field listings</a></p>
+</div>
+	
+<h2 class="govuk-heading-m">About the field</h2>
+<p>For use in performance management and success rates.</p>
+	
+<h2 class="govuk-heading-m">How it’s used</h2>
+<p>The reason why the learner has withdrawn from the learning aim</p>
+	
+<h2 class="govuk-heading-m">When to use</h2>
+<p>When notified to do so.</p>
+
+      
+<h2 class="govuk-heading-m">Schema definitions</h2>
+<table class="govuk-table">
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">XML Element Name</th>
+      <td class="govuk-table__cell">WithdrawReason</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">Field length</th>
+      <td class="govuk-table__cell">2</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">Data type</th>
+      <td class="govuk-table__cell">xs:int</td>
+    </tr>
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">Minimum occurrences</th>
+      <td class="govuk-table__cell">0</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">Maximum occurrences</th>
+      <td class="govuk-table__cell">1</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">Part of</th>
+      <td class="govuk-table__cell">LearningDeliveryCollection</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 class="govuk-heading-m">Collection requirements</h2>
+<table class="govuk-table">
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">Collected for all aims.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 class="govuk-heading-m">Valid entries</h2>
+<table class="govuk-table">
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">Must be in a valid look up. This is a 8-digit identifier using alphanumeric characters.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 class="govuk-heading-m">Attribute Codes</h2>
+<table class="govuk-table">
+  <tbody class="govuk-table__body">
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><strong>Code</strong></th>
+      <td class="govuk-table__cell"><strong>Definition</strong></td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">2</th>
+      <td class="govuk-table__cell">Learner has transferred to another provider</td>
+    </tr>
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">3</th>
+      <td class="govuk-table__cell">Learner injury / illness</td>
+    </tr>
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">7</th>
+      <td class="govuk-table__cell">Learner has transferred between providers due to intervention by or with the written agreement of the ESFA</td>
+    </tr>
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">28</th>
+      <td class="govuk-table__cell">OLASS learner withdrawn due to circumstances outside the providers' control</td>
+    </tr>
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">29</th>
+      <td class="govuk-table__cell">Learner has been made redundant</td>
+    </tr>
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">40</th>
+      <td class="govuk-table__cell">Learner has transferred to a new learning aim with the same provider</td>
+    </tr>
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">41</th>
+      <td class="govuk-table__cell">Learner has transferred to another provider to undertake learning that meets a specific government strategy</td>
+    </tr>
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">42</th>
+      <td class="govuk-table__cell">Academic failure/left in bad standing/not permitted to progress - HE learning aims only</td>
+    </tr>
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">43</th>
+      <td class="govuk-table__cell">Financial reasons</td>
+    </tr>
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">44</th>
+      <td class="govuk-table__cell">Other personal reasons</td>
+    </tr>
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">45</th>
+      <td class="govuk-table__cell">Written off after lapse of time - HE learning aims only</td>
+    </tr>
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">46</th>
+      <td class="govuk-table__cell">Exclusion</td>
+    </tr>
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">47</th>
+      <td class="govuk-table__cell"><strong class="govuk-tag">VERSION 1</strong>&nbsp;&nbsp;&nbsp;Learner has transferred to another provider due to merger</td>
+    </tr>
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">97</th>
+      <td class="govuk-table__cell">Other</td>
+    </tr>
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">98</th>
+      <td class="govuk-table__cell">Reason not known</td>
+    </tr>
+	 
+  </tbody>
+</table>
+	
+</div>
+
+<blockquote class="noquotes">
+	<p><strong class="govuk-tag">VERSION 1</strong>&nbsp;&nbsp;&nbsp;Version 1 changes: New content Published February 2018</p>
+	<h3 class="govuk-heading-m">What's changed?</h3>
+	<p>New Attribute code: “47 - Learner has transferred to another provider due to merger”</p>
+	<p>Added to Learning Delivery entity within the Withdrawal Reason field for 2018 to 2019.</p>
+	</blockquote>
+	  
+<div class="print-page" style="margin-top:90px;">
+<a onclick="window.print();return false;" href="#">Print this page</a>
+</div>
+
+</div>
+	
+
+
+  
+<div class="column-one-third">
+  
+<div class="gem-c-contextual-sidebar">
+
+    
+  <div class="gem-c-related-navigation">
+
+      <h2 id="related-nav-related_items-9547b6f6" class="gem-c-related-navigation__main-heading" data-track-count="sidebarRelatedItemSection">
+        Related content
+      </h2>
+
+
+
+
+      <nav role="navigation" class="gem-c-related-navigation__nav-section" aria-labelledby="related-nav-related_items-9547b6f6" data-module="gem-toggle">
+
+
+  <ul class="gem-c-related-navigation__link-list" data-module="track-click">
+
+
+        <li class="gem-c-related-navigation__link"><a class="gem-c-related-navigation__section-link gem-c-related-navigation__section-link--sidebar  gem-c-related-navigation__section-link--other" href="#">Funding Streams</a></li>
+	  
+        <li class="gem-c-related-navigation__link"><a class="gem-c-related-navigation__section-link gem-c-related-navigation__section-link--sidebar  gem-c-related-navigation__section-link--other"  href="/change-vehicle-details-registration-certificate">Entity Definitions</a></li>
+	  
+        <li class="gem-c-related-navigation__link"><a class="gem-c-related-navigation__section-link gem-c-related-navigation__section-link--sidebar  gem-c-related-navigation__section-link--other"  href="#">Attribute Codes</a></li>
+
+  </ul>
+</nav>
+
+  </div>
+
+
+</div>
+
+</div>
+
+
+  
+
+
+</div>
+
+
+  
+
+
+
+    </main>
+
+<div class="gem-c-feedback gem-c-feedback--top-margin" data-module="feedback">
+  <div class="gem-c-feedback__prompt gem-c-feedback__js-show js-prompt" tabindex="-1">
+    <div class="gem-c-feedback__js-prompt-questions js-prompt-questions">
+      <h2 class="gem-c-feedback__prompt-question">Is this page useful?</h2>
+
+      <a class="gem-c-feedback__prompt-link" data-track-category="yesNoFeedbackForm" data-track-action="ffMaybeClick" aria-expanded="false" role="button" style="display: none;" hidden="hidden" aria-hidden="true" href="/contact/govuk">
+        Maybe
+</a>
+      <a class="gem-c-feedback__prompt-link gem-c-feedback__prompt-link--useful js-page-is-useful" data-track-category="yesNoFeedbackForm" data-track-action="ffYesClick" aria-expanded="false" role="button" href="/contact/govuk">
+        Yes <span class="visually-hidden">this page is useful</span>
+</a>
+      <a class="gem-c-feedback__prompt-link js-toggle-form js-page-is-not-useful" data-track-category="yesNoFeedbackForm" data-track-action="ffNoClick" aria-controls="page-is-not-useful" aria-expanded="false" role="button" href="/contact/govuk">
+        No <span class="visually-hidden">this page is not useful</span>
+</a>
+      <a class="gem-c-feedback__prompt-link gem-c-feedback__prompt-link--wrong js-toggle-form js-something-is-wrong" data-track-category="Onsite Feedback" data-track-action="GOV.UK Open Form" aria-controls="something-is-wrong" aria-expanded="false" role="button" href="/contact/govuk">
+        Is there anything wrong with this page?
+</a>    </div>
+
+    <div class="gem-c-feedback__prompt-success js-prompt-success js-hidden" tabindex="-1">
+      Thank you for your feedback
+    </div>
+  </div>
+
+  <form action="/contact/govuk/problem_reports" id="something-is-wrong" class="gem-c-feedback__form js-feedback-form js-hidden" data-track-category="Onsite Feedback" data-track-action="GOV.UK Send Form" method="post" aria-hidden="true">
+    <a href="#" class="gem-c-feedback__close gem-c-feedback__js-show js-close-form" data-track-category="Onsite Feedback" data-track-action="GOV.UK Close Form" aria-controls="something-is-wrong" aria-expanded="true" role="button">Close</a>
+
+    <div class="gem-c-feedback__grid-row">
+      <div class="gem-c-feedback__column-two-thirds">
+        <div class="gem-c-feedback__error-summary gem-c-feedback__js-show js-hidden js-errors" tabindex="-1"></div>
+
+        <input type="hidden" name="url" value="https://www.gov.uk/guidance/the-highway-code">
+        <input type="hidden" name="user_agent" value="Mozilla/5.0 (iPhone; CPU iPhone OS 12_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Mobile/15E148 Safari/604.1">
+
+        <h3 class="gem-c-feedback__form-heading">Help us improve GOV.UK</h3>
+        <p id="feedback_explanation" class="gem-c-feedback__form-paragraph">Don’t include personal or financial information like your National Insurance number or credit card details.</p>
+
+        
+<div class="govuk-form-group">
+    
+<label for="input-332765cc" class="gem-c-label govuk-label ">
+  What were you doing?
+</label>
+
+
+
+
+  <input name="what_doing" class="gem-c-input govuk-input" id="input-332765cc" type="text" aria-describedby="feedback_explanation">
+</div>
+
+        
+<div class="govuk-form-group">
+    
+<label for="input-84dbddd1" class="gem-c-label govuk-label ">
+  What went wrong?
+</label>
+
+
+
+
+  <input name="what_wrong" class="gem-c-input govuk-input" id="input-84dbddd1" type="text">
+</div>
+
+        
+  <button class="gem-c-button govuk-button" type="submit">Send</button>
+
+
+      </div>
+    </div>
+  <input type="hidden" name="javascript_enabled" value="true"><input type="hidden" name="referrer" value="https://www.gov.uk/browse/driving/highway-code-road-safety"><input type="hidden" name="javascript_enabled" value="true"><input type="hidden" name="referrer" value="http://localhost:3000/community-learning-funding-models"></form>
+
+  <form action="/contact/govuk/email-survey-signup" id="page-is-not-useful" class="gem-c-feedback__form gem-c-feedback__form--email gem-c-feedback__js-show js-feedback-form js-hidden" data-track-category="yesNoFeedbackForm" data-track-action="Send Form" method="post" aria-hidden="true">
+    <a href="#" class="gem-c-feedback__close js-close-form" data-track-category="yesNoFeedbackForm" data-track-action="ffFormClose" aria-controls="page-is-not-useful" aria-expanded="true" role="button">Close</a>
+
+    <div class="gem-c-feedback__grid-row">
+      <div class="gem-c-feedback__column-two-thirds">
+        <div class="gem-c-feedback__error-summary js-hidden js-errors" tabindex="-1"></div>
+
+        <input type="hidden" name="url" value="https://www.gov.uk/guidance/the-highway-code">
+        <input type="hidden" name="user_agent" value="Mozilla/5.0 (iPhone; CPU iPhone OS 12_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Mobile/15E148 Safari/604.1">
+
+        <input name="email_survey_signup[survey_id]" type="hidden" value="footer_satisfaction_survey">
+        <input name="email_survey_signup[survey_source]" type="hidden" value="https://www.gov.uk/guidance/the-highway-code">
+        <input name="email_survey_signup[ga_client_id]" type="hidden" value="1627485790.1515403243">
+
+        <h3 class="gem-c-feedback__form-heading">Help us improve GOV.UK</h3>
+        <p id="survey_explanation" class="gem-c-feedback__form-paragraph">To help us improve GOV.UK, we’d like to know more about your visit today. We’ll send you a link to a feedback form. It will take only 2 minutes to fill in. Don’t worry we won’t send you spam or share your email address with anyone.</p>
+
+        
+<div class="govuk-form-group">
+    
+<label for="input-3142ef64" class="gem-c-label govuk-label ">
+  Email address
+</label>
+
+
+
+
+  <input name="email_survey_signup[email_address]" class="gem-c-input govuk-input" id="input-3142ef64" type="email" aria-describedby="survey_explanation">
+</div>
+
+        
+  <button class="gem-c-button govuk-button" type="submit">Send me the survey</button>
+
+
+        <a href="https://www.smartsurvey.co.uk/s/gov-uk-banner/?c=/guidance/the-highway-code&amp;gcl=1627485790.1515403243" class="gem-c-feedback__email-link govuk-link" id="take-survey" target="_blank" rel="noopener noreferrer">Don’t have an email address?</a>
+      </div>
+    </div>
+  </form>
+
+</div>
+
+{% endblock %}

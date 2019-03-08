@@ -1,7 +1,7 @@
 {% extends "sprint-2-1/layout.html" %}
 
 {% block pageTitle %}
-  Field collection requirement tables 
+  Learner destination and progression: entity definition and fields
 {% endblock %}
 
 {% block beforeContent %}
@@ -13,19 +13,23 @@
       text: "Home",
       href: "#"
     },
-    {
+	{
       text: "ILR specification 2019 to 2020",
       href: '/sprint-2-1/ilr-specification-2019-to-2020'
     },
     {
       text: "Specification of the individualised learner record for 2019 to 2020",
       href: '/sprint-2-1/specification-of-the-Individualised-learner-record-for-2019-to-2020'
-    }
+    },	
+	{
+      text: "Entity definitions and fields",
+      href: '/sprint-2-1/entity-definitions-and-fields/technical-specification-entity-definitions-and-fields'
+    }	
 	
   ]
 }) }}
 
-<a class="govuk-back-link" href="/sprint-2-1/specification-of-the-Individualised-learner-record-for-2019-to-2020.html">Back</a> 
+<a class="govuk-back-link" href="/sprint-2-1/entity-definitions-and-fields/technical-specification-entity-definitions-and-fields.html">Back</a> 
 
 {% endblock %}
 
@@ -41,7 +45,7 @@
     <div class="page-header">
       <p class="page-header__context">ILR Spec</p>
       <h1 class="page-header__title">
-        Field collection requirement tables 
+        Learner destination and progression: entity 
       </h1>	
 	</div>
 	</div>	
@@ -78,17 +82,11 @@
 	
 
 	
-<div class="column-two-thirds">
+<!--<div class="column-two-thirds">
     <div class="page-header">	
-	  <h2 class="heading-medium">Overview</h2>
-	  <p class="summary">The tables in this section list the fields that are collected for the different funding models. Not all fields listed will need to be completed for all learners in all circumstances. 
-	  </p>
-	  <p>Refer to the <a href="/sprint-2-1/entity-definitions-and-fields/technical-specification-entity-definitions-and-fields.html">ILR specification entity and definitions</a> for the full details of the collection rules and requirements.</p>
-	  <p>In addition to the Learner and Learning Delivery fields listed for each funding model, HE data may be required.</p>
-	  <p>Some of the fields listed in the tables for each of the funding model are only required in certain circumstances.</p>
-	  
+	  <p class="summary">The destination of the learner when they have completed or withdrawn from the activities on their original learning agreement or plan. </p>
     </div>
-  </div>
+  </div>-->
 	
 </div>
 		  
@@ -97,58 +95,154 @@
 	  
 
 <div class="grid-row responsive-bottom-margin">
-  <div class="column-two-thirds">
-      <h2 class="heading-medium">You should send ILR data if you receive funding through one or more of the funding models</h2>
-
-		<ol class="section-list" style="margin:0px;">
-			  <li>
-			  <a class="" href="#">
-				  <span class="subsection-title-text">16-19 funded learning (excluding Apprenticeships)</span>
-	</a>          </li>
-			  <li>
-			  <a class="" href="#">
-				  <span class="subsection-title-text">Adult skills </span>
-	</a>          </li>
-			  <li>
-			  <a class="" href="#">
-				  <span class="subsection-title-text">Apprenticeships (from 1 May 2017)</span>
-	</a>          </li>
-			  <li>
-			  <a class="" href="/sprint-2-1/field-collection/community-learning-funding-models.html">
-				  <span class="subsection-title-text">Community learning</span>
-	</a>          </li>
-			  <li>
-			  <a class="" href="#">
-				  <span class="subsection-title-text">Advanced learner loans</span>
-	</a>          </li>
-			  <li>
-			  <a class="" href="#">
-				  <span class="subsection-title-text">Non-funded learning</span>
-	</a>          </li>
-			  <li>
-			  <a class="" href="#">
-				  <span class="subsection-title-text">Traineeship programmes</span>
-	</a>          </li>
-			  <li>
-			  <a class="" href="#">
-				  <span class="subsection-title-text">European social funding (ESF)</span>
-	</a>          </li> 
-
-			</ol>  
-
+  <div class="column-two-thirds"> 
+	  
+	<!--<blockquote class="noquotes">
+	<p><strong class="govuk-tag">VERSION 1</strong>&nbsp;&nbsp;&nbsp;Version 1 changes: Updates published January 2019</p>
+	<p>What's changed?</p>
+	<p>V1: <strong>amendment to Notes section for 2019 to 2020</strong></p>
+	</blockquote>-->
+	  
+<div class="gem-c-govspeak govuk-govspeak direction-ltr disable-youtube">
+	  
+		<h2 class="govuk-heading-m">Definition</h2>
+		<p>The destination of the learner when they have completed or withdrawn from the activities on their original learning agreement or plan.</p>
+		 
+		<h2 class="govuk-heading-m">Reason required</h2>
+		<ul class="list list-bullet">
+					  <li>To demonstrate how the FE sector is contributing to the future success of learners </li>
+					  <li>Minimum standards and publishing provider level outcomes for traineeships </li>
+					  <li>ESF funding </li> 
+					  <li>DfE completion and attainment measure</li>
+		</ul>
+	
+<h2 class="govuk-heading-m">Schema definitions</h2>
+<table class="govuk-table">
+  
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">XML Element Name</th>
+      <td class="govuk-table__cell">LearnerDestinationandProgression</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">Minimum occurrences</th>
+      <td class="govuk-table__cell">0</td>
+    </tr>
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">Maximum occurrences</th>
+      <td class="govuk-table__cell">Unbounded</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">Part of</th>
+      <td class="govuk-table__cell">Message</td>
+    </tr>
+  </tbody>
+</table>
+	
+		<h2 class="govuk-heading-m">Collection requirements</h2>
+		<ul class="list list-bullet">
+					  <li>16-19 excluding Apprenticeships (FundModel 25)</li>
+					  <li>ESF (FundModel 70)</li>
+					  <li>Other Adult (FundModel 81)</li> 
+					  <li>Adult Skills (FundModel 35)</li>
+					  <li>Non-levy funded apprenticeships (FundModel 36, ACT2)</li>
+		</ul>
 	
 
-
-
+<div class="definition-schema">
+<table class="govuk-table">
+  <!--<caption class="govuk-table__caption">Learner employment status: entity</caption>-->
+  <tbody class="govuk-table__body">
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><strong>XML elements</strong></th>
+	  <td class="govuk-table__cell"><strong>Schema mandation</strong></td>
+    </tr>
+	<tr class="govuk-table__row">
+		<th class="govuk-table__header" scope="row"><a href="#51">LearnRefNumber</a></th>
+	  <td class="govuk-table__cell">Y</td>
+    </tr>
+	<tr class="govuk-table__row">
+		<th class="govuk-table__header" scope="row"><a href="#52">ULN</a></th>
+	  <td class="govuk-table__cell">Y</td>
+    </tr>	
+  </tbody>
+</table> 
+</div>
+	
+	
+<table class="govuk-table">
+  <!--<caption class="govuk-table__caption">Learner employment status: entity</caption>-->
+  <tbody class="govuk-table__body">
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><strong>Child entities</strong></th>
+	  <td class="govuk-table__cell"><strong>Schema mandation</strong></td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="#41">DPOutcome</a></th>
+	  <td class="govuk-table__cell">Y</td>
+    </tr>
+  </tbody>
+</table> 
+	
+	
+<!--	  
+<table class="govuk-table">
+  <tbody class="govuk-table__body">
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><strong>Fields</strong></th>
+	  <td class="govuk-table__cell"><strong>XML Element Name</strong></td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="#4">Learner reference number</a></th>
+	  <td class="govuk-table__cell">LearnRefNumber</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="#5">Unique Learner  Number</a></th>
+	  <td class="govuk-table__cell">ULN</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="#6">DPOutcome Entity Definition</a></th>
+	  <td class="govuk-table__cell">DPOutcome Outcome Type</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="#7">OutType Outcome Code</a></th>
+	  <td class="govuk-table__cell">OutCode</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="#8">Outcome Start Date</a></th>
+	  <td class="govuk-table__cell">OutStartDate</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="#9">Outcome End Date</a></th>
+	  <td class="govuk-table__cell">OutEndDate</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="#10">Outcome Collection Date</a></th>
+	  <td class="govuk-table__cell">OutCollDate</td>
+    </tr>
+  </tbody>
+</table> 
+-->
 	
 
+		<h2 class="govuk-heading-m">Notes and guidance</h2>
+		<p>Collected for Non-levy funded apprenticeships that started on or after 1 August 2018 where the ACT record has remained non-levy. This data is not collected where a levy funded apprenticeship (ACT1) changes employer to become non-levy funded (ACT2).&nbsp;&nbsp;&nbsp;<strong class="govuk-tag">VERSION 1</strong></p>
+	
+		<p>Collected for learners when they have completed or withdrawn from all the activities on their original learning agreement or plan. </p>
+	    <p>Not required for apprenticeship standards funded through the trailblazer funding model (FundModel 81 and ProgType 25) </p>
+ 		
+		<ul class="list list-bullet">
+					  <li>This data is required both for learners who leave the provider and for learners who are remaining with the same provider to progress to further learning.</li>
+					  <li>Information about when to collect this data and examples of recording destination and progression data in different scenarios can be found in the Provider Support Manual.</li>
+		</ul>
+	  
 
-  
-
-
-
-  
-
+	  
+</div>
+	  
+<div class="print-page" style="margin-top:90px;">
+<a onclick="window.print();return false;" href="#">Print this page</a>
+</div>
 
 </div>
 

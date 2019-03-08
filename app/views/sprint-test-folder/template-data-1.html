@@ -1,0 +1,391 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Example of using variables in pages
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "includes/breadcrumb_examples.html" %}
+{% endblock %}
+
+{% block content %}
+<div id="wrapper">
+    <main role="main" class="hmrc-internal-manuals-frontend-content outer-block">
+      <div id="manuals-frontend" class="manuals-frontend-body inner-block">
+        
+
+
+
+
+<div class="gem-c-contextual-breadcrumbs">
+    <!-- Rendering step by step nav breadcrumbs because there's 1 step by step -->
+      <div class="gem-c-step-nav-header" data-module="track-click">
+    <span class="gem-c-step-nav-header__part-of">Part of</span>
+      <a href="/learn-to-drive-a-car" class="gem-c-step-nav-header__title" data-track-category="stepNavHeaderClicked" data-track-action="top" data-track-label="/learn-to-drive-a-car" data-track-dimension="Learn to drive a car: step by step" data-track-dimension-index="29" data-track-options="{&quot;dimension96&quot; : &quot;e01e924b-9c7c-4c71-8241-66a575c2f61f&quot; }">
+        Learn to drive a car: step by step
+      </a>
+  </div>
+
+</div>
+
+
+<header aria-labelledby="manual-title" class="">
+
+  <div class="primary">
+
+    <h1 id="manual-title">The Highway Code</h1>
+    <div class="gem-c-metadata gem-c-metadata--inverse" data-module="gem-toggle">
+  <dl data-module="track-click">
+      <dt class="gem-c-metadata__term">From:</dt>
+      <dd class="gem-c-metadata__definition">
+          <a href="https://www.gov.uk/government/organisations/department-for-transport">Department for Transport</a>
+
+      </dd>
+      <dt class="gem-c-metadata__term">Published:</dt>
+      <dd class="gem-c-metadata__definition"><time datetime="2015-10-01"> 1 October 2015</time></dd>
+          <dt class="gem-c-metadata__term">Updated:</dt>
+          <dd class="gem-c-metadata__definition">
+              <time datetime="2018-11-30">30 November 2018</time>, <a href="/guidance/the-highway-code/updates">see all updates</a>
+
+          </dd>
+  </dl>
+</div>
+
+    <div class="in-manual-search">
+      <form action="/search">
+        <label for="search-box">Search this manual</label>
+        <input type="hidden" name="filter_manual[]" value="/guidance/the-highway-code">
+        <input id="search-box" class="in-manual-search-box" type="text" name="q">
+        <button type="submit">search</button>
+      </form>
+    </div>
+  </div>
+  <div class="secondary">
+    <div class="secondary-inner">
+      <p>
+        <a class="feedback" href="https://www.gov.uk/contact/govuk">Give feedback about this page</a>
+      </p>
+    </div>
+  </div>
+</header>
+
+<ol class="breadcrumb-trail">
+    <li class="no-separator">Contents</li>
+
+</ol>
+
+<article aria-labelledby="manual-title" id="content">
+  <div class="manual-body">
+    <p class="summary">This Highway Code applies to England, Scotland and Wales. The Highway Code is essential reading for everyone.</p>
+      
+<div class="gem-c-govspeak govuk-govspeak ">
+      
+<div role="note" aria-label="Information" class="application-notice info-notice">
+<p>There’s a different version of <a rel="external" href="https://www.nidirect.gov.uk/articles/highway-code">The Highway Code for Northern Ireland</a>.</p>
+</div>
+
+<p>You can <a rel="external" href="http://www.safedrivingforlife.info/shop/product/official-highway-code-new-edition-2015">buy a copy of The Highway Code online</a> or from most high street bookshops.</p>
+
+<p><a rel="external" href="https://public.govdelivery.com/accounts/UKDVSA/subscriber/new?topic_id=UKDVSA_D_293">Sign up for email alerts</a> for rule changes, or follow The Highway Code on <a rel="external" href="https://www.facebook.com/HighwayCodeGB">Facebook</a> and <a rel="external" href="https://twitter.com/HighwayCodeGB">Twitter</a>.</p>
+
+</div>
+
+        <ol class="section-list">
+          <li>
+          <a class="" href="/guidance/the-highway-code/introduction">
+              <span class="subsection-title-text">Introduction</span>
+              <span class="subsection-summary">Who The Highway Code is for, how it's worded, and the consequences of not following the rules. </span>
+</a>          </li>
+          <li>
+          <a class="" href="/guidance/the-highway-code/rules-for-pedestrians-1-to-35">
+              <span class="subsection-title-text">Rules for pedestrians (1 to 35)</span>
+              <span class="subsection-summary">Rules for pedestrians, including general guidance, crossing the road, crossings, and situations needing extra care.</span>
+</a>          </li>
+          <li>
+          <a class="" href="/guidance/the-highway-code/rules-for-users-of-powered-wheelchairs-and-mobility-scooters-36-to-46">
+              <span class="subsection-title-text">Rules for users of powered wheelchairs and mobility scooters (36 to 46) </span>
+              <span class="subsection-summary">Rules for powered wheelchairs and mobility scooters, including on pavements and on the road.</span>
+</a>          </li>
+          <li>
+          <a class="" href="/guidance/the-highway-code/rules-about-animals-47-to-58">
+              <span class="subsection-title-text">Rules about animals (47 to 58) </span>
+              <span class="subsection-summary">Rules about animals, including horse-drawn vehicles, horse riders and other animals.</span>
+</a>          </li>
+          <li>
+          <a class="" href="/guidance/the-highway-code/rules-for-cyclists-59-to-82">
+              <span class="subsection-title-text">Rules for cyclists (59 to 82)</span>
+              <span class="subsection-summary">Rules for cyclists, including an overview, road junctions, roundabouts and crossing the road.</span>
+</a>          </li>
+          <li>
+          <a class="" href="/guidance/the-highway-code/rules-for-motorcyclists-83-to-88">
+              <span class="subsection-title-text">Rules for motorcyclists (83 to 88)</span>
+              <span class="subsection-summary">Rules for motorcyclists, including helmets, carrying passengers, daylight riding and riding in the dark.</span>
+</a>          </li>
+          <li>
+          <a class="" href="/guidance/the-highway-code/rules-for-drivers-and-motorcyclists-89-to-102">
+              <span class="subsection-title-text">Rules for drivers and motorcyclists (89 to 102)</span>
+              <span class="subsection-summary">Rules for drivers and motorcyclists, including vehicle condition, fitness to drive, alcohol and drugs, what to do before setting off, vehicle towing and loading, and seat belts and child restraints.</span>
+</a>          </li>
+          <li>
+          <a class="" href="/guidance/the-highway-code/general-rules-techniques-and-advice-for-all-drivers-and-riders-103-to-158">
+              <span class="subsection-title-text">General rules, techniques and advice for all drivers and riders (103 to 158) </span>
+              <span class="subsection-summary">Signals, stopping procedures, lighting, control of the vehicle, speed limits, stopping distances, lines and lane markings and multi-lane carriageways, smoking, mobile phones and sat nav.</span>
+</a>          </li>
+          <li>
+          <a class="" href="/guidance/the-highway-code/using-the-road-159-to-203">
+              <span class="subsection-title-text">Using the road (159 to 203)</span>
+              <span class="subsection-summary">Rules for using the road, including general rules, overtaking, road junctions, roundabouts, pedestrian crossings and reversing.</span>
+</a>          </li>
+          <li>
+          <a class="" href="/guidance/the-highway-code/road-users-requiring-extra-care-204-to-225">
+              <span class="subsection-title-text">Road users requiring extra care (204 to 225) </span>
+              <span class="subsection-summary">Rules for road users requiring extra care, including pedestrians, motorcyclists and cyclists, other road users and other vehicles.</span>
+</a>          </li>
+          <li>
+          <a class="" href="/guidance/the-highway-code/driving-in-adverse-weather-conditions-226-to-237">
+              <span class="subsection-title-text">Driving in adverse weather conditions (226 to 237) </span>
+              <span class="subsection-summary">Rules for driving in adverse weather conditions, including wet weather, icy and snowy weather, windy weather, fog and hot weather.</span>
+</a>          </li>
+          <li>
+          <a class="" href="/guidance/the-highway-code/waiting-and-parking-238-to-252">
+              <span class="subsection-title-text">Waiting and parking (238 to 252) </span>
+              <span class="subsection-summary">Rules for waiting and parking, including rules on parking at night and decriminalised parking enforcement.</span>
+</a>          </li>
+          <li>
+          <a class="" href="/guidance/the-highway-code/motorways-253-to-273">
+              <span class="subsection-title-text">Motorways (253 to 273)</span>
+              <span class="subsection-summary">Rules for motorways, including rules for signals, joining the motorway, driving on the motorway, lane discipline, overtaking, stopping and leaving the motorway.</span>
+</a>          </li>
+          <li>
+          <a class="" href="/guidance/the-highway-code/breakdowns-and-incidents-274-to-287">
+              <span class="subsection-title-text">Breakdowns and incidents (274 to 287) </span>
+              <span class="subsection-summary">Rules for breakdowns and incidents, including rules for motorways, obstructions, incidents, incidents involving dangerous goods and documents.</span>
+</a>          </li>
+          <li>
+          <a class="" href="/guidance/the-highway-code/road-works-level-crossings-and-tramways-288-to-307">
+              <span class="subsection-title-text">Road works, level crossings and tramways (288 to 307) </span>
+              <span class="subsection-summary">Rules for road works (including on high-speed roads), level crossings and tramways.</span>
+</a>          </li>
+          <li>
+          <a class="" href="/guidance/the-highway-code/light-signals-controlling-traffic">
+              <span class="subsection-title-text">Light signals controlling traffic</span>
+              <span class="subsection-summary">Light signals used to control traffic, including traffic light signals, flashing red lights, motorway signals and lane control signals.</span>
+</a>          </li>
+          <li>
+          <a class="" href="/guidance/the-highway-code/signals-to-other-road-users">
+              <span class="subsection-title-text">Signals to other road users</span>
+              <span class="subsection-summary">Signals used to other road users, including direction indicator signals, brake light signals, reversing light signals and arm signals. </span>
+</a>          </li>
+          <li>
+          <a class="" href="/guidance/the-highway-code/signals-by-authorised-persons">
+              <span class="subsection-title-text">Signals by authorised persons</span>
+              <span class="subsection-summary">Signals used by authorised persons, including police officers, arm signals to persons controlling traffic, Driver and Vehicle Standards Agency officers and traffic officers and school crossing patrols.</span>
+</a>          </li>
+          <li>
+          <a class="" href="/guidance/the-highway-code/traffic-signs">
+              <span class="subsection-title-text">Traffic signs</span>
+              <span class="subsection-summary">Traffic signs used, including signs giving orders, warning signs, direction signs, information signs and road works signs.</span>
+</a>          </li>
+          <li>
+          <a class="" href="/guidance/the-highway-code/road-markings">
+              <span class="subsection-title-text">Road markings</span>
+              <span class="subsection-summary">Road markings used, including those across the carriageway, along the carriageway, along the edge of the carriageway, on the kerb or at the edge of the carriageway and other road markings.</span>
+</a>          </li>
+          <li>
+          <a class="" href="/guidance/the-highway-code/vehicle-markings">
+              <span class="subsection-title-text">Vehicle markings</span>
+              <span class="subsection-summary">Vehicle markings used, including large goods vehicle rear markings, hazard warning plates, projection markers and other markings.</span>
+</a>          </li>
+          <li>
+
+          <a class="" href="/guidance/the-highway-code/annex-1-you-and-your-bicycle">
+              <span class="subsection-title-text">Annex 1. You and your bicycle </span>
+              <span class="subsection-summary">Information and rules about you and your bicycle.</span>
+</a>          </li>
+          <li>
+          <a class="" href="/guidance/the-highway-code/annex-2-motorcycle-licence-requirements">
+              <span class="subsection-title-text">Annex 2. Motorcycle licence requirements</span>
+              <span class="subsection-summary">Information and rules about motorcycle licence requirements.</span>
+</a>          </li>
+          <li>
+          <a class="" href="/guidance/the-highway-code/annex-3-motor-vehicle-documentation-and-learner-driver-requirements">
+              <span class="subsection-title-text">Annex 3. Motor vehicle documentation and learner driver requirements</span>
+              <span class="subsection-summary">Information and rules about motor vehicle documentation and learner driver requirements.</span>
+</a>          </li>
+          <li>
+          <a class="" href="/guidance/the-highway-code/annex-4-the-road-user-and-the-law">
+              <span class="subsection-title-text">Annex 4. The road user and the law</span>
+              <span class="subsection-summary">Information about the road user and the law, including acts and regulations.</span>
+</a>          </li>
+          <li>
+          <a class="" href="/guidance/the-highway-code/annex-5-penalties">
+              <span class="subsection-title-text">Annex 5. Penalties</span>
+              <span class="subsection-summary">Information and rules about penalties, including points and disqualification, a penalty table, new drivers and other consequences of offending.</span>
+</a>          </li>
+          <li>
+          <a class="" href="/guidance/the-highway-code/annex-6-vehicle-maintenance-safety-and-security">
+              <span class="subsection-title-text">Annex 6. Vehicle maintenance, safety and security</span>
+              <span class="subsection-summary">Information and rules about vehicle maintenance, safety and security.</span>
+</a>          </li>
+          <li>
+          <a class="" href="/guidance/the-highway-code/annex-7-first-aid-on-the-road">
+              <span class="subsection-title-text">Annex 7. First aid on the road</span>
+              <span class="subsection-summary">Information about first aid on the road, including dealing with danger, getting help, helping those involved, and providing emergency care. </span>
+</a>          </li>
+          <li>
+          <a class="" href="/guidance/the-highway-code/annex-8-safety-code-for-new-drivers">
+              <span class="subsection-title-text">Annex 8. Safety code for new drivers</span>
+              <span class="subsection-summary">Information about the safety code for new drivers, including the New Drivers Act and further training.</span>
+</a>          </li>
+          <li>
+          <a class="" href="/guidance/the-highway-code/other-information">
+              <span class="subsection-title-text">Other information</span>
+              <span class="subsection-summary">Metric conversions, useful websites, further reading, the blue badge scheme and code of practice horse-drawn vehicles.</span>
+</a>          </li>
+          <li>
+          <a class="" href="/guidance/the-highway-code/index">
+              <span class="subsection-title-text">Index</span>
+              <span class="subsection-summary">An A to Z index of topics covered by The Highway Code.</span>
+</a>          </li>
+        </ol>
+  </div>
+</article>
+
+
+        <div class="print-page">
+          <a onclick="window.print();return false;" href="#">Print this page</a>
+        </div>
+      </div>
+    </main>
+    
+<div class="gem-c-feedback gem-c-feedback--top-margin" data-module="feedback">
+  <div class="gem-c-feedback__prompt gem-c-feedback__js-show js-prompt" tabindex="-1">
+    <div class="gem-c-feedback__js-prompt-questions js-prompt-questions">
+      <h2 class="gem-c-feedback__prompt-question">Is this page useful?</h2>
+
+      <a class="gem-c-feedback__prompt-link" data-track-category="yesNoFeedbackForm" data-track-action="ffMaybeClick" aria-expanded="false" role="button" style="display: none;" hidden="hidden" aria-hidden="true" href="/contact/govuk">
+        Maybe
+</a>
+      <a class="gem-c-feedback__prompt-link gem-c-feedback__prompt-link--useful js-page-is-useful" data-track-category="yesNoFeedbackForm" data-track-action="ffYesClick" aria-expanded="false" role="button" href="/contact/govuk">
+        Yes <span class="visually-hidden">this page is useful</span>
+</a>
+      <a class="gem-c-feedback__prompt-link js-toggle-form js-page-is-not-useful" data-track-category="yesNoFeedbackForm" data-track-action="ffNoClick" aria-controls="page-is-not-useful" aria-expanded="false" role="button" href="/contact/govuk">
+        No <span class="visually-hidden">this page is not useful</span>
+</a>
+      <a class="gem-c-feedback__prompt-link gem-c-feedback__prompt-link--wrong js-toggle-form js-something-is-wrong" data-track-category="Onsite Feedback" data-track-action="GOV.UK Open Form" aria-controls="something-is-wrong" aria-expanded="false" role="button" href="/contact/govuk">
+        Is there anything wrong with this page?
+</a>    </div>
+
+    <div class="gem-c-feedback__prompt-success js-prompt-success js-hidden" tabindex="-1">
+      Thank you for your feedback
+    </div>
+  </div>
+
+  <form action="/contact/govuk/problem_reports" id="something-is-wrong" class="gem-c-feedback__form js-feedback-form js-hidden" data-track-category="Onsite Feedback" data-track-action="GOV.UK Send Form" method="post" aria-hidden="true">
+    <a href="#" class="gem-c-feedback__close gem-c-feedback__js-show js-close-form" data-track-category="Onsite Feedback" data-track-action="GOV.UK Close Form" aria-controls="something-is-wrong" aria-expanded="true" role="button">Close</a>
+
+    <div class="gem-c-feedback__grid-row">
+      <div class="gem-c-feedback__column-two-thirds">
+        <div class="gem-c-feedback__error-summary gem-c-feedback__js-show js-hidden js-errors" tabindex="-1"></div>
+
+        <input type="hidden" name="url" value="https://www.gov.uk/guidance/the-highway-code">
+        <input type="hidden" name="user_agent" value="Mozilla/5.0 (iPhone; CPU iPhone OS 12_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Mobile/15E148 Safari/604.1">
+
+        <h3 class="gem-c-feedback__form-heading">Help us improve GOV.UK</h3>
+        <p id="feedback_explanation" class="gem-c-feedback__form-paragraph">Don’t include personal or financial information like your National Insurance number or credit card details.</p>
+
+        
+<div class="govuk-form-group">
+    
+<label for="input-332765cc" class="gem-c-label govuk-label ">
+  What were you doing?
+</label>
+
+
+
+
+  <input name="what_doing" class="gem-c-input govuk-input" id="input-332765cc" type="text" aria-describedby="feedback_explanation">
+</div>
+
+        
+<div class="govuk-form-group">
+    
+<label for="input-84dbddd1" class="gem-c-label govuk-label ">
+  What went wrong?
+</label>
+
+
+
+
+  <input name="what_wrong" class="gem-c-input govuk-input" id="input-84dbddd1" type="text">
+</div>
+
+        
+  <button class="gem-c-button govuk-button" type="submit">Send</button>
+
+
+      </div>
+    </div>
+  <input type="hidden" name="javascript_enabled" value="true"><input type="hidden" name="referrer" value="https://www.gov.uk/browse/driving/highway-code-road-safety"></form>
+
+  <form action="/contact/govuk/email-survey-signup" id="page-is-not-useful" class="gem-c-feedback__form gem-c-feedback__form--email gem-c-feedback__js-show js-feedback-form js-hidden" data-track-category="yesNoFeedbackForm" data-track-action="Send Form" method="post" aria-hidden="true">
+    <a href="#" class="gem-c-feedback__close js-close-form" data-track-category="yesNoFeedbackForm" data-track-action="ffFormClose" aria-controls="page-is-not-useful" aria-expanded="true" role="button">Close</a>
+
+    <div class="gem-c-feedback__grid-row">
+      <div class="gem-c-feedback__column-two-thirds">
+        <div class="gem-c-feedback__error-summary js-hidden js-errors" tabindex="-1"></div>
+
+        <input type="hidden" name="url" value="https://www.gov.uk/guidance/the-highway-code">
+        <input type="hidden" name="user_agent" value="Mozilla/5.0 (iPhone; CPU iPhone OS 12_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Mobile/15E148 Safari/604.1">
+
+        <input name="email_survey_signup[survey_id]" type="hidden" value="footer_satisfaction_survey">
+        <input name="email_survey_signup[survey_source]" type="hidden" value="https://www.gov.uk/guidance/the-highway-code">
+        <input name="email_survey_signup[ga_client_id]" type="hidden" value="1627485790.1515403243">
+
+        <h3 class="gem-c-feedback__form-heading">Help us improve GOV.UK</h3>
+        <p id="survey_explanation" class="gem-c-feedback__form-paragraph">To help us improve GOV.UK, we’d like to know more about your visit today. We’ll send you a link to a feedback form. It will take only 2 minutes to fill in. Don’t worry we won’t send you spam or share your email address with anyone.</p>
+
+        
+<div class="govuk-form-group">
+    
+<label for="input-3142ef64" class="gem-c-label govuk-label ">
+  Email address
+</label>
+
+
+
+
+  <input name="email_survey_signup[email_address]" class="gem-c-input govuk-input" id="input-3142ef64" type="email" aria-describedby="survey_explanation">
+</div>
+
+        
+  <button class="gem-c-button govuk-button" type="submit">Send me the survey</button>
+
+
+        <a href="https://www.smartsurvey.co.uk/s/gov-uk-banner/?c=/guidance/the-highway-code&amp;gcl=1627485790.1515403243" class="gem-c-feedback__email-link govuk-link" id="take-survey" target="_blank" rel="noopener noreferrer">Don’t have an email address?</a>
+      </div>
+    </div>
+  </form>
+
+</div>
+
+  </div>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        Passing data into pages
+      </h1>
+
+      <p>
+        The example route defined in <code class="code">/docs/documentation_routes.js</code> is passing the string '{{ name }}' to this page, via the variable called 'name'.
+      </p>
+
+      <p>
+        Have a look at the source for this page in your text editor to see how it works: <code class="code">/docs/views/examples/template-data.html</code>
+      </p>
+
+    </div>
+  </div>
+
+{% endblock %}

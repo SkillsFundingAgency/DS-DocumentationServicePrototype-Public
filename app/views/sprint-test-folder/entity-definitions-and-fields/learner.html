@@ -1,7 +1,7 @@
 {% extends "sprint-2-1/layout.html" %}
 
 {% block pageTitle %}
-  Field collection requirement tables 
+  Learner: entity definition and fields
 {% endblock %}
 
 {% block beforeContent %}
@@ -13,19 +13,23 @@
       text: "Home",
       href: "#"
     },
-    {
+	{
       text: "ILR specification 2019 to 2020",
       href: '/sprint-2-1/ilr-specification-2019-to-2020'
     },
     {
       text: "Specification of the individualised learner record for 2019 to 2020",
       href: '/sprint-2-1/specification-of-the-Individualised-learner-record-for-2019-to-2020'
-    }
+    },	
+	{
+      text: "Entity definitions and fields",
+      href: '/sprint-2-1/entity-definitions-and-fields/technical-specification-entity-definitions-and-fields'
+    }	
 	
   ]
 }) }}
 
-<a class="govuk-back-link" href="/sprint-2-1/specification-of-the-Individualised-learner-record-for-2019-to-2020.html">Back</a> 
+<a class="govuk-back-link" href="/sprint-2-1/entity-definitions-and-fields/technical-specification-entity-definitions-and-fields.html">Back</a> 
 
 {% endblock %}
 
@@ -41,7 +45,7 @@
     <div class="page-header">
       <p class="page-header__context">ILR Spec</p>
       <h1 class="page-header__title">
-        Field collection requirement tables 
+        Learner: entity 
       </h1>	
 	</div>
 	</div>	
@@ -78,17 +82,11 @@
 	
 
 	
-<div class="column-two-thirds">
+<!--<div class="column-two-thirds">
     <div class="page-header">	
-	  <h2 class="heading-medium">Overview</h2>
-	  <p class="summary">The tables in this section list the fields that are collected for the different funding models. Not all fields listed will need to be completed for all learners in all circumstances. 
-	  </p>
-	  <p>Refer to the <a href="/sprint-2-1/entity-definitions-and-fields/technical-specification-entity-definitions-and-fields.html">ILR specification entity and definitions</a> for the full details of the collection rules and requirements.</p>
-	  <p>In addition to the Learner and Learning Delivery fields listed for each funding model, HE data may be required.</p>
-	  <p>Some of the fields listed in the tables for each of the funding model are only required in certain circumstances.</p>
-	  
+	  <p class="summary">You should return only one record for each learner. The data recorded in the learner entity contains basic information specific to the learner such as their name, date of birth, sex and ethnicity. </p>
     </div>
-  </div>
+  </div>-->
 	
 </div>
 		  
@@ -97,58 +95,167 @@
 	  
 
 <div class="grid-row responsive-bottom-margin">
-  <div class="column-two-thirds">
-      <h2 class="heading-medium">You should send ILR data if you receive funding through one or more of the funding models</h2>
+  <div class="column-two-thirds"> 
+	  
+<!--<blockquote class="noquotes">
+	<p><strong class="govuk-tag">VERSION 1</strong>&nbsp;&nbsp;&nbsp;Version 1 changes: Updates Published February 2018</p>
+	<h3 class="govuk-heading-m">What's changed?</h3>
+	<p>Campus identifier: entity has been added</p>
 
-		<ol class="section-list" style="margin:0px;">
-			  <li>
-			  <a class="" href="#">
-				  <span class="subsection-title-text">16-19 funded learning (excluding Apprenticeships)</span>
-	</a>          </li>
-			  <li>
-			  <a class="" href="#">
-				  <span class="subsection-title-text">Adult skills </span>
-	</a>          </li>
-			  <li>
-			  <a class="" href="#">
-				  <span class="subsection-title-text">Apprenticeships (from 1 May 2017)</span>
-	</a>          </li>
-			  <li>
-			  <a class="" href="/sprint-2-1/field-collection/community-learning-funding-models.html">
-				  <span class="subsection-title-text">Community learning</span>
-	</a>          </li>
-			  <li>
-			  <a class="" href="#">
-				  <span class="subsection-title-text">Advanced learner loans</span>
-	</a>          </li>
-			  <li>
-			  <a class="" href="#">
-				  <span class="subsection-title-text">Non-funded learning</span>
-	</a>          </li>
-			  <li>
-			  <a class="" href="#">
-				  <span class="subsection-title-text">Traineeship programmes</span>
-	</a>          </li>
-			  <li>
-			  <a class="" href="#">
-				  <span class="subsection-title-text">European social funding (ESF)</span>
-	</a>          </li> 
+	</blockquote>-->
+	  
+<div class="gem-c-govspeak govuk-govspeak direction-ltr disable-youtube">
+	  
+		<h2 class="govuk-heading-m">Definition</h2>
+		<p>This entity collects attributes that relate to an individual learner such as their name and date of birth.</p>
+		 
+		<h2 class="govuk-heading-m">Reason required</h2>
+		<p>To enable the learner to be identified for matching purposes, to maintain data integrity and assist with query resolution.</p>
+	
+<h2 class="govuk-heading-m">Schema definitions</h2>
+<table class="govuk-table">
+  
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">XML Element Name</th>
+      <td class="govuk-table__cell">Learner</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">Minimum occurrences</th>
+      <td class="govuk-table__cell">0</td>
+    </tr>
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">Maximum occurrences</th>
+      <td class="govuk-table__cell">Unbounded</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">Part of</th>
+      <td class="govuk-table__cell">Message</td>
+    </tr>
+  </tbody>
+</table>
+	
+		<h2 class="govuk-heading-m">Collection requirements</h2>
+		<p>Collected for all learners.</p>
 
-			</ol>  
+
+<div class="definition-schema">
+<table class="govuk-table">
+  <!--<caption class="govuk-table__caption"></caption>-->
+  <tbody class="govuk-table__body">
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><strong>XML elements</strong></th>
+	  <td class="govuk-table__cell"><strong>Schema mandation</strong></td>
+    </tr>
+	<tr class="govuk-table__row">
+		<th class="govuk-table__header" scope="row"><a href="#51">LearnRefNumber</a></th>
+	  <td class="govuk-table__cell">Y</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="#52">PrevLearnRefNumber</a></th>
+	  <td class="govuk-table__cell">N</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="#53">PrevUKPRN</a></th>
+	  <td class="govuk-table__cell">N</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="#54">PMUKPRN</a></th>
+	  <td class="govuk-table__cell">N</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="#55">CampId</a></th>
+	  <td class="govuk-table__cell">N</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="#56">ULN</a></th>
+	  <td class="govuk-table__cell">N</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="#57">FamilyName</a></th>
+	  <td class="govuk-table__cell">N</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="#58">GivenNames</a></th>
+	  <td class="govuk-table__cell">N</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="#59">DateOfBirth</a></th>
+	  <td class="govuk-table__cell">N</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="#60">Ethnicity</a></th>
+	  <td class="govuk-table__cell">N</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="#61">Sex</a></th>
+	  <td class="govuk-table__cell">N</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="#62">LLDDHealthProb</a></th>
+	  <td class="govuk-table__cell">N</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="#63">NINumber</a></th>
+	  <td class="govuk-table__cell">N</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="#64">PriorAttain</a></th>
+	  <td class="govuk-table__cell">N</td>
+    </tr>
+	
+  </tbody>
+</table> 
+</div>	
 
 	
+<table class="govuk-table">
+  <!--<caption class="govuk-table__caption">Learner employment status: entity</caption>-->
+  <tbody class="govuk-table__body">
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><strong>Child entities</strong></th>
+	  <td class="govuk-table__cell"><strong>Schema mandation</strong></td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="#41">ContactPreference </a></th>
+	  <td class="govuk-table__cell">N</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="#42">LLDDandHealthProblem  </a></th>
+	  <td class="govuk-table__cell">N</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="#43">LearnerFAM  </a></th>
+	  <td class="govuk-table__cell">N</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="#44">ProviderSpecLearnerMonitoring </a></th>
+	  <td class="govuk-table__cell">N</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="#45">LearnerEmploymentStatus  </a></th>
+	  <td class="govuk-table__cell">N</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="#46">LearnerHE  </a></th>
+	  <td class="govuk-table__cell">N</td>
+    </tr>
+	<tr class="govuk-table__row">
+	  <th class="govuk-table__header" scope="row"><a href="#47">LearningDelivery  </a></th>
+	  <td class="govuk-table__cell">Y</td>
+    </tr>
+  </tbody>
+</table> 
 
-
-
+<h2 class="govuk-heading-m">Notes and guidance</h2>
+		<p>All fields must be returned in the above order in the XML file.</p>
 	
-
-
-  
-
-
-
-  
-
+		<p>Refer to individual field pages for the collection and validation requirements and notes for each field.</p>	  
+</div>
+	  
+<div class="print-page" style="margin-top:90px;">
+<a onclick="window.print();return false;" href="#">Print this page</a>
+</div>
 
 </div>
 

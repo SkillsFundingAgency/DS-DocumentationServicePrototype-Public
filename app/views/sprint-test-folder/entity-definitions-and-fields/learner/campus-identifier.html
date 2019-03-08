@@ -1,8 +1,9 @@
 {% extends "sprint-2-1/layout.html" %}
 
 {% block pageTitle %}
-  Field collection requirement tables 
+  Campus identifier
 {% endblock %}
+
 
 {% block beforeContent %}
   {% from "breadcrumbs/macro.njk" import govukBreadcrumbs %}
@@ -13,47 +14,56 @@
       text: "Home",
       href: "#"
     },
-    {
+	{
       text: "ILR specification 2019 to 2020",
       href: '/sprint-2-1/ilr-specification-2019-to-2020'
     },
     {
       text: "Specification of the individualised learner record for 2019 to 2020",
       href: '/sprint-2-1/specification-of-the-Individualised-learner-record-for-2019-to-2020'
-    }
+    },	
+	{
+      text: "Entity definitions and fields",
+      href: '/sprint-2-1/entity-definitions-and-fields/technical-specification-entity-definitions-and-fields'
+    }	
 	
   ]
 }) }}
 
-<a class="govuk-back-link" href="/sprint-2-1/specification-of-the-Individualised-learner-record-for-2019-to-2020.html">Back</a> 
+<a class="govuk-back-link" href="/sprint-2-1/entity-definitions-and-fields/technical-specification-entity-definitions-and-fields.html">Back</a> 
 
 {% endblock %}
 
 {% block content %}
-<div id="wrapper">
-    <main role="main" class="hmrc-internal-manuals-frontend-content outer-block">
-      <div id="manuals-frontend" class="manuals-frontend-body inner-block">
 
-		  
+  <main role="main" id="content" class="answer" lang="en">
+      
+
 <div class="grid-row">
 
   <div class="column-two-thirds">
     <div class="page-header">
       <p class="page-header__context">ILR Spec</p>
       <h1 class="page-header__title">
-        Field collection requirement tables 
-      </h1>	
-	</div>
-	</div>	
-	
+        Campus identifier: field
+      </h1>
+    </div>
+	<div class="summary">
+	<p class="summary"><a href="/sprint-2-1/entity-definitions-and-fields/learner.html">Part of the learner entity</a></p>
+</div>
+  </div>
+
   <div class="column-third">
+
     <div class="community-contact">
       <p>
         <a class="feedback" href="#">Give feedback about this page</a>
       </p>
     </div>
   </div>
-
+</div>
+	  
+<div class="grid-row">
   <div class="column-two-thirds">
 
     <div class="metadata">
@@ -73,85 +83,117 @@
     </div>
 
   </div>
-		
 	
-	
-
-	
-<div class="column-two-thirds">
+  <div class="column-two-thirds">
     <div class="page-header">	
-	  <h2 class="heading-medium">Overview</h2>
-	  <p class="summary">The tables in this section list the fields that are collected for the different funding models. Not all fields listed will need to be completed for all learners in all circumstances. 
-	  </p>
-	  <p>Refer to the <a href="/sprint-2-1/entity-definitions-and-fields/technical-specification-entity-definitions-and-fields.html">ILR specification entity and definitions</a> for the full details of the collection rules and requirements.</p>
-	  <p>In addition to the Learner and Learning Delivery fields listed for each funding model, HE data may be required.</p>
-	  <p>Some of the fields listed in the tables for each of the funding model are only required in certain circumstances.</p>
-	  
+	  <h2 class="govuk-heading-m">Overview</h2>
+	  <p class="summary">You should return only one record for each learner. The data recorded in the learner entity contains basic information specific to the learner such as their name, date of birth, sex and ethnicity. </p>
     </div>
   </div>
-	
 </div>
-		  
-
-	
-	  
 
 <div class="grid-row responsive-bottom-margin">
   <div class="column-two-thirds">
-      <h2 class="heading-medium">You should send ILR data if you receive funding through one or more of the funding models</h2>
+   
+	  
+<!--<blockquote class="noquotes">
+	<p>Version 2 changes: Updates Published March 2018&nbsp;&nbsp;&nbsp;<strong class="govuk-tag">VERSION 2</strong></p>
+	<h3 class="govuk-heading-m">What's changed?</h3>
+	<p>Pattern has been corrected to [A-Za-z0-9]{1,8}</p>
+	<p>The pattern was incorrect in version 1.
+    </br>“8” is the change to the pattern in version 2.</p>
+	</blockquote>-->
+	  
+<div class="gem-c-govspeak govuk-govspeak direction-ltr disable-youtube">
+    
 
-		<ol class="section-list" style="margin:0px;">
-			  <li>
-			  <a class="" href="#">
-				  <span class="subsection-title-text">16-19 funded learning (excluding Apprenticeships)</span>
-	</a>          </li>
-			  <li>
-			  <a class="" href="#">
-				  <span class="subsection-title-text">Adult skills </span>
-	</a>          </li>
-			  <li>
-			  <a class="" href="#">
-				  <span class="subsection-title-text">Apprenticeships (from 1 May 2017)</span>
-	</a>          </li>
-			  <li>
-			  <a class="" href="/sprint-2-1/field-collection/community-learning-funding-models.html">
-				  <span class="subsection-title-text">Community learning</span>
-	</a>          </li>
-			  <li>
-			  <a class="" href="#">
-				  <span class="subsection-title-text">Advanced learner loans</span>
-	</a>          </li>
-			  <li>
-			  <a class="" href="#">
-				  <span class="subsection-title-text">Non-funded learning</span>
-	</a>          </li>
-			  <li>
-			  <a class="" href="#">
-				  <span class="subsection-title-text">Traineeship programmes</span>
-	</a>          </li>
-			  <li>
-			  <a class="" href="#">
-				  <span class="subsection-title-text">European social funding (ESF)</span>
-	</a>          </li> 
-
-			</ol>  
-
+<h2 class="govuk-heading-m">Definition</h2>
+<p>The identifier of a campus within a college group and no longer a separate legal entity but previously operated as an incorporated college with a UKPRN.</p>
 	
-
-
-
+<h2 class="govuk-heading-m">Reason required</h2>
+<p>To allow identification of provision delivered across the various sites of merged institutions.</p>
 	
-
-
+<h2 class="govuk-heading-m">Schema definitions</h2>	  
+<table class="govuk-table">
   
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">XML Element Name</th>
+      <td class="govuk-table__cell">CampId</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">Field length</th>
+      <td class="govuk-table__cell">8</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">Data type</th>
+      <td class="govuk-table__cell">RestrictedString</td>
+    </tr>
+	<tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">Minimum occurrences</th>
+      <td class="govuk-table__cell">0</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">Maximum occurrences</th>
+      <td class="govuk-table__cell">1</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">Part of</th>
+      <td class="govuk-table__cell">Learner</td>
+    </tr>
+  </tbody>
+</table>
 
+<h2 class="govuk-heading-m">Valid entries</h2>
+<table class="govuk-table">
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">Must be in a valid look up. This is a 8-digit identifier using alphanumeric characters.</td>
+    </tr>
+  </tbody>
+</table>
+	
+</div>
 
-
-  
-
+<h2 class="govuk-heading-m">Pattern</h2>
+<table class="govuk-table">
+  <caption class="govuk-table__caption"><!--Pattern&nbsp;&nbsp;&nbsp;<strong class="govuk-tag">
+  VERSION 2</strong>--></caption>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">[A-Za-z0-9]{1,8}</th>
+      <td class="govuk-table__cell"></td>
+    </tr>
+  </tbody>
+</table>
+	  
+<h2 class="govuk-heading-m">Collection requirements</h2>
+<table class="govuk-table">
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">This field is collected for all learners.</td>
+    </tr>
+  </tbody>
+</table>
+	  
+<h2 class="govuk-heading-m">Notes and guidance about this field</h2>
+<p>This field records the identifier of a campus within a college group who is no longer a separate legal entity but previously operated as an incorporated college with a UKPRN</p>
+	
+<p>This should only be returned where the provider has been notified that they can use this field.</p>
+	
+<p>The campus identifier must be linked to a college group with a separate UKPRN.
+</p>
+	  
+<div class="print-page" style="margin-top:90px;">
+<a onclick="window.print();return false;" href="#">Print this page</a>
+</div>
 
 </div>
 
+
+	
+
+  
 <div class="column-one-third">
   
 <div class="gem-c-contextual-sidebar">
@@ -183,13 +225,20 @@
 </div>
 
 </div>
-        
-      </div>
-		  
-		</div>
-    
-		  </main>
-    
+
+
+  
+
+
+</div>
+
+
+  
+
+
+
+    </main>
+
 <div class="gem-c-feedback gem-c-feedback--top-margin" data-module="feedback">
   <div class="gem-c-feedback__prompt gem-c-feedback__js-show js-prompt" tabindex="-1">
     <div class="gem-c-feedback__js-prompt-questions js-prompt-questions">
@@ -300,7 +349,5 @@
   </form>
 
 </div>
-
-  
 
 {% endblock %}
