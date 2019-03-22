@@ -1,0 +1,692 @@
+{% extends "sprint-5/layout.html" %}
+
+{% block pageTitle %}
+  ILR Specification Validation Rules and Appendices
+{% endblock %}
+
+{% block beforeContent %}
+  {% from "breadcrumbs/macro.njk" import govukBreadcrumbs %}
+
+{{ govukBreadcrumbs({
+  items: [
+    {
+      text: "Home",
+      href: "#"
+    },
+    {
+      text: "ILR specification 2019 to 2020",
+      href: '/sprint-5/ilr-specification-2019-to-2020'
+    }
+  ]
+}) }}
+
+<button class="govuk-back-link" style="background-color: #ffffff;border: none;border-bottom: 1px solid #0b0c0c;" onclick="window.history.back()">Back</button>
+
+{% endblock %}
+
+{% block content %}
+<div id="wrapper">
+    <main role="main" class="hmrc-internal-manuals-frontend-content outer-block">
+      <div id="manuals-frontend" class="manuals-frontend-body inner-block">
+        
+
+
+<header aria-labelledby="manual-title" class="">
+
+  <div class="primary">
+	<p class="gem-c-title__context" style="color: #FFFFFF;">Guidance</p>
+    <h1 id="manual-title">Provider Support Manual for 2018 to 2019 (Version 2)</h1>
+    <div class="gem-c-metadata gem-c-metadata--inverse" data-module="gem-toggle">
+  <dl data-module="track-click">
+      <dt class="gem-c-metadata__term">From:</dt>
+      <dd class="gem-c-metadata__definition">
+          <a href="https://www.gov.uk/government/organisations/education-and-skills-funding-agency">Education and Skills Funding Agency
+</a>
+
+      </dd>
+      <dt class="gem-c-metadata__term">Published:</dt>
+      <dd class="gem-c-metadata__definition"><time datetime="2015-10-01">31 January 2019</time></dd>
+          <dt class="gem-c-metadata__term">Updated:</dt>
+          <dd class="gem-c-metadata__definition">
+              <time datetime="2018-06-26">31 January 2019</time>, <a href="#">see all updates</a>
+
+          </dd>
+  </dl>
+</div>
+
+    <div class="in-manual-search">
+      <form action="/search">
+        <label for="search-box">Search this manual</label>
+        <input type="hidden" name="filter_manual[]" value="/guidance/the-highway-code">
+        <input id="search-box" class="in-manual-search-box" type="text" name="q">
+        <button type="submit">search</button>
+      </form>
+    </div>
+  </div>
+  <div class="secondary">
+    <div class="secondary-inner">
+      <p>
+        <a class="feedback" href="#">Give feedback about this page</a>
+      </p>
+    </div>
+  </div>
+</header>
+
+<ol class="breadcrumb-trail">
+    <li class="no-separator">Contents</li>
+
+</ol>
+
+<article aria-labelledby="manual-title" id="content">
+  <div class="manual-body">
+    <p class="summary">This document contains guidance to support providers to meet requirements and make ILR data returns during the 2018 to 2019 funding year.</p>
+    
+
+	<table class="govuk-table tech-spec-table">
+	  <tbody class="govuk-table__body">
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header tech-spec-label" scope="row"><a href="#1">Section 1 How to use this manual</a></th>
+		</tr>
+	  </tbody>
+	</table>
+	  
+	<table class="govuk-table tech-spec-table">
+	  <tbody class="govuk-table__body">
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-label psm-list" scope="row"><a href="#2">Section 2 Introduction to the ILR 9</a></th>
+		</tr>
+		<tr class="govuk-table__row psm-list">
+		  <th class="govuk-table__header psm-row" scope="row"><a href="#3">2.1 What is the ILR?</a></th>
+		</tr>
+		<tr class="govuk-table__row psm-list">
+		  <th class="govuk-table__header psm-row" scope="row"><a href="#4">2.2 What is ILR data used for?</a></th>
+		</tr>
+		<tr class="govuk-table__row psm-list">
+		  <th class="govuk-table__header psm-row" scope="row"><a href="#5">2.3 Who is required to make ILR data returns?</a></th>
+		</tr>
+		<tr class="govuk-table__row psm-list">
+		  <th class="govuk-table__header psm-row" scope="row"><a href="#6">2.4 Coverage of the ILR</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row-sub-section" scope="row"><a href="#7">2.4.1 16-19 funding (excluding apprenticeships)</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row-sub-section" scope="row"><a href="#8">2.4.2 Adult skills funding</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row-sub-section" scope="row"><a href="#9">2.4.3 Other 16-19 and Other Adult skills funding</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row-sub-section" scope="row"><a href="#10">2.4.4 Apprenticeships</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row-sub-section" scope="row"><a href="#11">2.4.5 Community Learning</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row-sub-section" scope="row"><a href="#12">2.4.6 European Social Fund (ESF)</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row-sub-section" scope="row"><a href="#13">2.4.7 Traineeships</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row-sub-section" scope="row"><a href="#14">2.4.8 Learning that is not funded by the ESFA</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row-sub-section psm-list-border" scope="row"><a href="#15">2.4.9 Subcontracted provision</a></th>
+		</tr>
+	  </tbody>
+	</table>
+	
+	<table class="govuk-table tech-spec-table">
+	  <tbody class="govuk-table__body">
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-label psm-list" scope="row"><a href="#17">Section 3 Collecting and submitting ILR data</a></th>
+		</tr>
+		<tr class="govuk-table__row psm-list">
+		  <th class="govuk-table__header psm-row" scope="row"><a href="#18">3.1 Data management principles for ILR completion</a></th>
+		</tr>
+		<tr class="govuk-table__row psm-list">
+		  <th class="govuk-table__header psm-row" scope="row"><a href="#19">3.2 How should I collect ILR data?</a></th>
+		</tr>
+		<tr class="govuk-table__row psm-list">
+		  <th class="govuk-table__header psm-row" scope="row"><a href="#20">3.3 How do I send data to the ESFA?</a></th>
+		</tr>
+		<tr class="govuk-table__row psm-list">
+		  <th class="govuk-table__header psm-row-sub-section" scope="row"><a href="#21">3.3.1 File compression</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row-sub-section" scope="row"><a href="#22">3.3.2 ILR file transmission</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row-sub-section" scope="row"><a href="#23">3.3.3 The impact of incomplete information</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row-sub-section" scope="row"><a href="#24">3.3.4 The Funding Information System (FIS)</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row-sub-section" scope="row"><a href="#25">3.3.5 Combining ILR files: amalgamation</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row-sub-section" scope="row"><a href="#26">3.3.6 Data validation</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row-sub-section" scope="row"><a href="#27">3.3.7 Earnings adjustment statement (EAS)</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row psm-list-border" scope="row"><a href="#28">3.4 When do I send data to the ESFA?</a></th>
+		</tr>
+	  </tbody>
+	</table>  
+	  
+	<table class="govuk-table tech-spec-table">
+	  <tbody class="govuk-table__body">
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-label psm-list" scope="row"><a href="#29">Section 4 Completing the ILR: guidance for all provision</a></th>
+		</tr>
+		<tr class="govuk-table__row psm-list">
+		  <th class="govuk-table__header psm-row" scope="row"><a href="#30">4.1 What to include</a></th>
+		</tr>
+		<tr class="govuk-table__row psm-list">
+		  <th class="govuk-table__header psm-row-sub-section" scope="row"><a href="#31">4.1.1 Completing the final return for the current year</a></th>
+		</tr>
+		<tr class="govuk-table__row psm-list">
+		  <th class="govuk-table__header psm-row" scope="row"><a href="#32">4.2 Learner details: completing the Learner entity</a></th>
+		</tr>
+		<tr class="govuk-table__row psm-list">
+		  <th class="govuk-table__header psm-row-sub-section" scope="row"><a href="#33">4.2.1 Learner reference numbers</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row-sub-section" scope="row"><a href="#34">4.2.2 Campus identifier</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row-sub-section" scope="row"><a href="#35">4.2.3 Off-the-job training hours</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row-sub-section" scope="row"><a href="#36">4.2.4 Ethnicity</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row-sub-section" scope="row"><a href="#37">4.2.5 Planned learning hours</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row" scope="row"><a href="#38">4.3 Recording learner contact details</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row-sub-section" scope="row"><a href="#39">4.3.1 Postcode prior to enrolment</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row" scope="row"><a href="#40">4.4 Recording learner contact preference</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row" scope="row"><a href="#41">4.5 Recording learner learning difficulties, disabilities (LLDD) and health problems</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row" scope="row"><a href="#42">4.6 Recording Learner Funding and Monitoring</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row" scope="row"><a href="#43">4.7 Employment status</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row-sub-section" scope="row"><a href="#44">4.7.1 Agreement identifier</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row-sub-section" scope="row"><a href="#45">4.7.2 Employment status</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row-sub-section" scope="row"><a href="#46">4.7.3 Recording employment status</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row-sub-section" scope="row"><a href="#47">4.7.4 Collecting employment status data</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row-sub-section" scope="row"><a href="#48">4.7.5 Learner eligibility</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row" scope="row"><a href="#49">4.8 Recording learning aims: completing the Learning Delivery entity</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row-sub-section" scope="row"><a href="#50">4.8.1 Recording programme aims</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row-sub-section" scope="row"><a href="#51">4.8.2 Searching for learning aims</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row-sub-section" scope="row"><a href="#52">4.8.3 Recording non-regulated provision</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row-sub-section" scope="row"><a href="#53">4.8.4 Recording proxy learning aims</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row-sub-section" scope="row"><a href="#54">4.8.5 Subcontracted or partner UKPRN</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row-sub-section" scope="row"><a href="#55">4.8.6 Additional delivery hours</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row-sub-section" scope="row"><a href="#56">4.8.7 Funding adjustment for prior learning and Other funding adjustment</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row-sub-section" scope="row"><a href="#57">4.8.8 Completion status</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row" scope="row"><a href="#58">4.9 Recording Learning Delivery Funding and Monitoring</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row-sub-section" scope="row"><a href="#59">4.9.1 Recording source of funding</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row" scope="row"><a href="#60">4.10 Recording work placements</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row" scope="row"><a href="#61">4.11 Recording Higher Education (HE) data</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row" scope="row"><a href="#62">4.12 Recording Learner Destination and Progression</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row-sub-section psm-list-border" scope="row"><a href="#63">4.12.1 When to collect and return Destination and Progression data</a></th>
+		</tr>
+	  </tbody>
+	</table>
+	  
+	<table class="govuk-table tech-spec-table">
+	  <tbody class="govuk-table__body">
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-label psm-list" scope="row"><a href="section-5/completing-the-ilr-recording-learner-changes-section-5.html">Section 5 Completing the ILR: recording learner changes</a></th>
+		</tr>
+		<tr class="govuk-table__row psm-list">
+		  <th class="govuk-table__header psm-row" scope="row"><a href="section-5/completing-the-ilr-recording-learner-changes-section-5.html#5.1-correcting-errors">5.1 Correcting errors</a></th>
+		</tr>
+		<tr class="govuk-table__row psm-list">
+		  <th class="govuk-table__header psm-row-sub-section" scope="row"><a href="section-5/completing-the-ilr-recording-learner-changes-section-5.html#5.1.1-correcting-data-errors-after-hard-close">5.1.1 Correcting data errors after hard close</a></th>
+		</tr>
+		<tr class="govuk-table__row psm-list">
+		  <th class="govuk-table__header psm-row-sub-section" scope="row"><a href="#67">5.1.2 Correcting data for reasons other than data errors</a></th>
+		</tr>
+		<tr class="govuk-table__row psm-list">
+		  <th class="govuk-table__header psm-row" scope="row"><a href="#68">5.2 Recording changes to a learner’s details</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row" scope="row"><a href="#69">5.3 Recording changes to a learner’s programme or learning aim</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row-sub-section" scope="row"><a href="#70">5.3.1 Changes to learning aims within the funding qualifying period</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row-sub-section" scope="row"><a href="#71">5.3.2 Changes to the Learning start and end dates</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row-sub-section" scope="row"><a href="#72">5.3.3 Recording learner absence or withdrawal</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row" scope="row"><a href="#73">5.4 Recording breaks in learning, transfers and restarts</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row-sub-section" scope="row"><a href="#74">5.4.1 Recording agreed breaks in learning</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row" scope="row"><a href="#75">5.4.2 Recording learner transfers</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row-sub-section" scope="row"><a href="#76">5.4.3 Recording restarts (without an agreed break in learning)</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row" scope="row"><a href="#77">5.5 Recording learning outcomes</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row" scope="row"><a href="#78">5.5.1 Recording retakes and resits</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row-sub-section psm-list-border" scope="row"><a href="#79">5.6 How to delete records</a></th>
+		</tr>
+	  </tbody>
+	</table>
+	  
+	<table class="govuk-table tech-spec-table">
+	  <tbody class="govuk-table__body">
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-label psm-list" scope="row"><a href="#80">Section 6 Completing the ILR: recording apprenticeship programmes</a></th>
+		</tr>
+		<tr class="govuk-table__row psm-list">
+		  <th class="govuk-table__header psm-row" scope="row"><a href="#81">6.1 Guidance for all apprenticeship programmes</a></th>
+		</tr>
+		<tr class="govuk-table__row psm-list">
+		  <th class="govuk-table__header psm-row-sub-section" scope="row"><a href="#82">6.1.1 Recording employment status for apprenticeships</a></th>
+		</tr>
+		<tr class="govuk-table__row psm-list">
+		  <th class="govuk-table__header psm-row-sub-section" scope="row"><a href="#83">6.1.2 Recording learning aims for apprenticeship programmes</a></th>
+		</tr>
+		<tr class="govuk-table__row psm-list">
+		  <th class="govuk-table__header psm-row-sub-section" scope="row"><a href="#84">6.1.3 Recording apprenticeship frameworks</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row-sub-section" scope="row"><a href="#85">6.1.4 Recording apprenticeship standards</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row-sub-section" scope="row"><a href="#86">6.1.5 Recording Higher Education (HE) data</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row-sub-section" scope="row"><a href="#87">6.1.6 Apprenticeship training agencies (ATAs)</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row-sub-section" scope="row"><a href="#88">6.1.7 Recording changes to learning aims</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row-sub-section" scope="row"><a href="#89">6.1.8 Recording higher and degree apprenticeships</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row-sub-section" scope="row"><a href="#90">6.1.9 Requirements for Higher Education Institutions (HEIs)</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row" scope="row"><a href="#91">6.2 Additional guidance for apprenticeship frameworks recorded on Funding model 35</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row" scope="row"><a href="#92">6.3 Additional guidance for apprenticeship standards recorded on Funding model 81</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row" scope="row"><a href="#93">6.4 Additional guidance for apprenticeship frameworks and standards recorded on Funding model 36</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row psm-list-border" scope="row"><a href="#94">6.4.5 Funding model 36: recording changes</a></th>
+		</tr>
+	  </tbody>
+	</table>
+	  
+	<table class="govuk-table tech-spec-table">
+	  <tbody class="govuk-table__body">
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-label psm-list" scope="row"><a href="#95">Section 7 Completing the ILR: recording traineeship programmes</a></th>
+		</tr>
+		<tr class="govuk-table__row psm-list">
+		  <th class="govuk-table__header psm-row" scope="row"><a href="#96">7.1 Traineeships for 16 to 18 year olds</a></th>
+		</tr>
+		<tr class="govuk-table__row psm-list">
+		  <th class="govuk-table__header psm-row" scope="row"><a href="#97">7.2 Traineeships for 19 to 24 year olds</a></th>
+		</tr>
+		<tr class="govuk-table__row psm-list">
+		  <th class="govuk-table__header psm-row" scope="row"><a href="#98">7.3 Work experience</a></th>
+		</tr>
+		<tr class="govuk-table__row psm-list">
+		  <th class="govuk-table__header psm-row" scope="row"><a href="#99">7.4 Work preparation</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row" scope="row"><a href="#100">7.5 Traineeships that spread across more than one teaching year</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row" scope="row"><a href="#101">7.6 Recording completion, achievement and retention</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row" scope="row"><a href="#102">7.7 Recording early leavers and transfers</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row psm-list-border" scope="row"><a href="#103">7.8 Recording destination and progression information</a></th>
+		</tr>
+	  </tbody>
+	</table>
+	  
+	<table class="govuk-table tech-spec-table">
+	  <tbody class="govuk-table__body">
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-label psm-list" scope="row"><a href="#104">Section 8 Completing the ILR: recording 16-19 study programmes</a></th>
+		</tr>
+		<tr class="govuk-table__row psm-list">
+		  <th class="govuk-table__header psm-row" scope="row"><a href="#105">8.1 Planned hours fields</a></th>
+		</tr>
+		<tr class="govuk-table__row psm-list">
+		  <th class="govuk-table__header psm-row-sub-section" scope="row"><a href="#106">8.1.1 Changes to planned hours</a></th>
+		</tr>
+		<tr class="govuk-table__row psm-list">
+		  <th class="govuk-table__header psm-row" scope="row"><a href="#98">8.2 GCSE qualification grades</a></th>
+		</tr>
+		<tr class="govuk-table__row psm-list">
+		  <th class="govuk-table__header psm-row" scope="row"><a href="#99">8.3 GCSE maths and English condition of funding</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row" scope="row"><a href="#100">8.4 Recording a core aim</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row" scope="row"><a href="#101">8.5 Recording High Needs Students</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row-sub-section" scope="row"><a href="#102">8.5.1 Additional guidance for special post-16 institutions</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row" scope="row"><a href="#103">8.6 Recording work experience</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row-sub-section" scope="row"><a href="#104">8.6.1 Work experience and planned hours</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row-sub-section" scope="row"><a href="#105">8.6.2 Recording work experience that crosses multiple teaching years</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row psm-list-border" scope="row"><a href="#106">8.7 Early leavers and transfers</a></th>
+		</tr>
+	  </tbody>
+	</table>
+	  
+	<table class="govuk-table tech-spec-table">
+	  <tbody class="govuk-table__body">
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-label psm-list" scope="row"><a href="#107">Section 9 Completing the ILR: ESF funded learning aims</a></th>
+		</tr>
+		<tr class="govuk-table__row psm-list">
+		  <th class="govuk-table__header psm-row" scope="row"><a href="#108">9.1 Recording ESF data in the ILR</a></th>
+		</tr>
+		<tr class="govuk-table__row psm-list">
+		  <th class="govuk-table__header psm-row-sub-section" scope="row"><a href="#109">9.1.1 Returning ESF data and destination data</a></th>
+		</tr>
+		<tr class="govuk-table__row psm-list">
+		  <th class="govuk-table__header psm-row" scope="row"><a href="#110">9.2 ESF validation and eligibility checks</a></th>
+		</tr>
+		<tr class="govuk-table__row psm-list">
+		  <th class="govuk-table__header psm-row" scope="row"><a href="#111">9.3 Supplementary data collection</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row" scope="row"><a href="#112">9.4 Amending submitted data</a></th>
+		</tr>
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-row  psm-list-border" scope="row"><a href="#113">9.5 Match funding</a></th>
+		</tr>
+	  </tbody>
+	</table>
+	  
+	<table class="govuk-table tech-spec-table">
+	  <tbody class="govuk-table__body">
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-label psm-list psm-list-border" scope="row"><a href="#114">Section 10 Completing the ILR: Recording A and AS levels</a></th>
+		</tr>
+	  </tbody>
+	</table>
+	  
+	<table class="govuk-table tech-spec-table">
+	  <tbody class="govuk-table__body">
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-label psm-list" scope="row"><a href="#115">Section 11 Completing the ILR: Recording Household situation</a></th>
+		</tr>
+		<tr class="govuk-table__row psm-list">
+		  <th class="govuk-table__header psm-row" scope="row"><a href="#116">11.1 When to use the Household situation codes</a></th>
+		</tr>
+		<tr class="govuk-table__row psm-list">
+		  <th class="govuk-table__header psm-row psm-list-border" scope="row"><a href="#117">11.2 Definitions used for Household data</a></th>
+		</tr>
+	  </tbody>
+	</table>
+	  
+	<table class="govuk-table tech-spec-table">
+	  <tbody class="govuk-table__body">
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-label psm-list" scope="row"><a href="#118">Section 12 Further information</a></th>
+		</tr>
+		<tr class="govuk-table__row psm-list">
+		  <th class="govuk-table__header psm-row psm-list-border" scope="row"><a href="#119">12.1 Support available</a></th>
+		</tr>
+	  </tbody>
+	</table>
+	  
+	<table class="govuk-table tech-spec-table">
+	  <tbody class="govuk-table__body">
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-label psm-list" scope="row"><a href="#120">Section 13 Field collection requirements tables</a></th>
+		</tr>
+		<tr class="govuk-table__row psm-list">
+		  <th class="govuk-table__header psm-row" scope="row"><a href="#121">13.1 16-19 funded learning (excluding apprenticeships)</a></th>
+		</tr>
+		<tr class="govuk-table__row psm-list">
+		  <th class="govuk-table__header psm-row" scope="row"><a href="#122">13.2 Adult skills funded learning</a></th>
+		</tr>
+		<tr class="govuk-table__row psm-list">
+		  <th class="govuk-table__header psm-row" scope="row"><a href="#123">13.3 ESF funded learning</a></th>
+		</tr>
+		<tr class="govuk-table__row psm-list">
+		  <th class="govuk-table__header psm-row" scope="row"><a href="#124">13.4 Community Learning funded learning</a></th>
+		</tr>
+		<tr class="govuk-table__row psm-list">
+		  <th class="govuk-table__header psm-row" scope="row"><a href="#125">13.5 Advanced Learner Loans funded learning</a></th>
+		</tr>
+		<tr class="govuk-table__row psm-list">
+		  <th class="govuk-table__header psm-row" scope="row"><a href="#126">13.6 Non-funded learning</a></th>
+		</tr>
+		<tr class="govuk-table__row psm-list">
+		  <th class="govuk-table__header psm-row" scope="row"><a href="#127">13.7 Traineeship programmes</a></th>
+		</tr>
+		<tr class="govuk-table__row psm-list">
+		  <th class="govuk-table__header psm-row psm-list-border" scope="row"><a href="#128">13.8 Apprenticeships</a></th>
+		</tr>
+	  </tbody>
+	</table>
+	  
+	<table class="govuk-table tech-spec-table">
+	  <tbody class="govuk-table__body">
+		<tr class="govuk-table__row">
+		  <th class="govuk-table__header psm-label psm-list-border" scope="row"><a href="#129">Section 14 Related Links to Documents and Information</a></th>
+		</tr>
+	  </tbody>
+	</table>
+		
+  </div>
+</article>
+	
+
+
+
+        <!--<div class="print-page">
+          <a onclick="window.print();return false;" href="#">Print this page</a>
+        </div>-->
+      </div>
+    </main>
+    
+<div class="gem-c-feedback gem-c-feedback--top-margin" data-module="feedback">
+  <div class="gem-c-feedback__prompt gem-c-feedback__js-show js-prompt" tabindex="-1">
+    <div class="gem-c-feedback__js-prompt-questions js-prompt-questions">
+      <h2 class="gem-c-feedback__prompt-question">Is this page useful?</h2>
+
+      <a class="gem-c-feedback__prompt-link" data-track-category="yesNoFeedbackForm" data-track-action="ffMaybeClick" aria-expanded="false" role="button" style="display: none;" hidden="hidden" aria-hidden="true" href="/contact/govuk">
+        Maybe
+</a>
+      <a class="gem-c-feedback__prompt-link gem-c-feedback__prompt-link--useful js-page-is-useful" data-track-category="yesNoFeedbackForm" data-track-action="ffYesClick" aria-expanded="false" role="button" href="/contact/govuk">
+        Yes <span class="visually-hidden">this page is useful</span>
+</a>
+      <a class="gem-c-feedback__prompt-link js-toggle-form js-page-is-not-useful" data-track-category="yesNoFeedbackForm" data-track-action="ffNoClick" aria-controls="page-is-not-useful" aria-expanded="false" role="button" href="/contact/govuk">
+        No <span class="visually-hidden">this page is not useful</span>
+</a>
+      <a class="gem-c-feedback__prompt-link gem-c-feedback__prompt-link--wrong js-toggle-form js-something-is-wrong" data-track-category="Onsite Feedback" data-track-action="GOV.UK Open Form" aria-controls="something-is-wrong" aria-expanded="false" role="button" href="/contact/govuk">
+        Is there anything wrong with this page?
+</a>    </div>
+
+    <div class="gem-c-feedback__prompt-success js-prompt-success js-hidden" tabindex="-1">
+      Thank you for your feedback
+    </div>
+  </div>
+
+  <form action="/contact/govuk/problem_reports" id="something-is-wrong" class="gem-c-feedback__form js-feedback-form js-hidden" data-track-category="Onsite Feedback" data-track-action="GOV.UK Send Form" method="post" aria-hidden="true">
+    <a href="#" class="gem-c-feedback__close gem-c-feedback__js-show js-close-form" data-track-category="Onsite Feedback" data-track-action="GOV.UK Close Form" aria-controls="something-is-wrong" aria-expanded="true" role="button">Close</a>
+
+    <div class="gem-c-feedback__grid-row">
+      <div class="gem-c-feedback__column-two-thirds">
+        <div class="gem-c-feedback__error-summary gem-c-feedback__js-show js-hidden js-errors" tabindex="-1"></div>
+
+        <input type="hidden" name="url" value="https://www.gov.uk/guidance/the-highway-code">
+        <input type="hidden" name="user_agent" value="Mozilla/5.0 (iPhone; CPU iPhone OS 12_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Mobile/15E148 Safari/604.1">
+
+        <h3 class="gem-c-feedback__form-heading">Help us improve GOV.UK</h3>
+        <p id="feedback_explanation" class="gem-c-feedback__form-paragraph">Don’t include personal or financial information like your National Insurance number or credit card details.</p>
+
+        
+<div class="govuk-form-group">
+    
+<label for="input-332765cc" class="gem-c-label govuk-label ">
+  What were you doing?
+</label>
+
+
+
+
+  <input name="what_doing" class="gem-c-input govuk-input" id="input-332765cc" type="text" aria-describedby="feedback_explanation">
+</div>
+
+        
+<div class="govuk-form-group">
+    
+<label for="input-84dbddd1" class="gem-c-label govuk-label ">
+  What went wrong?
+</label>
+
+
+
+
+  <input name="what_wrong" class="gem-c-input govuk-input" id="input-84dbddd1" type="text">
+</div>
+
+        
+  <button class="gem-c-button govuk-button" type="submit">Send</button>
+
+
+      </div>
+    </div>
+  <input type="hidden" name="javascript_enabled" value="true"><input type="hidden" name="referrer" value="https://www.gov.uk/browse/driving/highway-code-road-safety"></form>
+
+  <form action="/contact/govuk/email-survey-signup" id="page-is-not-useful" class="gem-c-feedback__form gem-c-feedback__form--email gem-c-feedback__js-show js-feedback-form js-hidden" data-track-category="yesNoFeedbackForm" data-track-action="Send Form" method="post" aria-hidden="true">
+    <a href="#" class="gem-c-feedback__close js-close-form" data-track-category="yesNoFeedbackForm" data-track-action="ffFormClose" aria-controls="page-is-not-useful" aria-expanded="true" role="button">Close</a>
+
+    <div class="gem-c-feedback__grid-row">
+      <div class="gem-c-feedback__column-two-thirds">
+        <div class="gem-c-feedback__error-summary js-hidden js-errors" tabindex="-1"></div>
+
+        <input type="hidden" name="url" value="https://www.gov.uk/guidance/the-highway-code">
+        <input type="hidden" name="user_agent" value="Mozilla/5.0 (iPhone; CPU iPhone OS 12_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Mobile/15E148 Safari/604.1">
+
+        <input name="email_survey_signup[survey_id]" type="hidden" value="footer_satisfaction_survey">
+        <input name="email_survey_signup[survey_source]" type="hidden" value="https://www.gov.uk/guidance/the-highway-code">
+        <input name="email_survey_signup[ga_client_id]" type="hidden" value="1627485790.1515403243">
+
+        <h3 class="gem-c-feedback__form-heading">Help us improve GOV.UK</h3>
+        <p id="survey_explanation" class="gem-c-feedback__form-paragraph">To help us improve GOV.UK, we’d like to know more about your visit today. We’ll send you a link to a feedback form. It will take only 2 minutes to fill in. Don’t worry we won’t send you spam or share your email address with anyone.</p>
+
+        
+<div class="govuk-form-group">
+    
+<label for="input-3142ef64" class="gem-c-label govuk-label ">
+  Email address
+</label>
+
+
+
+
+  <input name="email_survey_signup[email_address]" class="gem-c-input govuk-input" id="input-3142ef64" type="email" aria-describedby="survey_explanation">
+</div>
+
+        
+  <button class="gem-c-button govuk-button" type="submit">Send me the survey</button>
+
+
+        <a href="https://www.smartsurvey.co.uk/s/gov-uk-banner/?c=/guidance/the-highway-code&amp;gcl=1627485790.1515403243" class="gem-c-feedback__email-link govuk-link" id="take-survey" target="_blank" rel="noopener noreferrer">Don’t have an email address?</a>
+      </div>
+    </div>
+  </form>
+
+</div>
+
+  </div>
+  
+
+{% endblock %}

@@ -1,0 +1,395 @@
+{% extends "sprint-2-1/layout.html" %}
+
+{% block pageTitle %}
+  Entities, definitions and fields 
+{% endblock %}
+
+{% block beforeContent %}
+  {% from "breadcrumbs/macro.njk" import govukBreadcrumbs %}
+
+{{ govukBreadcrumbs({
+  items: [
+    {
+      text: "Home",
+      href: "#"
+    },
+    {
+      text: "ILR specification 2019 to 2020",
+      href: '/sprint-2-1/ilr-specification-2019-to-2020'
+    },
+    {
+      text: "Specification of the individualised learner record for 2019 to 2020",
+      href: '/sprint-2-1/specification-of-the-Individualised-learner-record-for-2019-to-2020'
+    }	
+	
+  ]
+}) }}
+
+<a class="govuk-back-link" href="/sprint-2-1/specification-of-the-Individualised-learner-record-for-2019-to-2020.html">Back</a> 
+
+{% endblock %}
+
+{% block content %}
+<div id="wrapper">
+    <main role="main" class="hmrc-internal-manuals-frontend-content outer-block">
+      <div id="manuals-frontend" class="manuals-frontend-body inner-block">
+
+		  
+<div class="grid-row">
+
+  <div class="column-two-thirds">
+    <div class="page-header">
+      <p class="page-header__context">ILR Spec</p>
+      <h1 class="page-header__title">
+        Entities, definitions and fields 
+      </h1>	
+	</div>
+	</div>	
+	
+  <div class="column-third">
+    <div class="community-contact">
+      <p>
+        <a class="feedback" href="#">Give feedback about this page</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="column-two-thirds">
+
+    <div class="metadata">
+      <dl>
+          <dt>Published by:</dt>
+            <dd>
+              <a href="#">Education and Skills Funding Agency</a>
+            </dd>
+		    <dt>Published:</dt>
+		    <dd>31 January 2019</dd>
+			<dt>Last updated:</dt>
+			<dd>
+			  31 January 2019 — <a href="/sprint-2-1/summary-of-changes.html">see all updates</a>
+			</dd>	
+		
+      </dl>
+    </div>
+
+  </div>
+		
+	
+	
+
+	
+<div class="column-two-thirds">
+    <div class="page-header">	
+	  <h2 class="heading-medium">Overview</h2>
+	  <p class="summary">Entities covered by the ILR </p>
+    </div>
+  </div>
+	
+</div>
+		  
+
+	
+	  
+
+<div class="grid-row responsive-bottom-margin">
+  <div class="column-two-thirds">
+	  
+	<blockquote class="noquotes">
+	<p><strong class="govuk-tag">VERSION 1</strong>&nbsp;&nbsp;&nbsp;Version 1 changes: Updates published January 2019</p>
+	<p>What's changed?</p>
+	<p>Learner destination and progression: <strong>Amendment to Notes section for 2019 to 2020</strong></p>
+
+	</blockquote>
+	  
+	  
+	  <div>
+	    <h2 class="govuk-heading-m">Learning provider entity</h2>
+	  </div>
+		 
+	    <ol class="section-list" style="margin:0px;">
+		<li>
+			<a class="" href="#1">
+				  <span class="subsection-title-text">Learning provider</span>
+				  <span class="subsection-summary"><p>This entity collects data about the provider.</p></span>
+			</a>        
+		</li>
+	  	</ol>
+	  
+	  <div style="margin-top:30px;">
+        <h2 class="govuk-heading-m">Learner entity and child entities</h2> 
+	  </div> 
+
+		<ol class="section-list" style="margin:0px;"> 
+		      <li>
+				  <a class="" href="/sprint-2-1/entities-definitions-and-fields/learner.html" alt="Learner">
+					  <span class="subsection-title-text">Learner</span>
+					  <span class="subsection-summary"><p>This entity collects attributes that relate to an individual learner such as their name and date of birth.</p></span>
+				  </a>         
+			  </li>
+			  <li>
+				  <a class="" href="#2">
+					  <span class="subsection-title-text">Learner contact preference</span>
+					  <span class="subsection-summary"><p>This entity collects any restrictions on the use of the learner's contact details and any restrictions on how a learner wishes to be contacted.</p></span>
+				  </a>          
+			  </li>
+		      <li>
+				  <a class="" href="#3">
+					  <span class="subsection-title-text">LLDD and health problem</span>
+					  <span class="subsection-summary"><p>This entity collect details of the nature of the learner's disability, learning difficulty and/or health problem.</p></span>
+				  </a>          
+			  </li>
+			  <li>
+				  <a class="" href="#4">
+					  <span class="subsection-title-text">Learner funding and monitoring (FAM)</span>
+					  <span class="subsection-summary"><p>This entity collects additional attributes of the learner that will inform either the funding of the learner or additional monitoring.</p></span>
+				  </a>          
+			  </li>
+			  <li>
+				  <a class="" href="#5">
+					  <span class="subsection-title-text">Learner provider specified monitoring</span>
+					  <span class="subsection-summary"><p>This entity collects data specified by the provider for their own use.</p></span>
+				  </a>          
+		      </li>
+			  <li>
+				  <a class="" href="/sprint-2-1/entities-definitions-and-fields/learner-employment-status.html">
+					  <span class="subsection-title-text">Learner employment status</span>
+					  <span class="subsection-summary"><p>This entity collects the details of a learner's employment status before they start their learning (prior to enrolment) and any changes during their programme of learning.</p></span>
+				  </a>          
+			  </li>
+			  <li>
+				  <a class="" href="#7">
+					  <span class="subsection-title-text">Learner HE</span>
+					  <span class="subsection-summary"><p>This entity collects data that is requested by the Office for Students (OfS) and the Higher Education Statistics Agency (HESA).</p></span>
+				  </a>         
+			  </li>
+			  <li>
+				  <a class="" href="#8">
+					  <span class="subsection-title-text">Learner HE financial support</span>
+					  <span class="subsection-summary"><p>This entity collects data about the financial support received by students.</p></span>
+				  </a>         
+			  </li>
+		</ol> 			
+		
+	    <div style="margin-top:30px;">
+		<h2 class="govuk-heading-m">Learning delivery entity and child entities</h2>
+	    </div>
+		
+	    <ol class="section-list" style="margin:0px;">			
+			  
+			  <li>
+				  <a class="" href="/sprint-2-1/entities-definitions-and-fields/learning-delivery.html" alt="Learning delivery">
+					  <span class="subsection-title-text">Learning delivery</span>
+					  <span class="subsection-summary"><p>This entity collects details of the learning aims that a learner is studying.
+	A learning delivery record should be returned for each learning aim that a learner is studying.</p></span>
+				  </a>          
+			  </li> 
+			  <li>
+				  <a class="" href="#10">
+					  <span class="subsection-title-text">Learning delivery funding and monitoring (FAM)</span>
+					  <span class="subsection-summary"><p>This entity collects additional attributes of the Learning Delivery that will either inform funding of the learner or additional monitoring.</p></span>
+				  </a>          
+			  </li>
+			  <li>
+				  <a class="" href="#11">
+					  <span class="subsection-title-text">Learning delivery work placement</span>
+					  <span class="subsection-summary"><p>This entity collects data about a work placement that is being undertaken by a learner as part of a traineeship or 16-19 study programme.</p></span>
+				  </a>          
+			  </li>
+			  <li>
+				  <a class="" href="#12">
+					  <span class="subsection-title-text">Apprenticeship financial record</span>
+					  <span class="subsection-summary"><p>This entity collects data about the cost of an apprenticeship and financial contributions received from an employer for an apprenticeship.</p></span>
+				  </a>          
+			  </li>
+			  <li>
+				  <a class="" href="#13">
+					  <span class="subsection-title-text">Apprenticeship financial type – AfinType</span>
+					  <span class="subsection-summary"><p>The type of financial details being recorded.</p></span>
+				  </a>          
+			  </li>
+			
+			  <li>
+				  <a class="" href="#14">
+					  <span class="subsection-title-text">Provider spec delivery monitoring</span>
+					  <span class="subsection-summary"><p>This entity collects data specified by the provider for their own use.</p></span>
+				  </a>          
+			  </li>
+			  <li>
+				  <a class="" href="#15">
+					  <span class="subsection-title-text">Learning delivery HE</span>
+					  <span class="subsection-summary"><p>Data requested by OfS and HESA.</p></span>
+				  </a>          
+			  </li>
+		</ol> 			
+		
+	    <div style="margin-top:30px;">
+		<h2 class="govuk-heading-m">Learner destination and progression entity</h2>
+	  	</div>
+		
+	    <ol class="section-list" style="margin:0px;">				
+			
+			 <li>
+				  <a class="" href="/sprint-2-1/entities-definitions-and-fields/learner-destination-and-progression.html">
+					  <span class="subsection-title-text">Learner destination and progression&nbsp;&nbsp;&nbsp;<strong class="govuk-tag">VERSION 1</strong></span>
+					  <span class="subsection-summary"><p>This entity records destination and progression outcomes for a learner, such as gaining employment or going onto further study. These outcomes will be reported after a learner has completed a programme of learning.</p></span>
+				  </a>         
+			 </li>
+
+		</ol>  
+
+</div>
+  
+
+
+<div class="column-one-third">
+  
+<div class="gem-c-contextual-sidebar">
+
+    
+  <div class="gem-c-related-navigation">
+
+      <h2 id="related-nav-related_items-9547b6f6" class="gem-c-related-navigation__main-heading" data-track-count="sidebarRelatedItemSection">
+        Related content
+      </h2>
+
+
+
+
+      <nav role="navigation" class="gem-c-related-navigation__nav-section" aria-labelledby="related-nav-related_items-9547b6f6" data-module="gem-toggle">
+
+
+  <ul class="gem-c-related-navigation__link-list" data-module="track-click">
+
+
+        <li class="gem-c-related-navigation__link"><span style="color: #6f777b;">Collection</span></br><a class="gem-c-related-navigation__section-link gem-c-related-navigation__section-link--sidebar  gem-c-related-navigation__section-link--other" href="#">TBC</a></li>
+
+  </ul>
+</nav>
+
+  </div>
+
+
+</div>
+
+</div>
+        
+      </div>
+		  
+		</div>
+    
+		  </main>
+    
+<div class="gem-c-feedback gem-c-feedback--top-margin" data-module="feedback">
+  <div class="gem-c-feedback__prompt gem-c-feedback__js-show js-prompt" tabindex="-1">
+    <div class="gem-c-feedback__js-prompt-questions js-prompt-questions">
+      <h2 class="gem-c-feedback__prompt-question">Is this page useful?</h2>
+
+      <a class="gem-c-feedback__prompt-link" data-track-category="yesNoFeedbackForm" data-track-action="ffMaybeClick" aria-expanded="false" role="button" style="display: none;" hidden="hidden" aria-hidden="true" href="/contact/govuk">
+        Maybe
+</a>
+      <a class="gem-c-feedback__prompt-link gem-c-feedback__prompt-link--useful js-page-is-useful" data-track-category="yesNoFeedbackForm" data-track-action="ffYesClick" aria-expanded="false" role="button" href="/contact/govuk">
+        Yes <span class="visually-hidden">this page is useful</span>
+</a>
+      <a class="gem-c-feedback__prompt-link js-toggle-form js-page-is-not-useful" data-track-category="yesNoFeedbackForm" data-track-action="ffNoClick" aria-controls="page-is-not-useful" aria-expanded="false" role="button" href="/contact/govuk">
+        No <span class="visually-hidden">this page is not useful</span>
+</a>
+      <a class="gem-c-feedback__prompt-link gem-c-feedback__prompt-link--wrong js-toggle-form js-something-is-wrong" data-track-category="Onsite Feedback" data-track-action="GOV.UK Open Form" aria-controls="something-is-wrong" aria-expanded="false" role="button" href="/contact/govuk">
+        Is there anything wrong with this page?
+</a>    </div>
+
+    <div class="gem-c-feedback__prompt-success js-prompt-success js-hidden" tabindex="-1">
+      Thank you for your feedback
+    </div>
+  </div>
+
+  <form action="/contact/govuk/problem_reports" id="something-is-wrong" class="gem-c-feedback__form js-feedback-form js-hidden" data-track-category="Onsite Feedback" data-track-action="GOV.UK Send Form" method="post" aria-hidden="true">
+    <a href="#" class="gem-c-feedback__close gem-c-feedback__js-show js-close-form" data-track-category="Onsite Feedback" data-track-action="GOV.UK Close Form" aria-controls="something-is-wrong" aria-expanded="true" role="button">Close</a>
+
+    <div class="gem-c-feedback__grid-row">
+      <div class="gem-c-feedback__column-two-thirds">
+        <div class="gem-c-feedback__error-summary gem-c-feedback__js-show js-hidden js-errors" tabindex="-1"></div>
+
+        <input type="hidden" name="url" value="https://www.gov.uk/guidance/the-highway-code">
+        <input type="hidden" name="user_agent" value="Mozilla/5.0 (iPhone; CPU iPhone OS 12_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Mobile/15E148 Safari/604.1">
+
+        <h3 class="gem-c-feedback__form-heading">Help us improve GOV.UK</h3>
+        <p id="feedback_explanation" class="gem-c-feedback__form-paragraph">Don’t include personal or financial information like your National Insurance number or credit card details.</p>
+
+        
+<div class="govuk-form-group">
+    
+<label for="input-332765cc" class="gem-c-label govuk-label ">
+  What were you doing?
+</label>
+
+
+
+
+  <input name="what_doing" class="gem-c-input govuk-input" id="input-332765cc" type="text" aria-describedby="feedback_explanation">
+</div>
+
+        
+<div class="govuk-form-group">
+    
+<label for="input-84dbddd1" class="gem-c-label govuk-label ">
+  What went wrong?
+</label>
+
+
+
+
+  <input name="what_wrong" class="gem-c-input govuk-input" id="input-84dbddd1" type="text">
+</div>
+
+        
+  <button class="gem-c-button govuk-button" type="submit">Send</button>
+
+
+      </div>
+    </div>
+  <input type="hidden" name="javascript_enabled" value="true"><input type="hidden" name="referrer" value="https://www.gov.uk/browse/driving/highway-code-road-safety"></form>
+
+  <form action="/contact/govuk/email-survey-signup" id="page-is-not-useful" class="gem-c-feedback__form gem-c-feedback__form--email gem-c-feedback__js-show js-feedback-form js-hidden" data-track-category="yesNoFeedbackForm" data-track-action="Send Form" method="post" aria-hidden="true">
+    <a href="#" class="gem-c-feedback__close js-close-form" data-track-category="yesNoFeedbackForm" data-track-action="ffFormClose" aria-controls="page-is-not-useful" aria-expanded="true" role="button">Close</a>
+
+    <div class="gem-c-feedback__grid-row">
+      <div class="gem-c-feedback__column-two-thirds">
+        <div class="gem-c-feedback__error-summary js-hidden js-errors" tabindex="-1"></div>
+
+        <input type="hidden" name="url" value="https://www.gov.uk/guidance/the-highway-code">
+        <input type="hidden" name="user_agent" value="Mozilla/5.0 (iPhone; CPU iPhone OS 12_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Mobile/15E148 Safari/604.1">
+
+        <input name="email_survey_signup[survey_id]" type="hidden" value="footer_satisfaction_survey">
+        <input name="email_survey_signup[survey_source]" type="hidden" value="https://www.gov.uk/guidance/the-highway-code">
+        <input name="email_survey_signup[ga_client_id]" type="hidden" value="1627485790.1515403243">
+
+        <h3 class="gem-c-feedback__form-heading">Help us improve GOV.UK</h3>
+        <p id="survey_explanation" class="gem-c-feedback__form-paragraph">To help us improve GOV.UK, we’d like to know more about your visit today. We’ll send you a link to a feedback form. It will take only 2 minutes to fill in. Don’t worry we won’t send you spam or share your email address with anyone.</p>
+
+        
+<div class="govuk-form-group">
+    
+<label for="input-3142ef64" class="gem-c-label govuk-label ">
+  Email address
+</label>
+
+
+
+
+  <input name="email_survey_signup[email_address]" class="gem-c-input govuk-input" id="input-3142ef64" type="email" aria-describedby="survey_explanation">
+</div>
+
+        
+  <button class="gem-c-button govuk-button" type="submit">Send me the survey</button>
+
+
+        <a href="https://www.smartsurvey.co.uk/s/gov-uk-banner/?c=/guidance/the-highway-code&amp;gcl=1627485790.1515403243" class="gem-c-feedback__email-link govuk-link" id="take-survey" target="_blank" rel="noopener noreferrer">Don’t have an email address?</a>
+      </div>
+    </div>
+  </form>
+
+</div>
+
+  
+
+{% endblock %}
